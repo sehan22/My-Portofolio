@@ -3,12 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS Box Model</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="../fontAwesome/css/all.min.css">
     <style>
+        header{
+            height: 70px;
+            background-color: white;
+            border: solid black 2px;
+            position: relative;
+        }
+        header>div{
+            background-color: white;
+            height: 50px;
+        }
+
+        header>div>img{
+            height: 50px;
+            position: absolute;
+            left: 50px;
+        }
+
+        header>nav>menu{
+            position: absolute;
+            top: 0;
+            right: 30px;
+
+            display: flex;
+            list-style: none;
+        }
+
+        header>nav>menu>li{
+
+            font-size: 18px;
+            font-weight: bold;
+
+            margin-right: 30px;
+        }
+
+        header>nav>menu>li>a{
+            text-decoration: none;
+            color: black;
+        }
+
+        footer{
+            background-color: #818181;
+            height: 50px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        footer>h3{
+            text-align: center;
+        }
 
     </style>
 </head>
 
 <body>
-    <section></section>
+    <header>
+            <div>
+                <img src="/InClass%20Assignments/Assests/ijse.png">
+            </div>
+
+            <nav>
+                <menu>
+                    <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+                    <li><i class="fa-solid fa-globe"></i><a href="#">Services</a></li>
+                    <li><i class="fa-regular fa-address-book"></i><a href="#">Contacts</a></li>
+                    <li><i class="fa-regular fa-address-card"></i><a href="#">About Us</a></li>
+                </menu>
+            </nav>
+    </header>
+    <main>
+        <nav></nav>
+        <section>
+            <section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque autem culpa cumque dignissimos
+                    enim ipsa, iure magni minus molestiae quia, recusandae ullam. Amet assumenda facilis nam natus sunt unde.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque autem culpa cumque dignissimos
+                    enim ipsa, iure magni minus molestiae quia, recusandae ullam. Amet assumenda facilis nam natus sunt unde.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque autem culpa cumque dignissimos
+                    enim ipsa, iure magni minus molestiae quia, recusandae ullam. Amet assumenda facilis nam natus sunt unde.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque autem culpa cumque dignissimos
+                    enim ipsa, iure magni minus molestiae quia, recusandae ullam. Amet assumenda facilis nam natus sunt unde.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque autem culpa cumque dignissimos
+                    enim ipsa, iure magni minus molestiae quia, recusandae ullam. Amet assumenda facilis nam natus sunt unde.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque autem culpa cumque dignissimos
+                    enim ipsa, iure magni minus molestiae quia, recusandae ullam. Amet assumenda facilis nam natus sunt unde.</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h3>DEVOLOPED By IJSE</h3>
+    </footer>
 </body>
 </html>
