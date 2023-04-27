@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 1</title>
+    <link href="normalize.css" rel="stylesheet">
+    <style>
+        body>section {
+            width: 100%;
+            height: 900px;
+            position: relative;
+        }
+
+        body>section>section {
+            width: 50%;
+            height: 50%;
+            position: absolute;
+        }
+
+        section>section:nth-child(1) {
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+
+        section>section:nth-child(2) {
+            top: 0;
+            right: 0;
+            background-color: green;
+        }
+
+        section>section:nth-child(3) {
+            bottom: 0;
+            left: 0;
+            background-color: orange;
+        }
+
+        section>section:nth-child(4) {
+            bottom: 0;
+            right: 0;
+            background-color: deeppink;
+        }
+
+        section>section>div {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: white;
+        }
+
+        section>section>div>div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: red;
+        }
+
+        section>div {
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+        }
+
+        section>div:nth-child(5) {
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 100%;
+        }
+
+        section>div:nth-child(6) {
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 100%;
+        }
+
+        section>div:nth-child(7) {
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 100%;
+        }
+
+        section>div:nth-child(8) {
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+        }
+
+        section>div:nth-child(9) {
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100px;
+            width: 200px;
+            margin: auto;
+            border-bottom-left-radius: 300px;
+            border-bottom-right-radius: 300px;
+        }
+
+        section>div:nth-child(10) {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100px;
+            width: 200px;
+            margin: auto;
+            border-top-left-radius: 300px;
+            border-top-right-radius: 300px;
+        }
+
+        section>div:nth-child(11) {
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+
+        body>section>div>div {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            border-radius: 100%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div>
+            <div></div>
+        </div>
+    </section>
+</body>
+</html>
