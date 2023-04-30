@@ -78,27 +78,22 @@
 
             main > section:nth-child(1) {
                 height: 900px;
-                border: 1px solid black;
             }
             main > section:nth-child(2) {
                 height: 750px;
-                border: 1px solid black;
             }
             main > section:nth-child(3) {
                 height: 80px;
-                border: 1px solid black;
             }
             main > section:nth-child(4) {
                 height: 900px;
-                border: 1px solid black;
             }
             main > section:nth-child(5) {
                 height: 1200px;
-                border: 1px solid black;
             }
 
             main > section:nth-child(6) {
-                height: 1300px;
+                height: 600px;
                 border: 1px solid black;
             }
 
@@ -474,7 +469,8 @@
                 font-weight: bold;
                 position: absolute;
                 top:10px;
-                left: 30px;
+                left: 0;
+                right: 0;
             }
 
             main > section:nth-child(6) > section > article > h3 {
@@ -491,7 +487,8 @@
                 font-weight: bold;
                 position: absolute;
                 top: 300px;
-                left: 30px;
+                left: 0;
+                right: 0;
             }
 
             main > section:nth-child(6) > section > article > h3:nth-child(4) {
@@ -525,21 +522,38 @@
                 color: #4B4954;
             }
 
+            footer {
+                position: relative;
+                height: 90px;
+                width: 100%;
+                background-color: #4B4954;
+            }
+
+            footer > h1 {
+                position: absolute;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-family: "Akshar", sans-serif;
+                font-weight: bolder;
+                color: white;
+
+            }
         </style>
     </head>
 
     <body>
-        <header>
+    <header>
             <img src="assests/1/Untitled-1%201.png">
 
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Certificates</a></li>
-                    <li><a href="#">Qualification</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#Certificates">Certificates</a></li>
+                    <li><a href="#Qualification">Qualification</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -574,6 +588,7 @@
 
         <section>
             <article>
+                <dfn id="Certificates"></dfn>
                 <h1>Certificates</h1>
                 <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively<br>
                     identifies the identity of an individual or organization. Using public key cryptography, its authenticity can be<br>
@@ -608,6 +623,7 @@
         <section>
             <section>
                 <article>
+                    <dfn id="Qualification"></dfn>
                     <h1>Qualifications</h1>
                     <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
                         identifies the identity of an individual or organization. Using public key cryptography,<br> its authenticity can be
@@ -639,6 +655,7 @@
 
         <section>
             <article>
+                <dfn id="Projects"></dfn>
                 <h1>Projects</h1>
                 <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
                     identifies the identity of an individual or organization.  Using public key cryptography,<br> its authenticity can be
@@ -692,6 +709,7 @@
         </section>
 
         <section>
+            <dfn id="About"></dfn>
             <h1>About</h1>
 
             <section>
@@ -732,129 +750,28 @@
         </section>
 
         <section>
-            <nav>
-                <img src="assests/Instagram.png">
-            </nav>
-            <nav>
-                <img src="assests/Linkedin.png">
-            </nav>
-            <nav>
-                <img src="assests/slackIcon.png">
-            </nav>
-            <nav>
-                <img src="assests/Gmail.png">
-            </nav>
-            <nav>
-                <img src="assests/Figma%20-%20Original.png">
-            </nav>
-            <nav>
-                <img src="assests/Github%20-%20Original.png">
-            </nav>
-            <nav><img src="assests/Telegram%20-%20Original.png">
-            </nav>
-            <nav>
-                <img src="assests/Gmail.png">
-            </nav>
+            <dfn id="Contact"></dfn>
+            <fieldset>
+
+                <legend><h1>Contact me</h1></legend><br><br>
+
+                <lable>Name : </lable><input id="name" type="text"><br><br>
+
+                <lable>Last Name : </lable><input id="lastname" type="text"><br><br>
+
+                <lable>Phone Number : </lable><input id="phonenumber" type="tel"><br><br>
+
+                <lable>Email : </lable><input id="email" type="email"><br><br>
+
+                <lable>Message : </lable><input id="message" type="text"><br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
         </section>
-
-        <section>
-            <article>
-                <h1>jhmgmgkg</h1>
-                <h1></h1>
-                <h1></h1>
-                <h1></h1>
-            </article>
-
-            <article>
-                <h1></h1>
-                <h1></h1>
-                <h1></h1>
-                <h1></h1>
-            </article>
-
-            <section></section>
-        </section>
-
-
-
-
-
-
-
-
-
-        <section>
-            <h1></h1>
-            <h4></h4>
-            <h4></h4>
-            <h4></h4>
-
-            <aside><h4></h4></aside>
-            <aside><h4></h4></aside>
-
-            <div>
-                <h3></h3>
-                <nav><h1></h1></nav>
-            </div>
-
-            <div>
-                <h3></h3>
-                <nav><h1></h1></nav>
-            </div>
-
-            <div>
-                <h3></h3>
-                <nav><h1></h1></nav>
-            </div>
-        </section>
-
-        <section>
-
-            <nav><h5></h5></nav>
-        </section>
-
-
-
-
-
-
-
-        <section>
-            <form>
-                <fieldset>
-                    <legend>Contact Me</legend>
-                </fieldset>
-            </form>
-            <nav></nav>
-        </section>
-
-        <section>
-            <h1></h1>
-        </section>
-
-        <section>
-            <section>
-                <h1></h1>
-                <nav><h1></h1></nav>
-                <nav></nav>
-                <h4></h4>
-                </section>
-            </section>
-
-            <section>
-                <h1></h1>
-                <nav></nav>
-
-                <aside>
-                    <h1></h1>
-                </aside>
-
-                <nav></nav>
-                <nav></nav>
-            </section>
-        </section>-->
     </main>
 
-    <footer></footer>
+    <footer>
+        <h1>Developed by Sehan Ranaweera</h1>
+    </footer>
     </body>
 </html>
