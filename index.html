@@ -18,44 +18,31 @@
         <link href="https://fonts.cdnfonts.com/css/akshar-unicode" rel="stylesheet">
         <style>
             header {
-                background: white;
-                position: relative;
-                height: 35vm;
+                background-color: #D9F6FB;
+                z-index: 1;
+                position: sticky;
+                top: 0;
+                width: 100%;
+                height: 100px;
             }
 
             header > img:nth-child(1) {
-                width: 100%;
-                height: 850px;
-            }
-
-            header > img:nth-child(2) {
                 position: absolute;
-                top: 62px;
+                margin: auto;
+                top: 0;
+                bottom: 0;
                 left: 45px;
                 width: 170px;
                 height: 59px;
             }
 
-            header > img:nth-child(3) {
-                position: absolute;
-                top: 150px;
-                left: 185px;
-                width:27%;
-                height: 74%;
-            }
-
-            header > img:nth-child(4) {
-                position: absolute;
-                top: 268px;
-                left: 1010px;
-                width: 30vw;
-                height: 3vh;
-            }
-
             header > nav > ul {
                 position: absolute;
+                margin: auto;
                 right: 0;
-                top: 0;
+                top: 35px;
+                bottom: 0;
+
             }
 
             header > nav > ul > li {
@@ -63,7 +50,9 @@
                 font-family: "Roboto Light",sans-serif;
                 font-weight: bold;
                 font-size: 23px;
-                top: 62px;
+                margin: auto;
+                top: 0;
+                bottom: 0;
                 right: 140px;
                 margin-left: 40px;
                 display: inline-block;
@@ -74,11 +63,38 @@
                 text-decoration: none;
             }
 
-            header > nav > ul > li > a:focus {
+            header > nav > ul > li > a:hover {
+                color: #4B4954;
+            }
+
+            header > nav > ul > li:nth-child(1) > a:nth-child(1) {
                 color: white;
+                background-color: #05BFDB;
                 text-decoration: none;
-                background-size: 100px 150px;
-                box-shadow: 4px 1px 4px 5px #0000005c;
+                box-shadow: 2px 2px 10px -2px #0000005c;
+                padding: 7px;
+                border-radius: 10px;
+            }
+
+            main > section:nth-child(1) > img:nth-child(1) {
+                width: 100%;
+                height: 850px;
+            }
+
+            main > section:nth-child(1) > img:nth-child(2) {
+                position: absolute;
+                top: 267px;
+                left: 1010px;
+                width: 30vw;
+                height: 3vh;
+            }
+
+            main > section:nth-child(1) > aside > img {
+                position: absolute;
+                top: 120px;
+                left: 185px;
+                width: 30%;
+                height: 80%;
             }
 
             main > section:nth-child(1) > article > h1 {
@@ -211,7 +227,7 @@
             }
 
             main > section:nth-child(3) > article {
-                height: 150px;
+                height: 100px;
             }
 
             main > section:nth-child(3) > article > h3 {
@@ -244,32 +260,55 @@
             main > section:nth-child(4) > section:nth-child(2) {
                 position: relative;
                 margin: auto;
-                width: 80%;
-                height: 80%;
+                width: 70%;
+                height: 60%;
                 display: grid;
                 grid-template-columns: repeat(3,1fr);
-                grid-gap: 50px;
+                grid-gap: 80px;
             }
 
             main > section:nth-child(4) > section:nth-child(2) > div {
+                position: relative;
+                top: 40px;
                 box-shadow: 2px 2px 10px -2px #0000005c;
                 border-radius: 100px;
             }
 
             main > section:nth-child(4) > section:nth-child(2) > div > img {
-                border-radius: 200px;
-                height: 100%;
+                border-radius: 100px;
+                height: 80%;
                 width: 100%;
+            }
+
+            main > section:nth-child(4) > section:nth-child(2) > div > h2 {
+                font-family: "Akshar", sans-serif;
+                font-weight: bold;
+                position: relative;
+                top: -40px;
+                text-align: center;
+                color: #4B4954;
+
+            }
+
+            main > section:nth-child(4) > article > h3 {
+                font-family: "Akshar", sans-serif;
+                font-weight: lighter;
+                text-align: center;
+                position: relative;
+                top: 100px;
+            }
+
+            main > section:nth-child(5) > article {
+                position: relative;
+                top: 100px;
+                text-align: center;
             }
         </style>
     </head>
 
     <body>
         <header>
-            <img src="assests/1/Group%20105.jpg">
             <img src="assests/1/Untitled-1%201.png">
-            <img src="assests/1/PXL_20230211_023400225%201.png">
-            <img src="assests/1/Group%20106.png">
 
             <nav>
                 <ul>
@@ -283,10 +322,13 @@
             </nav>
         </header>
 
-
     <main>
         <section>
-            <aside></aside>
+            <img src="assests/1/Group%20105.jpg">
+            <img src="assests/1/Group%20106.png">
+            <aside>
+                <img src="assests/1/PXL_20230211_023400225%201.png">
+            </aside>
 
             <article>
                 <h1>Hi There,</h1>
@@ -354,26 +396,49 @@
             <section>
                 <div>
                     <img src="assests/2/Group%20109.png">
+                    <h2>GCE Advanced Level Exam</h2>
                 </div>
                 <div>
                     <img src="assests/2/ijse%201.png">
+                    <h2>Student Of IJSE institution</h2>
                 </div>
                 <div>
                     <img src="assests/2/Group%20110.png">
+                    <h2>GCE Ordinary Level Exam</h2>
                 </div>
             </section>
+
+            <article>
+                <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively<br>
+                    identifies the identity of an individual or organization.  Using public key cryptography, its authenticity can be<br>
+                    verified to ensure that the software or website you are using is legitimate.</h3>
+            </article>
         </section>
 
-      <section>
+        <section>
+            <article>
+                <h1>Projects</h1>
+                <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
+                    identifies the identity of an individual or organization.  Using public key cryptography,<br> its authenticity can be
+                    verified to ensure that the software or website you are using is legitimate.</h3>
+            </article>
+
             <section>
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <img src="assests/Screenshot%20(19)%201.png">
-                <img src="assests/Screenshot%20(22)%201.png">
-            </section>
-            <section>
-                <img src="assests/Screenshot%20(21)%201.png">
-                <img src="assests/Screenshot%20(23)%201.png">
-                <img src="assests/Screenshot%20(24)%201.png">
+                <div>
+                    <img src="assests/3/Screenshot%20(119).png">
+                </div>
+                <div>
+                    <img src="assests/3/Screenshot%20(19)%201.png">
+                </div>
+                <div>
+                    <img src="assests/3/Screenshot%20(21)%201.png">
+                </div>
+                <div>
+                    <img src="assests/3/Screenshot%20(23)%201.png">
+                </div>
+                <div>
+                    <img src="assests/3/Screenshot%20(4)%201.png">
+                </div>
             </section>
         </section>
 
