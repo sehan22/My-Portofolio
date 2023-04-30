@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="style.css">
 
-        <title>My Web Page | Tile </title>
+        <title>Sehan Ranaweera</title>
         <meta name="keywords" content="Sehan Gayanath Ranaweera Arachchige">
         <meta name="discription" content="This is the for testing my webpage discription">
         <meta name="author" content="Sehan Ranaweera">
@@ -13,185 +13,360 @@
         <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
         <!-- <meta name="http-equiv="refresh" content="3;https://www.ijse.lk"> -->
         <link rel ="icon" href="yin-yang.png">
-
+        <link href="normalize.css", rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/coiny" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/akshar-unicode" rel="stylesheet">
         <style>
-            *{
-                color: green;
+            header {
+                background: white;
+                position: relative;
+                height: 35vm;
             }
 
-            p{
-                color: aqua;
+            header > img:nth-child(1) {
+                width: 100%;
+                height: 850px;
             }
 
-            .selected{
-                background-color: black;
+            header > img:nth-child(2) {
+                position: absolute;
+                top: 62px;
+                left: 45px;
+                width: 170px;
+                height: 59px;
             }
 
-            #special{
-                color: brown;
+            header > img:nth-child(3) {
+                position: absolute;
+                top: 150px;
+                left: 185px;
+                width:27%;
+                height: 74%;
             }
 
-            [id="a"]{
-                color: blue;
+            header > img:nth-child(4) {
+                position: absolute;
+                top: 268px;
+                left: 1010px;
+                width: 30vw;
+                height: 3vh;
             }
 
-            #special, .selected{
-                background-color: orange;
+            header > nav > ul {
+                position: absolute;
+                right: 0;
+                top: 0;
             }
 
-            h1:hover {
-                color: red;
+            header > nav > ul > li {
+                position: relative;
+                font-family: "Roboto Light",sans-serif;
+                font-weight: bold;
+                font-size: 23px;
+                top: 62px;
+                right: 140px;
+                margin-left: 40px;
+                display: inline-block;
             }
 
-            h2:nth-child(1) {
-                color: orange;
+            header > nav > ul > li > a {
+                color: black;
+                text-decoration: none;
             }
 
-            :first-child{
-                color: red;
-            }
-
-            :last-child{
-                border: 2px solid white;
-            }
-
-            h1:active{
-                color: red;
-            }
-
-            h2:focus{
-                border: 2px solid red;
-            }
-
-            h4:visited{
-                background-color: orange;
-            }
-
-            h4:before{
-                content: "@";
-                color: chocolate;
-            }
-
-            h4:after{
-                content: "@";
-                color: chocolate;
-            }
-
-            p::selection{
-                background-color: red;
+            header > nav > ul > li > a:focus {
                 color: white;
+                text-decoration: none;
+                background-size: 100px 150px;
+                box-shadow: 4px 1px 4px 5px #0000005c;
             }
 
-            li::marker{
-                content: "@";
-                color: red;
+            main > section:nth-child(1) > article > h1 {
+                position: absolute;
+                top: 200px;
+                left: 750px;
+                font-family: 'Akshar Unicode', sans-serif;
+                font-weight: bolder;
+                font-size: 60px;
+                color: #4B4954;
             }
 
-            input::placeholder{
-                color: green;
+            main > section:nth-child(1) > article > h2 {
+                position: absolute;
+                top: 400px;
+                left: 750px;
+                font-family: 'Coiny', sans-serif;
+                font-weight: bolder;
+                font-size: 60px;
+                color: black;
             }
 
-            input::file-selector-button{
-                color: white;
-                background-color: blue;
-                border: none;
+            main > section:nth-child(1) > article > h2:nth-child(2) {
+                top: 290px;
+                left: 800px;
+                font-family: 'Coiny', sans-serif;
+                font-weight: bolder;
+                font-size: 60px;
+                color: black;
+            }
+
+            main > section:nth-child(1) > article > h2:nth-child(3) {
+                top: 290px;
+                left: 1116px;
+                font-family: 'Coiny', sans-serif;
+                font-weight: bolder;
+                font-size: 60px;
+                color: #088395;
+            }
+
+            main > section:nth-child(1) > article > h4:nth-child(4) {
+                position: absolute;
+                top: 380px;
+                left: 900px;
+                font-family: 'Akshar', sans-serif;
+                font-weight: bolder;
+                font-size: 40px;
+                color: black;
+            }
+
+            main > section:nth-child(1) > article > h4:nth-child(5) {
+                position: absolute;
+                top: 380px;
+                left: 1305px;
+                font-family: 'Akshar', sans-serif;
+                font-weight: bolder;
+                font-size: 40px;
+                color: black;
+            }
+
+            main > section:nth-child(1) > article > h3:nth-child(6) {
+                position: absolute;
+                top: 500px;
+                left: 908px;
+                font-family: 'Akshar', sans-serif;
+                font-weight: lighter;
+                color: black;
+            }
+
+            main > section:nth-child(1) > article > nav > ul {
+                position: absolute;
+                top: 602px;
+                left: 910px;
+            }
+
+            main > section:nth-child(1) > article > nav > ul > li {
+                margin-left: 30px;
+                display: inline-block;
+            }
+
+            main > section:nth-child(1) > article > nav > ul > li > img {
+                height: 40px;
+            }
+
+            main > section:nth-child(2) > article {
+                text-align: center;
+            }
+
+            main > section:nth-child(2) > article > h1 {
+                position: relative;
+                top: 0;
+                font-family: "Roboto", sans-serif;
+                font-weight: bolder;
+                font-size: 40px;
+            }
+
+            main > section:nth-child(2) > article > h3 {
+                font-family: "Akshar", sans-serif;
+                font-weight: lighter;
+                line-height: 25px;
+                letter-spacing: 1px;
+            }
+
+            main > section:nth-child(2) > section {
+                position: relative;
+                top: 20px;
+                margin: auto;
+                width: 80%;
+                height: 70%;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 50px;
+            }
+
+            main > section:nth-child(2) > section > div > h2 {
+                font-family: "Akshar", sans-serif;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            main > section:nth-child(2) > section > div {
+                box-shadow: 2px 2px 10px -2px #0000005c;
+                border: 1px solid #EEEEEE;
                 border-radius: 10px;
+            }
+
+            main > section:nth-child(2) > section > div > img {
+                height: 80%;
+                width: 100%;
+            }
+
+            main > section:nth-child(3) > article {
+                height: 150px;
+            }
+
+            main > section:nth-child(3) > article > h3 {
+                position: relative;
+                top: 40px;
+                font-family: "Akshar", sans-serif;
+                font-weight: lighter;
+                text-align: center;
+            }
+
+            main > section:nth-child(4) > section > article {
+                text-align: center;
+            }
+
+            main > section:nth-child(4) > section > article > h1 {
+                position: relative;
+                top: 0;
+                font-family: "Roboto", sans-serif;
+                font-weight: bolder;
+                font-size: 40px;
+            }
+
+            main > section:nth-child(4) > section > article > h3 {
+                font-family: "Akshar", sans-serif;
+                font-weight: lighter;
+                line-height: 25px;
+                letter-spacing: 1px;
+            }
+
+            main > section:nth-child(4) > section:nth-child(2) {
+                position: relative;
+                margin: auto;
+                width: 80%;
+                height: 80%;
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-gap: 50px;
+            }
+
+            main > section:nth-child(4) > section:nth-child(2) > div {
+                box-shadow: 2px 2px 10px -2px #0000005c;
+                border-radius: 100px;
+            }
+
+            main > section:nth-child(4) > section:nth-child(2) > div > img {
+                border-radius: 200px;
+                height: 100%;
+                width: 100%;
             }
         </style>
     </head>
 
     <body>
-        <head >
-            <input type="file">
-            <img src="assests/vecteezy_abstract-grunge-texture-with-halftone-effect-and-tosca-color_%201.png" width="1900" height="800">
-            <!--<picture>
-                <picture>
-                    <source srcset="assests/vecteezy_abstract-grunge-texture-with-halftone-effect-and-tosca-color_ 1.png"
-                            media="(orientation: portrait)">
-                </picture>-->
-
-            </picture>
-
-            <h1>BLOG</h1>
+        <header>
+            <img src="assests/1/Group%20105.jpg">
+            <img src="assests/1/Untitled-1%201.png">
+            <img src="assests/1/PXL_20230211_023400225%201.png">
+            <img src="assests/1/Group%20106.png">
 
             <nav>
-                <menu>
-                    <li>Home</li>
-                    <li>Certificates</li>
-                    <li>Qualification</li>
-                    <li>Projects</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </menu>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Certificates</a></li>
+                    <li><a href="#">Qualification</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </nav>
-        </head>
+        </header>
 
+
+    <main>
         <section>
-            <aside><img src="assests/Screenshot%20(17).png"> </aside>
-
-<!--            <video controls src="assests/BHASHI.mp4" autoplay="true"  muted>
-                <track default
-                       kind="captions"
-                       srclang="sinhala"
-                       src="assests/songsubtitles.vtt"></video>-->
+            <aside></aside>
 
             <article>
-                <h1>Hello I'm R.A.Sehan Gayanath</h1>
-                <ul>
-                    <li>Name : R.A.Sehan Gayanath</li>
-                    <li>Address : Matara</li>
-                    <li>Email : <a href="mailto:sehanranaweera2002@gmail.com"><h4>sehanranaweera2002@gmail.com</h4></a></li>
-                    <li>Contact : <a href="tel:0712400168">0712400168</a></li>
-                    <li>My CV : <a href="OOP Coursework GDSE 65_66.pdf" download="Sehan Ranaweera CV.pdf">Download My CV</a></li>
+                <h1>Hi There,</h1>
+                <h2>I'm Sehan</h2>
+                <h2>Ranaweera</h2>
+                <h4>Software Developer ,</h4>
+                <h4>UI & UX Designer</h4>
+                <h3>I'm Sehan Ranaweera from Matara Sri Lanka.Software Developer and<br>
+                    UI & UX Designer based in Sri Lanka.</h3>
 
-                </ul>
+                <nav>
+                    <ul>
+                        <li><img src="assests/1/Github%20-%20Original.png"></li>
+                        <li><img src="assests/1/LinkedIn%20-%20Negative.png"></li>
+                        <li><img src="assests/1/Facebook%20-%20Negative.png"></li>
+                        <li><img src="assests/1/Instagram%20-%20Negative.png"></li>
+                    </ul>
+                </nav>
             </article>
         </section>
 
         <section>
-            <article><h1>Certificates</h1></article>>A certificate or digital certificate is a unique, digitally<br>
-                <h2>signed d ividual or organization. Using public key cryptography,</h2><br>
-                its authenticity can be verified to ensure that the software or<br>
-                website you are using is legitimate.</br>
+            <article>
+                <h1>Certificates</h1>
+                <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively<br>
+                    identifies the identity of an individual or organization. Using public key cryptography, its authenticity can be<br>
+                    verified to ensure that the software or website you are using is legitimate.</h3>
+            </article>
 
-<!--            <object type="application/pdf"
-                    data="assests/OOP%20Coursework%20GDSE%2065_66.pdf"
-                    width="500"
-                    height="500">
-            </object>-->
-
-<!--            <iframe width="560" height="315" src="https://www.youtube.com/embed/RnnRN8HhLdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-
-<!--            <iframe id="inlineFrameExample"
-                    title="Inline Frame Example"
-                    width="500"
-                    height="500"
-                    src="https://www.ijse.lk">
-            </iframe>-->
-
-            <br><br><br><br>
-
-<!--            <picture>
-                <source srcset="assests/Linkedin.png"
-                        media="(orientation: portrait)">
-                <img src="assests/Instagram.png" alt="">
-            </picture>-->
 
             <section>
-                <img src="assests/java.png">
-                <img src="assests/sql.png">
-                <img src="assests/phython.png">
+                <div>
+                    <img src="assests/2/java.png">
+                    <h2>Java certificates</h2>
+                </div>
+                <div>
+                    <img src="assests/2/sql.png">
+                    <h2>SQL certificates</h2>
+                </div>
+                <div>
+                    <img src="assests/2/phython.png">
+                    <h2>Phython certificates</h2>
+                </div>
             </section>
         </section>
 
         <section>
-            <img src="assests/5679672%202.png">
-            <img src="assests/ijse%201.png">
-            <img src="assests/5679672%202.png">
+            <article>
+                <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
+                    identifies the identity of an individual or organization. Using public key cryptography,<br> its authenticity can be
+                    verified to ensure that the software or website you are using is legitimate.</h3>
+            </article>
         </section>
 
         <section>
             <section>
+                <article>
+                    <h1>Qualifications</h1>
+                    <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
+                        identifies the identity of an individual or organization. Using public key cryptography,<br> its authenticity can be
+                        verified to ensure that the software or website you are using is legitimate.</h3>
+                </article>
+            </section>
+
+            <section>
+                <div>
+                    <img src="assests/2/Group%20109.png">
+                </div>
+                <div>
+                    <img src="assests/2/ijse%201.png">
+                </div>
+                <div>
+                    <img src="assests/2/Group%20110.png">
+                </div>
+            </section>
+        </section>
+
+      <section>
+            <section>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <img src="assests/Screenshot%20(19)%201.png">
                 <img src="assests/Screenshot%20(22)%201.png">
             </section>
@@ -336,10 +511,9 @@
                 <nav></nav>
                 <nav></nav>
             </section>
-        </section>
+        </section>-->
+    </main>
 
-
-
-
+    <footer></footer>
     </body>
 </html>
