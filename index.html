@@ -19,7 +19,7 @@
         <style>
             header {
                 background-color: #D9F6FB;
-                z-index: 1;
+                z-index: 3;
                 position: sticky;
                 top: 0;
                 width: 100%;
@@ -76,8 +76,53 @@
                 border-radius: 10px;
             }
 
+            main > section:nth-child(1) > article > nav > ul > li:nth-child(5) {
+                position: absolute;
+                top: 50%;
+                left: 135%;
+                transform: translate(-50%,-50%);
+            }
+
+            main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button {
+                position: relative;
+                background: none;
+                border: 2px solid #000000;
+                font-family: "Roboto", sans-serif;
+                font-weight: bolder;
+                padding: 12px 20px;
+                min-width: 175px;
+                cursor: pointer;
+                transition: color 0.4s linear;
+            }
+
+            main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button:hover {
+                color: #ffffff;
+            }
+
+            main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 105%;
+                background: #4B4954;
+                z-index: -1;
+                transition: transform 0.5s;
+                transform-origin: 0 0;
+                transition-timing-function: cubic-bezier(0.9,1.6,0.4,0.7);
+            }
+
+            main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button::before {
+                transform: scaleX(0);
+            }
+
+            main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button:hover::before {
+                transform: scaleX(1);
+            }
+
             main > section:nth-child(1) {
-                height: 900px;
+                height: 750px;
             }
             main > section:nth-child(2) {
                 height: 750px;
@@ -99,7 +144,7 @@
 
             main > section:nth-child(1) > img:nth-child(1) {
                 width: 100%;
-                height: 850px;
+                height: 750px;
             }
 
             main > section:nth-child(1) > img:nth-child(2) {
@@ -108,14 +153,6 @@
                 left: 1010px;
                 width: 30vw;
                 height: 3vh;
-            }
-
-            main > section:nth-child(1) > aside > img {
-                position: absolute;
-                top: 120px;
-                left: 185px;
-                width: 28%;
-                height: 72%;
             }
 
             main > section:nth-child(1) > article > h1 {
@@ -561,11 +598,8 @@
 
     <main>
         <section>
-            <img src="assests/1/Group%20105.jpg">
+            <img src="assests/1/Group%20109.png">
             <img src="assests/1/Group%20106.png">
-            <aside>
-                <img src="assests/1/PXL_20230211_023400225%201.png">
-            </aside>
 
             <article>
                 <h1>Hi There,</h1>
@@ -582,6 +616,7 @@
                         <li><img src="assests/1/LinkedIn%20-%20Negative.png"></li>
                         <li><img src="assests/1/Facebook%20-%20Negative.png"></li>
                         <li><img src="assests/1/Instagram%20-%20Negative.png"></li>
+                        <li><button type="button">Download My CV</button></li>
                     </ul>
                 </nav>
             </article>

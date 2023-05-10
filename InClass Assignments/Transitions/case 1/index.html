@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="../fontAwesome/css/all.min.css" rel="stylesheet">
+
+  <style>
+
+      section {
+          position: absolute;
+      }
+
+        section > div {
+            position: relative;
+            width: 400px;
+            height: 60px;
+            margin-top: 80px;
+            background: #C147E9;
+            box-shadow: -5px 5px 15px #4B4954;
+            cursor: pointer;
+            left: -80%;
+            transition: 1s;
+        }
+
+        section > div > h3 {
+            color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 30px;
+        }
+
+        section > div > i {
+            position: absolute;
+            top: 13px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+        }
+
+        section > div:hover {
+            left: 0;
+            transition: 1s;
+        }
+  </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h3>Menu One</h3>
+            <i class="fa-solid fa-address-book"></i>
+        </div>
+
+        <div>
+            <h3>Menu Two</h3>
+            <i class="fa-solid fa-truck-medical"></i>
+        </div>
+
+        <div>
+            <h3>Menu Three</h3>
+            <i class="fa-sharp fa-solid fa-book-atlas"></i>
+        </div>
+
+        <div>
+            <h3>Menu Four</h3>
+            <i class="fa-solid fa-layer-group"></i>
+        </div>
+
+        <div>
+            <h3>Menu Five</h3>
+            <i class="fa-solid fa-cart-arrow-down"></i>
+        </div>
+    </section>
+</body>
+</html>
