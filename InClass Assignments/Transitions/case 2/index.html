@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transitions Case 2</title>
+    <link href="normalize.css" rel="stylesheet">
+    <style>
+      * {
+        background: dodgerblue;
+      }
+
+      section {
+        position: relative;
+        border: 1px solid black;
+        width: 100%;
+        height: 98vh;
+      }
+
+      section > div:nth-child(1) {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 400px;
+        width: 400px;
+        border-radius: 100%;
+        background-color: #4B4954;
+        border: 15px solid lightgray;
+        border-top-color: #ff253a;
+        transition-property: border-top-color;
+        transition: 0.2s;
+        color: white;
+      }
+
+      section > h1 {
+        position: absolute;
+        top: 420px;
+        left: 910px;
+        color: lightgray;
+        background-color: #4B4954;
+      }
+
+      section > div:hover {
+        transition-property: border-top-color;
+        transform: rotate(360deg);
+        transition: 1s;
+      }
+    </style>
+</head>
+<body>
+  <section>
+    <div></div>
+    <h1>RWAD</h1>
+  </section>
+</body>
+</html>
