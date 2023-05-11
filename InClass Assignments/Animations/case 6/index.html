@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations Case 6</title>
+  <link href="normalize.css" rel="stylesheet">
+  <style>
+
+    body{
+      background: url("assests/sky.jpg") center;
+      overflow: hidden;
+      width: 99vw;
+      height: 98vh;
+    }
+
+    body > section:nth-child(1) > section:nth-child(1) {
+      height: 38%;
+      width: 400%;
+      position: absolute;
+      left: 0;
+      bottom: 200px;
+      z-index: 1;
+      background: url("assests/city.png") repeat-x;
+      animation: city 20s infinite;
+    }
+
+    body > section:nth-child(1) > section:nth-child(2) {
+      height: 33%;
+      width: 400%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background: url("assests/road.jpg");
+      animation: city 20s infinite;
+    }
+
+    body > section:nth-child(2) {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      bottom: 15%;
+      z-index: 2;
+      width: 500px;
+      height: 208px;
+    }
+
+    body > section:nth-child(2) > div:nth-child(1) {
+      width: 100%;
+      height: 100%;
+      background: url("assests/car.png");
+      background-size: cover;
+    }
+
+    body > section:nth-child(2) > div:nth-child(2) {
+      transform: scale(0.4);
+    }
+
+    body > section:nth-child(2) > div:nth-child(2) > img {
+      position: absolute;
+      bottom: 0;
+      animation: wheel 20s infinite;
+    }
+
+    body > section:nth-child(2) > div:nth-child(2) > img:nth-child(1){
+      right: 105%;
+    }
+
+    body > section:nth-child(2) > div:nth-child(2) > img:nth-child(2){
+      left: 98%;
+    }
+
+    @keyframes city {
+        from{
+
+        }
+        to{
+            transform: translateX(-70%);
+        }
+    }
+
+    @keyframes wheel {
+        0% {
+            rotate: 0deg;
+        }
+
+        100% {
+            rotate: 360deg;
+        }
+    }
+
+
+  </style>
+</head>
+<body>
+    <section>
+      <section></section>
+      <section></section>
+    </section>
+
+    <section>
+      <div></div>
+      <div>
+        <img src="assests/wheel.png" alt="">
+        <img src="assests/wheel.png" alt="">
+      </div>
+    </section>
+</body>
+</html>
