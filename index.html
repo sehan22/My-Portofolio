@@ -16,6 +16,7 @@
         <link href="normalize.css", rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/coiny" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/akshar-unicode" rel="stylesheet">
+        <link rel="stylesheet" href="CertificateCardStyle.css">
         <style>
             header {
                 background-color: #D9F6FB;
@@ -124,9 +125,10 @@
             main > section:nth-child(1) {
                 height: 750px;
             }
+
             main > section:nth-child(2) {
-                height: 750px;
             }
+
             main > section:nth-child(3) {
                 height: 80px;
             }
@@ -237,7 +239,7 @@
                 height: 40px;
             }
 
-            main > section:nth-child(2) > article {
+/*            main > section:nth-child(2) > article {
                 text-align: center;
             }
 
@@ -282,7 +284,7 @@
             main > section:nth-child(2) > section > div > img {
                 height: 80%;
                 width: 100%;
-            }
+            }*/
 
             main > section:nth-child(3) > article {
                 height: 100px;
@@ -622,7 +624,7 @@
             </article>
         </section>
 
-        <section>
+<!--        <section>
             <article>
                 <dfn id="Certificates"></dfn>
                 <h1>Certificates</h1>
@@ -632,7 +634,7 @@
             </article>
 
 
-            <section>
+            <section class="container">
                 <div>
                     <img src="assests/2/java.png">
                     <h2>Java certificates</h2>
@@ -644,6 +646,50 @@
                 <div>
                     <img src="assests/2/phython.png">
                     <h2>Phython certificates</h2>
+                </div>
+            </section>
+        </section>-->
+
+
+        <section class="main">
+            <article>
+                <dfn id="Certificates"></dfn>
+                <h1>Certificates</h1>
+                <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
+                    identifies the identity of an individual or organization. Using public key cryptography, its authenticity can be<br>
+                    verified to ensure that the software or website you are using is legitimate.</h3>
+            </article>
+            <section class="mainContainer">
+                <div class="container">
+                    <div class="card">
+                        <img src="assests/2/sql.png" alt="certificate">
+                        <div class="intro">
+                            <h1>Java Certificate</h1>
+                            <p>A <span>certificate</span> or digital certificate is a unique, digitally signed document which authoritatively<br>
+                                identifies the identity of an individual or organization.</p>
+                            <button type="submit"><a href="http://github.com">VIST</a></button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assests/2/sql.png" alt="certificate">
+                        <div class="intro">
+                            <h1>SQL Certificate</h1>
+                            <p>A <span>certificate</span> or digital certificate is a unique, digitally signed document which authoritatively<br>
+                                identifies the identity of an individual or organization.</p>
+                            <button type="submit">VIST</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="assests/2/phython.png" alt="certificate">
+                        <div class="intro">
+                            <h1>Phython Certificate</h1>
+                            <p>A <span>certificate</span> or digital certificate is a unique, digitally signed document which authoritatively<br>
+                                identifies the identity of an individual or organization.</p>
+                            <button type="submit">VIST</button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
