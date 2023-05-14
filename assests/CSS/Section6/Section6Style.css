@@ -1,0 +1,4 @@
+body > main > section:nth-child(6) {
+    position: relative;
+    width: 100%;
+}

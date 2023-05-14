@@ -1,5 +1,4 @@
 body > main > section:nth-child(3) {
-    border-bottom: 1px solid black;
     position: relative;
     width: 100%;
     height: 43vh;
@@ -96,28 +95,6 @@ body > main > section:nth-child(3) > section:nth-child(1) > div > div:hover > h2
 body > main > section:nth-child(3) > section:nth-child(1) > div > div:hover > p {
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 body > main > section:nth-child(3) > section:nth-child(2) > article {
     height: 25vh;

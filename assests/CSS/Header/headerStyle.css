@@ -7,6 +7,10 @@ body > header {
     width: 100%;
 }
 
+body > header: {
+    background-color: black;
+}
+
 body > header > img {
     position: relative;
     top: 20%;
