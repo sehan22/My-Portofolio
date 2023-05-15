@@ -1,0 +1,14 @@
+body > footer {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    bottom: 0;
+}
+
+body > footer > h4 {
+    text-align: center;
+    font-family: "Akshar", sans-serif;
+    font-weight: bolder;
+    color: #35858B;
+    font-size: 15px;
+}
