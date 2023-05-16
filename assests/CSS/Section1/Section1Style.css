@@ -158,3 +158,28 @@ body > main > section:nth-child(1) section:nth-child(3) > div > button:nth-child
 body > main > section:nth-child(1) section:nth-child(3) > div > button:nth-child(2):hover::before {
     transform: scaleY(0);
 }
+
+body > main > section:nth-child(1) section:nth-child(3) > nav {
+    position: absolute;
+    bottom: 18.5vh;
+    left: 22vw;
+    margin: auto;
+}
+
+body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1.5vw;
+}
+
+body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a {
+    font-size: 2vw;
+}
+
+body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a > i{
+    transition: 0.3s;
+}
+
+body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a > i:hover {
+    transform: scale(1.3);
+}

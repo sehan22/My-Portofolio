@@ -20,7 +20,7 @@ body > main > section:nth-child(6) > section:nth-child(1) > h4 {
     left: 47.8%;
 }
 
-body > main > section:nth-child(6) > section:nth-child(1) > h1 {
+body > main > section:nth-child(6) > section:nth-child(1) > dfn > h1 {
     font-family: "Roboto",sans-serif;
     font-weight: bolder;
     font-size: 61px;
@@ -29,6 +29,7 @@ body > main > section:nth-child(6) > section:nth-child(1) > h1 {
     position: relative;
     right: 0;
     left: 0;
+    font-style: normal;
 }
 
 body > main > section:nth-child(6) > section:nth-child(1) > p {

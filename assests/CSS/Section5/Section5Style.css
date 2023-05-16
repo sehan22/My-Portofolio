@@ -29,6 +29,7 @@ body > main > section:nth-child(5) > section > div > img {
     cursor: pointer;
     position: relative;
     top: 15%;
+    transition: 0.3s;
 }
 
 body > main > section:nth-child(5) > section > div > img:hover {
@@ -66,7 +67,7 @@ body > main > section:nth-child(5) > section > div:nth-child(4) > h4 {
     left: 14%;
 }
 
-body > main > section:nth-child(5) > section > div:nth-child(4) > h1 {
+body > main > section:nth-child(5) > section > div:nth-child(4) > dfn > h1 {
     font-family: "Roboto",sans-serif;
     font-weight: bolder;
     font-size: 61px;
@@ -75,4 +76,5 @@ body > main > section:nth-child(5) > section > div:nth-child(4) > h1 {
     text-align: center;
     position: relative;
     top: 14%;
+    font-style: normal;
 }

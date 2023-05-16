@@ -53,7 +53,7 @@ body > main > section:nth-child(8) > section >  section:nth-child(1) > h4 {
     top: 50px;
 }
 
-body > main > section:nth-child(8) > section >  section:nth-child(1) > h1 {
+body > main > section:nth-child(8) > section >  section:nth-child(1) > dfn > h1 {
     font-family: "Roboto",sans-serif;
     font-weight: bolder;
     font-size: 61px;
@@ -61,6 +61,7 @@ body > main > section:nth-child(8) > section >  section:nth-child(1) > h1 {
     letter-spacing: -3.5px;
     position: relative;
     text-align: center;
+    font-style: normal;
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(1) > nav > ul > li {
@@ -123,6 +124,7 @@ body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset 
     font-weight: bolder;
     font-size: 17px;
     color: #4B4954;
+
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > input {
@@ -134,7 +136,7 @@ body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset 
     font-weight: lighter;
     font-size: 14px;
     color: #4B4954;
-    border: 3px solid #A6A6A6;
+    border: 2px solid #A6A6A6;
     border-radius: 3px;
     box-sizing: border-box;
     outline: none;
@@ -142,7 +144,7 @@ body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset 
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > input:focus {
-    border: 3px solid #4FBDBA;
+    border: 2px solid #4FBDBA;
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > button {
@@ -155,7 +157,6 @@ body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset 
     font-size: 13px;
     color: white;
     background-color: #35858B;
-    border: none;
     cursor: pointer;
     box-shadow: 5px 5px 10px -5px #A6A6A6;
     border-radius: 3px;
