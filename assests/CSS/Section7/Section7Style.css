@@ -72,6 +72,7 @@ body > main > section:nth-child(7) > section:nth-child(2) > section > div {
     margin: 20px;
     background-color: white;
     position: relative;
+    cursor: pointer;
 }
 
 body > main > section:nth-child(7) > section:nth-child(2) > section > div:hover {

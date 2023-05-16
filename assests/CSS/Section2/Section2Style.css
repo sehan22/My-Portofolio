@@ -138,6 +138,11 @@ body > main > section:nth-child(2) > section:nth-child(1) > nav > ul > li {
 
 body > main > section:nth-child(2) > section:nth-child(1) > nav > ul > li > a > img {
     height: 60px;
+    transition: 0.3s;
+}
+
+body > main > section:nth-child(2) > section:nth-child(1) > nav > ul > li > a > img:hover {
+    transform: scale(1.5);
 }
 
 

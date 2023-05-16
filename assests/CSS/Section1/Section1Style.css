@@ -118,6 +118,7 @@ body > main > section:nth-child(1) section:nth-child(3) > div > button:nth-child
     min-width: 175px;
     cursor: pointer;
     transition: color 0.4s linear;
+    margin-left: 10px;
 }
 
 body > main > section:nth-child(1) section:nth-child(3) > div > button:hover {
