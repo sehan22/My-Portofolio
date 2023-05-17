@@ -94,6 +94,10 @@ body > main > section:nth-child(1) section:nth-child(3) > div {
     transform: translate(-50%,-50%);
 }
 
+
+
+
+
 body > main > section:nth-child(1) section:nth-child(3) > div > button:nth-child(1) {
     position: relative;
     background: none;

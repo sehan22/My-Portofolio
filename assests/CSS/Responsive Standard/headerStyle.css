@@ -5,10 +5,11 @@ body > header {
     background-color: white;
     height: 8vh;
     width: 100%;
+    transition: 0.3s;
 }
 
 body > header:hover {
-    box-shadow: 0px 0px 10px #A6A6A6;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.05);
 }
 
 body > header > img {

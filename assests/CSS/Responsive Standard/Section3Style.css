@@ -14,7 +14,7 @@ body > main > section:nth-child(3) > section:nth-child(1) {
     position: absolute;
     left: 0;
     width: 65%;
-    height: 43vh;
+    height: 35vh;
 }
 
 body > main > section:nth-child(3) > section:nth-child(2) {
