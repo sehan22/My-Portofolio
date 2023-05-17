@@ -1,0 +1,154 @@
+@media all and (max-width: 1024px) {
+    body > main > section:nth-child(7) {
+        width: 100%;
+        height: 70vh;
+        margin-top: 10vh;
+        background-color: #F8FEFF;
+        padding: 0;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(1) {
+        width: 100%;
+        height: 25vh;
+        position: relative;
+    }
+
+
+    body > main > section:nth-child(7) > section:nth-child(1) > h4 {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: bolder;
+        font-size: 1vw;
+        color: #4B4954;
+        letter-spacing: 0.2vw;
+        text-align: center;
+        position: relative;
+        top: 9%;
+        left: 2%;
+        right: 0;
+    }
+    body > main > section:nth-child(7) > section:nth-child(1) > dfn > h1 {
+        font-family: "Roboto",sans-serif;
+        font-weight: bolder;
+        font-size: 5vw;
+        color: #35858B;
+        letter-spacing: -3.5px;
+        text-align: center;
+        position: relative;
+        top: 0.1vh;
+        margin: 0;
+        left: 0;
+        right: 0;
+        font-style: normal;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(1) > p {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: lighter;
+        font-size: 1.5vw;
+        color: #4B4954;
+        text-align: center;
+        position: relative;
+        top: 5%;
+        left: 0;
+        right: 0;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) {
+        width: 100%;
+        position: relative;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) > section {
+        width: max-content;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        display: flex;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) > section > div {
+        width: 28vw;
+        height: 35vw;
+        box-shadow: 0 0 20px 0 #A6A6A6;
+        border-radius: 3px;
+        margin: 1.5vw;
+        background-color: white;
+        position: relative;
+        cursor: pointer;
+        transition: 0.5s;
+        transform: rotate(1deg);
+        z-index: 2;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) > section > div:hover {
+        box-shadow: 0 0 10px 0 #A6A6A6;
+        transform: rotate(0deg);
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) > section > div > img {
+        width: 100%;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) > section > div > h4 {
+        text-align: center;
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: bolder;
+        font-size: 1.8vw;
+        color: #35858B;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) > section > div > p {
+        opacity: 0;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) > section > div > p {
+        text-align: center;
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: lighter;
+        font-size: 15px;
+        color: #4B4954;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) > section > div > button {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 28vw;
+        font-size: 1.2vw;
+        width: 10vw;
+        height: 4vh;
+        background-color: white;
+        color: #4FBDBA;
+        border-radius: 2px;
+        border: 2px solid #4FBDBA;
+        cursor: pointer;
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        box-shadow: 5px 5px 5px -5px #A6A6A6;
+        transition: 0.5s;
+    }
+
+    body > main > section:nth-child(7) > section:nth-child(2) > section > div > button:hover {
+        background-color: #4FBDBA;
+        color: white;
+        box-shadow: 0px 0px 20px -10px #A6A6A6;
+    }
+
+    body > main > section:nth-child(7) > div {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    body > main > section:nth-child(7) > div > img {
+        width: 100%;
+        z-index: 1;
+        height: 75%;
+        opacity: 30%;
+    }
+}
