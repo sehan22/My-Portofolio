@@ -85,8 +85,8 @@ body > main > section:nth-child(3) > section:nth-child(1) > div > div > p {
     text-align: center;
     font-family: "Akshar Unicode",sans-serif;
     font-weight: lighter;
-    font-size: 20px;
-    color: #35858B;
+    font-size: 17px;
+    color: #4B4954;
 }
 
 body > main > section:nth-child(3) > section:nth-child(1) > div > div:hover > h2 {

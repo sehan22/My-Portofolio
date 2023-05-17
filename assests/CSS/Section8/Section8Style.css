@@ -75,6 +75,11 @@ body > main > section:nth-child(8) > section >  section:nth-child(1) > nav > ul 
 
 body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(3) > ul > li > a > img {
     width: 3vw;
+    transition: 0.3s;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(3) > ul > li > a > img:hover {
+    transform: scale(1.2);
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(3) > ul > li:nth-child(4) > a > img {
@@ -89,6 +94,11 @@ body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-c
 
 body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(4) > ul > li {
     margin-bottom: 51px;
+    transition: 0.5s;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(4) > ul > li:hover {
+    transform: scale(0.9);
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(4) > ul > li > a {
@@ -170,4 +180,5 @@ body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset 
     background-color: white;
     border: 2px solid #35858B;
 }
+
 
