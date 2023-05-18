@@ -258,7 +258,7 @@ body > main > section:nth-child(6) > section:nth-child(5) > section > div:hover 
 }
 
 body > main > section:nth-child(6) > section:nth-child(5) > section > div:nth-child(3) {
-    margin-left: -5px;
+    margin-left: -15px;
 }
 
 body > main > section:nth-child(6) > section:nth-child(5) > section > div > img {
