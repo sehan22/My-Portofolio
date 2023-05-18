@@ -33,7 +33,7 @@
 
     body > main > section:nth-child(3) > section:nth-child(1) > div > div{
         width: 18.5vw;
-        height: 20vh;
+        height: 190px;
         overflow: hidden;
         position: relative;
         right: 0;

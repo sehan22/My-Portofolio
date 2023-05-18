@@ -2,6 +2,7 @@
     body > main > section:nth-child(5) {
         position: relative;
         width: 100%;
+
     }
 
     body > main > section:nth-child(5) > img {

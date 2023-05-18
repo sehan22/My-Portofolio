@@ -1,25 +1,27 @@
 @media all and (max-width: 1024px) {
     body > main > section:nth-child(8) {
         width: 100%;
-        height: 80vh;
+        height: 600px;
         position: relative;
     }
 
     body > main > section:nth-child(8) > section {
         display: flex;
-        width: max-content;
+        width: 90%;
         position: absolute;
         left: 0;
         right: 0;
-        margin: 10vh auto auto 8%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     }
 
     body > main > section:nth-child(8) > section >  section:nth-child(1) {
-        width: 35vw;
-        height: 40vh;
+        width: 350px;
+        height: 380px;
         position: relative;
         top: 0;
-        right:15vw;
+        right:10vw;
         bottom: 0;
         margin: auto;
         background-color: #35858B;
@@ -32,9 +34,9 @@
         position: relative;
         top: 0;
         bottom: 0;
-        right: 5vw;
-        width: 70vw;
-        height: 50vh;
+        right: -5vw;
+        width: 700px;
+        height: 440px;
         margin: auto auto auto -40%;
         background-color: white;
         box-shadow: 5px 5px 20px 0px #A6A6A6;
@@ -88,7 +90,7 @@
 
     body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(4) {
         position: absolute;
-        top: 15vh;
+        top: 14.3vw;
         left: 4vw;
     }
 
@@ -110,11 +112,12 @@
 
 
     body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset {
-        position: relative;
-        margin-left: 19vw;
-        margin-top: 1vh;
-        height: 46vh;
-        width: 48vw;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto auto auto 19vw;
+        height: 400px;
+        width: 480px;
     }
 
     body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > h3 {
@@ -144,7 +147,7 @@
         position: absolute;
         margin-top: -1.5vw;
         width: 35vw;
-        height: 3.5vh;
+        height: 33px;
         font-family: "Roboto",sans-serif;
         font-weight: lighter;
         font-size: 1.1vw;
@@ -161,10 +164,10 @@
 
     body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > button {
         position: relative;
-        left: 34vw;
-        bottom: 2.8vh;
-        width: 10vw;
-        height: 4vh;
+        left: 35vw;
+        bottom: 20px;
+        width: 90px;
+        height: 40px;
         font-family: 'Akshar Unicode', sans-serif;
         font-weight: bold;
         font-size: 1.1vw;

@@ -86,7 +86,7 @@
     }
 
     body > main > section:nth-child(6) > section:nth-child(2) > section > div {
-        width: 350px;
+        width: 300px;
         height: 200px;
         box-shadow: 5px 5px 10px 0 #A6A6A6;
         margin: 20px;
@@ -135,7 +135,7 @@
         display: flex;
     }
     body > main > section:nth-child(6) > section:nth-child(3) > section > div {
-        width: 350px;
+        width: 300px;
         height: 200px;
         margin: 20px;
         background-color: #072227;
@@ -203,7 +203,7 @@
         display: flex;
     }
     body > main > section:nth-child(6) > section:nth-child(4) > section > div {
-        width: 350px;
+        width: 300px;
         height: 200px;
         margin: 20px;
         background-color: #072227;
@@ -256,7 +256,7 @@
         display: flex;
     }
     body > main > section:nth-child(6) > section:nth-child(5) > section > div {
-        width: 350px;
+        width: 300px;
         height: 200px;
         margin: 20px;
         background-color: #072227;

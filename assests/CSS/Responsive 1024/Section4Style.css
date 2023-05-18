@@ -10,7 +10,7 @@
         width: 100%;
         height: max-content;
         padding-bottom: 3vw;
-        background-color: whitesmoke;
+        background-color: transparent;
     }
 
     body > main > section:nth-child(4) > section:nth-child(1) > h4 {

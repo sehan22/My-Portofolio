@@ -1,10 +1,10 @@
 @media all and (max-width: 1024px) {
     body > main > section:nth-child(2) {
         position: relative;
-        height: 70vh;
+        height: 600px;
         display: flex;
         background-color: #F8FEFF;
-        margin-top: 9vh;
+        margin-top: 5vh;
     }
 
     body > main > section:nth-child(2) > section {
@@ -14,14 +14,14 @@
         position: absolute;
         left: 0;
         width: 50%;
-        height: 60vh;
+        height: 510px;
     }
 
     body > main > section:nth-child(2) > section:nth-child(2) {
         position: absolute;
         right: 0;
         width: 50%;
-        height: 60vh;
+        height: 510px;
     }
 
     body > main > section:nth-child(2) > section:nth-child(1) > article {
@@ -139,7 +139,7 @@
 
     body > main > section:nth-child(2) > section:nth-child(1) > nav > ul {
         position: relative;
-        top: 0vw;
+        top: 0;
         right: 0;
         left: 0;
         bottom: 0;
