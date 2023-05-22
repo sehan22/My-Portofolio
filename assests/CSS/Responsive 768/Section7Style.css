@@ -1,7 +1,7 @@
 @media all and (max-width: 768px) {
     body > main > section:nth-child(7) {
         width: 100%;
-        height: 500px;
+        height: 430px;
         margin-top: 100px;
         background-color: #F8FEFF;
         padding: 0;
@@ -55,13 +55,15 @@
 
     body > main > section:nth-child(7) > section:nth-child(2) {
         width: 100%;
-        height: 320px;
+        height: 280px;
         position: relative;
         display: flex;
     }
 
     body > main > section:nth-child(7) > section:nth-child(2) > section {
+        justify-content: center;
         width: max-content;
+        height: max-content;
         position: relative;
         left: 0;
         right: 0;
@@ -114,7 +116,7 @@
         text-align: center;
         font-family: "Akshar Unicode",sans-serif;
         font-weight: lighter;
-        font-size: 15px;
+        font-size: 1px;
         color: #4B4954;
     }
 
@@ -148,14 +150,14 @@
     body > main > section:nth-child(7) > div {
         position: absolute;
         top: 0;
-        height: 500px;
+        height: 450px;
         width: 100%;
     }
 
     body > main > section:nth-child(7) > div > img {
         width: 100%;
         z-index: 1;
-        height: 75%;
-        opacity: 30%;
+        height: 100%;
+        opacity: 35%;
     }
 }
