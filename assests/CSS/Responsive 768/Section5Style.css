@@ -1,4 +1,4 @@
-@media all and (max-width: 1024px) {
+@media all and (max-width: 768px) {
     body > main > section:nth-child(5) {
         position: relative;
         width: 100%;
@@ -25,12 +25,13 @@
     }
 
     body > main > section:nth-child(5) > section > div > img {
-        width: 30%;
+        width: 35%;
         border-radius: 100%;
         box-shadow: 5px 5px 10px #A6A6A6;
         cursor: pointer;
         position: relative;
         top: 15%;
+        left: 20%;
         transition: 0.3s;
     }
 
@@ -41,10 +42,11 @@
     body > main > section:nth-child(5) > section > div > h3 {
         font-family: 'Akshar Unicode', sans-serif;
         font-weight: bolder;
-        font-size: 2vw;
+        font-size: 15px;
         color: #4B4954;
         position: relative;
-        top: 15%
+        top: 10%;
+        left: 15%;
     }
 
     body > main > section:nth-child(5) > section > div > h4 {
@@ -60,7 +62,7 @@
     body > main > section:nth-child(5) > section > div:nth-child(4) > h4 {
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
-        font-size: 1vw;
+        font-size: 7px;
         color: #4B4954;
         letter-spacing: 2px;
         text-align: center;
@@ -72,9 +74,9 @@
     body > main > section:nth-child(5) > section > div:nth-child(4) > dfn > h1 {
         font-family: "Roboto",sans-serif;
         font-weight: bolder;
-        font-size: 4vw;
+        font-size: 31px;
         color: #35858B;
-        letter-spacing: -3.5px;
+        letter-spacing: -1px;
         text-align: center;
         position: relative;
         top: 8%;
