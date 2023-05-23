@@ -1,4 +1,4 @@
-@media all and (max-width: 768px) {
+@media all and (max-width: 375px) {
     body > main > section:nth-child(2) {
         position: relative;
         height: 490px;
@@ -13,14 +13,15 @@
     body > main > section:nth-child(2) > section:nth-child(1) {
         position: absolute;
         left: 0;
-        width: 49.6%;
+        width: 100%;
         height: 480px;
+        background-color: navajowhite;
     }
 
     body > main > section:nth-child(2) > section:nth-child(2) {
         position: absolute;
         right: 0;
-        width: 50%;
+        width: 0;
         height: 480px;
     }
 
@@ -33,6 +34,7 @@
         margin: auto 0 auto auto;
         justify-content: center;
         text-align: center;
+        background-color: whitesmoke;
     }
 
     body > main > section:nth-child(2) > section:nth-child(1) > article > h5 {
@@ -187,6 +189,10 @@
         top: 22%;
         right: 12%;
         z-index: 2;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) {
+        opacity: 0;
     }
 
     body > main > section:nth-child(2) > section:nth-child(2) > img:nth-child(3) {
