@@ -55,7 +55,7 @@
     body > main > section:nth-child(6) > section:nth-child(1) > h2 {
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
-        font-size: 18px;
+        font-size: 15px;
         color: #4B4954;
         position: absolute;
         margin: auto;
@@ -210,51 +210,69 @@
 
     body > main > section:nth-child(6) > section:nth-child(4) > h2:nth-child(1) {
         position: absolute;
-        margin-top: -2%;
-        left: 6%;
+        margin-top: -8%;
+        left: 24%;
     }
 
     body > main > section:nth-child(6) > section:nth-child(4) > h2:nth-child(2) {
         position: absolute;
-        margin-top: -2%;
-        left: 52%;
+        margin-top: 117%;
+        left: 25%;
+        z-index: 1;
+        width: 50%;
+        height: 10px;
     }
 
     body > main > section:nth-child(6) > section:nth-child(4) {
         position: relative;
         width: 100%;
-        height: 200px;
-
+        height: 650px;
+        margin-top: 50px;
     }
 
     body > main > section:nth-child(6) > section:nth-child(4) > section {
-        width: 95%;
+        width: 80%;
         height: 100%;
         position: absolute;
         right: 0;
         left: 0;
         top: 0;
         margin: auto;
-        display: flex;
     }
     body > main > section:nth-child(6) > section:nth-child(4) > section > div {
-        width: 200px;
-        height: 160px;
-        margin: 20px;
-        background-color: #072227;
-        position: relative;
+        width: 280px;
+        height: 180px;
         box-shadow: 5px 5px 10px 0 #A6A6A6;
-        border-radius: 3px;
+        position: absolute;
         transition: 0.3s;
+        border-radius: 3px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(4) > section > div:nth-child(1) {
+        position: absolute;
+        top: 0;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(4) > section > div:nth-child(2) {
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(4) > section > div:nth-child(3) {
+        position: absolute;
+        top: 700px;
+        left: -10px;
+        z-index: 1;
     }
 
     body > main > section:nth-child(6) > section:nth-child(4) > section > div:hover {
         box-shadow: 3px 3px 10px -5px #A6A6A6;
     }
 
-    body > main > section:nth-child(6) > section:nth-child(4) > section > div:nth-child(3) {
-        margin-left: 20px;
-    }
 
     body > main > section:nth-child(6) > section:nth-child(4) > section > div > img {
         width: 100%;
@@ -277,36 +295,49 @@
     body > main > section:nth-child(6) > section:nth-child(5) {
         position: relative;
         width: 100%;
-        height: 200px;
+        height: 650px;
+        margin-top: 50px;
     }
 
     body > main > section:nth-child(6) > section:nth-child(5) > section {
-        width: 95%;
+        width: 80%;
         height: 100%;
         position: absolute;
         right: 0;
         left: 0;
         top: 0;
         margin: auto;
-        display: flex;
     }
     body > main > section:nth-child(6) > section:nth-child(5) > section > div {
-        width: 200px;
-        height: 160px;
-        margin: 20px;
-        background-color: #072227;
-        position: relative;
+        width: 280px;
+        height: 180px;
         box-shadow: 5px 5px 10px 0 #A6A6A6;
-        border-radius: 3px;
+        position: absolute;
         transition: 0.3s;
+        border-radius: 3px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(5) > section > div:nth-child(1) {
+        position: absolute;
+        top: -459px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(5) > section > div:nth-child(2) {
+        position: absolute;
+        top: 240px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(5) > section > div:nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        margin: auto;
     }
 
     body > main > section:nth-child(6) > section:nth-child(5) > section > div:hover {
         box-shadow: 3px 3px 10px -5px #A6A6A6;
-    }
-
-    body > main > section:nth-child(6) > section:nth-child(5) > section > div:nth-child(3) {
-        margin-left: 20px;
     }
 
     body > main > section:nth-child(6) > section:nth-child(5) > section > div > img {
