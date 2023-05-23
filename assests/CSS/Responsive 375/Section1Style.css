@@ -94,7 +94,7 @@
 
     body > main > section:nth-child(1) section:nth-child(3) > div {
         position: absolute;
-        top: 29vw;
+        top: 30vw;
         left: 17vw;
         transform: translate(-50%,-50%);
         z-index: 2;
@@ -169,7 +169,7 @@
 
     body > main > section:nth-child(1) section:nth-child(3) > nav {
         position: absolute;
-        bottom: 4.6vw;
+        bottom: 3.8vw;
         left: 23vw;
         margin: auto;
         z-index: 1;
