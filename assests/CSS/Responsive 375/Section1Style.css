@@ -41,32 +41,32 @@
     body > main > section:nth-child(1) section:nth-child(3) > article > h3:nth-child(1) {
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
-        font-size: 11px;
+        font-size: 10px;
         text-align: left;
         color: #4E4E50;
         position: absolute;
-        top: 23%;
-        left: 3.5vw;
+        top: 21%;
+        left: 10px;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h2:nth-child(2) {
         font-family: "Roboto",sans-serif;
         font-weight: bolder;
-        font-size: 22px;
+        font-size: 14px;
         color: black;
         position: absolute;
-        top: 11vw;
+        top: 11.5vw;
         left: 7vw;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h1 {
         font-family: "Roboto",sans-serif;
         font-weight: bolder;
-        font-size: 26px;
+        font-size: 15px;
         text-align: left;
         color: #35858B;
         position: absolute;
-        top: 10.8vw;
+        top: 11.85vw;
         left: 13vw;
     }
 
@@ -74,10 +74,10 @@
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
         text-align: left;
-        font-size: 27px;
+        font-size: 14px;
         color: #4E4E50;
         position: absolute;
-        top: 15.3vw;
+        top: 16.1vw;
         left: 7vw;
     }
 
@@ -85,17 +85,17 @@
         font-family: "Akshar Unicode",sans-serif;
         font-weight: lighter;
         text-align: left;
-        font-size: 10px;
+        font-size: 4.5px;
         color: #4E4E50;
         position: absolute;
-        top: 21.5vw;
+        top: 21.9vw;
         left: 7vw;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > div {
         position: absolute;
         top: 29vw;
-        left: 16.5vw;
+        left: 17vw;
         transform: translate(-50%,-50%);
     }
 
@@ -104,10 +104,10 @@
         background: none;
         border: 1px solid #35858B;
         color: #35858B;
-        font-size: 11px;
+        font-size: 8px;
         font-family: "Roboto", sans-serif;
         font-weight: bolder;
-        padding: 6px 15px;
+        padding: 2px 4px;
         min-width: 0.1vw;
         cursor: pointer;
         transition: color 0.4s linear;
@@ -118,10 +118,10 @@
         background: none;
         border: 1px solid #35858B;
         font-family: "Roboto", sans-serif;
-        font-size: 11px;
+        font-size: 8px;
         color: white;
         font-weight: bolder;
-        padding: 6px 20px;
+        padding: 3px 3px;
         min-width: 0.1vw;
         cursor: pointer;
         transition: color 0.4s linear;
@@ -168,8 +168,8 @@
 
     body > main > section:nth-child(1) section:nth-child(3) > nav {
         position: absolute;
-        bottom: 7.6vw;
-        left: 26vw;
+        bottom: 4.6vw;
+        left: 23vw;
         margin: auto;
     }
 
@@ -180,7 +180,7 @@
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a > i{

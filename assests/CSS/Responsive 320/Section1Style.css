@@ -1,3 +1,4 @@
+/*
 @media all and (max-width: 375px) {
     body > main > section:nth-child(1) {
         position: relative;
@@ -41,7 +42,7 @@
     body > main > section:nth-child(1) section:nth-child(3) > article > h3:nth-child(1) {
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
-        font-size: 11px;
+        font-size: 1px;
         text-align: left;
         color: #4E4E50;
         position: absolute;
@@ -190,4 +191,4 @@
     body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a > i:hover {
         transform: scale(1.3);
     }
-}
+}*/
