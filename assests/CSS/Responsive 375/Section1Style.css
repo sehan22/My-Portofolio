@@ -97,6 +97,7 @@
         top: 29vw;
         left: 17vw;
         transform: translate(-50%,-50%);
+        z-index: 2;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > div > button:nth-child(1) {
@@ -171,6 +172,7 @@
         bottom: 4.6vw;
         left: 23vw;
         margin: auto;
+        z-index: 1;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li {
