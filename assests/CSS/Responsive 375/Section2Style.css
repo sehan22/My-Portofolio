@@ -1,7 +1,7 @@
 @media all and (max-width: 375px) {
     body > main > section:nth-child(2) {
         position: relative;
-        height: 490px;
+        height: 400px;
         display: flex;
         margin-top: 20px;
         background-color: #F8FEFF;
@@ -177,7 +177,7 @@
         transition: 0.3s;
     }
 
-    body > main > section:nth-child(2) > section:nth-child(1) > nav > ul > li > a > img:hover {
+    body > main > section:nth-child(2) > section:nth-child(1) > nav > ul > li > a > img:active {
         transform: scale(1.5);
     }
 
