@@ -1,4 +1,4 @@
-@media all and (max-width: 375px) {
+@media all and (max-width: 320px) {
     body > header {
         position: sticky;
         top: 0;
@@ -7,7 +7,6 @@
         height: 50px;
         width: 100%;
         transition: 0.3s;
-        background-color: whitesmoke;
     }
 
     body > header:hover {
@@ -16,10 +15,16 @@
 
     body > header > img {
         position: absolute;
-        top: 33.1%;
-        left: 15px;
-        width: 50px;
-        height: 15px;
+        top: 35%;
+        left: 10px;
+        width: 48px;
+        height: 13px;
+        opacity: 0;
+    }
+
+    body > header > nav {
+        width: 100%;
+        height: 100%;
     }
 
     body > header > nav > ul {
@@ -31,12 +36,11 @@
 
     body > header > nav > ul > li {
         position: relative;
-        top: 13px;
+        left: 290px;
         font-family: "Roboto Light",sans-serif;
         font-weight: normal;
         font-size: 8px;
-        left: 385px;
-        margin-left: 2px;
+        margin-left: 3px;
         display: inline-block;
     }
 
@@ -50,7 +54,7 @@
     }
 
     body > header > nav > ul > li:nth-child(1) > a:nth-child(1) {
-        padding: 6px;
+        padding: 4px;
         background-color: #4FBDBA;
         border-radius: 2px;
         color: white;
