@@ -30,7 +30,7 @@
             margin-right: 15px;
         }
 
-        .container {
+        .container1 {
             position: relative;
         }
 
@@ -41,6 +41,18 @@
             bottom: 0;
             left: 0;
             right: 0;
+        }
+
+        .container > div > div > div > div > input {
+            border: 1px solid #3c4043;
+        }
+
+        .container > div > div > div > div > input::placeholder {
+            color: #cbccce;
+        }
+
+        .container > div > div > div > div > input:focus {
+            border: 1px solid #4FBDBA;
         }
     </style>
 </head>
@@ -77,7 +89,7 @@
 
     <main>
         <div class="bg">
-            <div class="container" style="height: 600px">
+            <div class="container1" style="height: 600px">
                 <div  class="box text-light text-center" style="height: 400px">
                     <h4>Welcome to..</h4>
                     <h1 class="text-success mb-5">Sales Palace Arcade</h1>
@@ -108,29 +120,41 @@
         </div>
 
         <div class="container">
-            <div class="row bg-dark row-gap-xxl-4" style="box-shadow: 0 0 40px 0 #000000">
-                <div class="bg-gradient col-xxl-11" style="height: 100px">
-                    <input class="form-control me-2 col-xxl-1" type="search" placeholder="Search" aria-label="Search">
+            <div class="row bg-dark row-gap-xxl-5" style="box-shadow: 0 0 40px 0 #000000">
+                <div class="col-xxl-12">
+                    <div class="row justify-content-center mb-3">
+                        <div class="mt-5 col-xxl-6">
+                            <input class="form-control me-2 text-light col-xxl-2" type="search" placeholder="Search" aria-label="Search" style="background-color: transparent">
+                        </div>
+
+                        <div class="mt-5 col-xxl-1">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-xxl-1">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                <div class="col-xxl-6">
+                    <div class="row justify-content-center">
+                        <input class="col-xxl-11 text-light" type="text" name="customer id" placeholder="Customer Id" style="height: 60px; background-color: transparent;">
+                    </div>
                 </div>
 
-                <div class="bg-success col-xxl-6" style="height: 100px">
-                    <input class="col-xxl-11" type="text" name="customer id" placeholder="Customer Id">
+                <div class="col-xxl-6">
+                    <div class="row justify-content-center">
+                        <input class="col-xxl-11 text-light" type="text" name="customer id" placeholder="Customer Name" style="height: 60px; background-color: transparent;">
+                    </div>
                 </div>
 
-                <div class="bg-warning col-xxl-6" style="height: 100px">
-                    <input class="col-xxl-11" type="text" name="customer id" placeholder="Customer Name">
+                <div class="col-xxl-6">
+                    <div class="row justify-content-center">
+                        <input class="col-xxl-11 text-light" type="text" name="customer id" placeholder="Customer Address" style="height: 60px; background-color: transparent;">
+                    </div>
                 </div>
 
-                <div class="bg-warning col-xxl-6" style="height: 100px">
-                    <input class="col-xxl-11" type="text" name="customer id" placeholder="Customer Address">
-                </div>
-
-                <div class="bg-success col-xxl-6" style="height: 100px">
-                    <input class="col-xxl-11" type="text" name="customer id" placeholder="Phone Number">
+                <div class="col-xxl-6">
+                    <div class="row justify-content-center">
+                        <input class="col-xxl-11 text-light" type="text" name="customer id" placeholder="Phone Number" style="height: 60px; background-color: transparent;">
+                    </div>
                 </div>
 
                 <div class="bg-success col-xxl-6" style="height: 100px">
