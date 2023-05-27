@@ -58,21 +58,23 @@
         font-family: "Roboto",sans-serif;
         font-weight: bolder;
         font-size: 25px;
+        letter-spacing: -1px;
         color: black;
         position: absolute;
-        top: 12.5vw;
-        left: 5vw;
+        top: 13vw;
+        left: 30px;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h1 {
         font-family: "Roboto",sans-serif;
         font-weight: bolder;
         font-size: 31px;
+        letter-spacing: -1px;
         text-align: left;
         color: #35858B;
         position: absolute;
         top: 11.85vw;
-        left: 16vw;
+        left: 70px;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h2:nth-child(4) {
@@ -100,7 +102,7 @@
     body > main > section:nth-child(1) section:nth-child(3) > div {
         position: absolute;
         top: 65vw;
-        left: 33vw;
+        left: 137px;
         transform: translate(-50%,-50%);
         z-index: 2;
     }
