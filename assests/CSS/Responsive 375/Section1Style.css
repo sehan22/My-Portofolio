@@ -1,10 +1,14 @@
 @media all and (max-width: 375px) {
     body > main > section:nth-child(1) {
         position: relative;
+        height: 350px;
     }
 
     body > main > section:nth-child(1) > img {
         width: 100%;
+        height: 300px;
+        object-fit: cover;
+        opacity: 50;
     }
 
     body > main > section:nth-child(1) > section:nth-child(2) {
@@ -13,89 +17,90 @@
         position: absolute;
         left: 0;
         top: 0;
+        display: none;
     }
 
 
     body > main > section:nth-child(1) > section:nth-child(2) > img {
         position: absolute;
         margin: auto;
-        right: -3px;
+        left: 0;
         top: 0;
         bottom: 0;
         width: 75%;
-        height: 85%;
+        height: 700px;
     }
 
     body > main > section:nth-child(1) > section:nth-child(3) {
-        width: 60.1%;
-        height: 98%;
-        right: 0;
+        width: 100%;
+        height: 100%;
+        left: 0;
         position: absolute;
         top: 0;
+        background-color: whitesmoke;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article {
-
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h3:nth-child(1) {
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
-        font-size: 10px;
+        font-size: 18px;
         text-align: left;
         color: #4E4E50;
         position: absolute;
-        top: 21%;
-        left: 10px;
+        top: 8%;
+        left: 30px;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h2:nth-child(2) {
         font-family: "Roboto",sans-serif;
         font-weight: bolder;
-        font-size: 14px;
+        font-size: 25px;
         color: black;
         position: absolute;
-        top: 11.5vw;
-        left: 7vw;
+        top: 12.5vw;
+        left: 5vw;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h1 {
         font-family: "Roboto",sans-serif;
         font-weight: bolder;
-        font-size: 15px;
+        font-size: 31px;
         text-align: left;
         color: #35858B;
         position: absolute;
         top: 11.85vw;
-        left: 13vw;
+        left: 16vw;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h2:nth-child(4) {
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
         text-align: left;
-        font-size: 14px;
+        font-size: 28px;
         color: #4E4E50;
         position: absolute;
-        top: 16.1vw;
-        left: 7vw;
+        top: 22.1vw;
+        left: 30px;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h4 {
         font-family: "Akshar Unicode",sans-serif;
         font-weight: lighter;
         text-align: left;
-        font-size: 4.5px;
+        font-size: 15px;
         color: #4E4E50;
         position: absolute;
-        top: 21.9vw;
-        left: 7vw;
+        top: 35vw;
+        left: 30px;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > div {
         position: absolute;
-        top: 30vw;
-        left: 17vw;
+        top: 65vw;
+        left: 33vw;
         transform: translate(-50%,-50%);
         z-index: 2;
     }
@@ -105,10 +110,10 @@
         background: none;
         border: 1px solid #35858B;
         color: #35858B;
-        font-size: 8px;
+        font-size: 10px;
         font-family: "Roboto", sans-serif;
         font-weight: bolder;
-        padding: 2px 4px;
+        padding: 10px 25px;
         min-width: 0.1vw;
         cursor: pointer;
         transition: color 0.4s linear;
@@ -119,10 +124,10 @@
         background: none;
         border: 1px solid #35858B;
         font-family: "Roboto", sans-serif;
-        font-size: 8px;
+        font-size: 10px;
         color: white;
         font-weight: bolder;
-        padding: 3px 3px;
+        padding: 10px 25px;
         min-width: 0.1vw;
         cursor: pointer;
         transition: color 0.4s linear;
@@ -170,7 +175,7 @@
     body > main > section:nth-child(1) section:nth-child(3) > nav {
         position: absolute;
         bottom: 3.8vw;
-        left: 23vw;
+        left: 0;
         margin: auto;
         z-index: 1;
     }
@@ -178,11 +183,11 @@
     body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li {
         list-style-type: none;
         display: inline-block;
-        margin-right: 1.5vw;
+        margin-right: 4vw;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a {
-        font-size: 15px;
+        font-size: 24px;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a > i{
