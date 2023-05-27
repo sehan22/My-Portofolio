@@ -1,50 +1,39 @@
 @media all and (max-width: 375px) {
     body > main > section:nth-child(8) {
         width: 100%;
-        height: 500px;
+        height: 900px;
         position: relative;
         background-color: navajowhite;
     }
 
     body > main > section:nth-child(8) > section {
-        display: flex;
         width: 90%;
-        height: 100%;
+        height: 900px;
         position: relative;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
         background-color: white;
     }
 
     body > main > section:nth-child(8) > section >  section:nth-child(1) {
-        width: 280px;
+        width: 337px;
         height: 310px;
-        position: relative;
-        top: 0;
+        position: absolute;
+        top: -390px;
         left: 0;
-        bottom: 0;
-        margin: auto;
         background-color: #35858B;
         box-shadow: 5px 5px 15px -5px #A6A6A6;
         border-radius: 3px;
-        z-index: 2;
     }
 
     body > main > section:nth-child(8) > section >  section:nth-child(2) {
-        position: relative;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 600px;
-        height: 360px;
+        position: absolute;
+        top: 410px;
+        width: 337px;
+        height: 415px;
         margin: auto auto auto -30%;
         background-color: white;
         box-shadow: 5px 5px 20px 0px #A6A6A6;
         border-radius: 5px;
-        z-index: 1;
+
     }
 
     body > main > section:nth-child(8) > section >  section:nth-child(1) > h4 {
@@ -135,6 +124,7 @@
         letter-spacing: 0;
         position: relative;
         top: 0;
+        left: 126px;
     }
 
     body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > label {
@@ -146,7 +136,7 @@
         font-weight: bolder;
         font-size: 11px;
         color: #4B4954;
-
+        display: none;
     }
 
     body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > input {
@@ -171,7 +161,7 @@
 
     body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > button {
         position: relative;
-        left: 280px;
+        left: 170px;
         bottom: 20px;
         width: 70px;
         height: 30px;
