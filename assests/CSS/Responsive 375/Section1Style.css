@@ -37,7 +37,6 @@
         left: 0;
         position: absolute;
         top: 0;
-        background-color: whitesmoke;
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article {
