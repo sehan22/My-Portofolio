@@ -137,25 +137,25 @@
 
                 <div class="col-xxl-6">
                     <div class="row justify-content-center">
-                        <input class="col-xxl-11 text-light" type="text" name="customer id" placeholder="Customer Id" style="height: 60px; background-color: transparent;">
+                        <input class="col-xxl-11 text-light" id="txtCustomerId" type="text" name="customer id" placeholder="Customer Id" style="height: 60px; background-color: transparent;">
                     </div>
                 </div>
 
                 <div class="col-xxl-6">
                     <div class="row justify-content-center">
-                        <input class="col-xxl-11 text-light" type="text" name="customer id" placeholder="Customer Name" style="height: 60px; background-color: transparent;">
+                        <input class="col-xxl-11 text-light" id="txtCustomerName" type="text" name="customer id" placeholder="Customer Name" style="height: 60px; background-color: transparent;">
                     </div>
                 </div>
 
                 <div class="col-xxl-6">
                     <div class="row justify-content-center">
-                        <input class="col-xxl-11 text-light" type="text" name="customer id" placeholder="Customer Address" style="height: 60px; background-color: transparent;">
+                        <input class="col-xxl-11 text-light" id="txtAddress" type="text" name="customer id" placeholder="Customer Address" style="height: 60px; background-color: transparent;">
                     </div>
                 </div>
 
                 <div class="col-xxl-6">
                     <div class="row justify-content-center">
-                        <input class="col-xxl-11 text-light" type="text" name="customer id" placeholder="Phone Number" style="height: 60px; background-color: transparent;">
+                        <input class="col-xxl-11 text-light" id="txtPhoneNumber" type="text" name="customer id" placeholder="Phone Number" style="height: 60px; background-color: transparent;">
                     </div>
                 </div>
 
@@ -179,7 +179,7 @@
 
                 <div class="col-xxl-2" style="height: 70px">
                     <div class="row justify-content-start">
-                        <button class="btn btn-outline-success col-xxl-6" type="submit">Save</button>
+                        <button id="btnCustomerSave" class="btn btn-outline-success col-xxl-6" type="submit">Save</button>
                     </div>
                 </div>
             </div>
@@ -187,10 +187,9 @@
 
         <div class="container bg-dark mt-5" style="box-shadow: 0 0 40px 0 #000000">
             <div class="p-5">
-                <table class="table text-light">
+                <table id="customerTable" class="table text-light">
                     <thead>
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Customer Id</th>
                         <th scope="col">Name</th>
                         <th scope="col">Address</th>
@@ -198,7 +197,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
+<!--                    <tr>
                         <th scope="row">1</th>
                         <td>C001</td>
                         <td>Sehan</td>
@@ -226,7 +225,7 @@
                         <td>Kamal</td>
                         <td>Dehiwala</td>
                         <td>0712400167</td>
-                    </tr>
+                    </tr>-->
                     </tbody>
                 </table>
             </div>
@@ -533,5 +532,29 @@
             <h7>Developed By Sehan Ranaweera 2023@</h7>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("btnCustomerSave").addEventListener("click",function () {
+            var row = document.createElement('tr');
+
+            var col = document.createElement('td');
+            var col2 = document.createElement('td');
+            var col3 = document.createElement('td');
+            var col4 = document.createElement('td');
+
+            col.textContent = txtCustomerId.value;
+            col2.textContent = txtCustomerName.value;
+            col3.textContent = txtAddress.value;
+            col4.textContent = txtPhoneNumber.value;
+
+            row.appendChild(col);
+            row.appendChild(col2);
+            row.appendChild(col3);
+            row.appendChild(col4);
+
+            let customerTable = document.getElementById("customerTable");
+            customerTable.appendChild(row);
+        })
+    </script>
 </body>
 </html>
