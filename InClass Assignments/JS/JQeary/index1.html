@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery</title>
+</head>
+<body id="body">
+    <h1 id="label">Institute of Java and Software Engineering</h1>
+    <h1 id="label1">Sehan Ranaweera</h1>
+
+    <script>
+        document.getElementById("label1").style.display="none";
+        let innerText = document.getElementById("label1").innerText;
+        let elementById = document.getElementById("label").innerText;
+
+        let i = 0;
+
+        let l = setInterval(function () {
+            let count = elementById.substring(0, i);
+            document.getElementById("label").innerText = count;
+            i++;
+
+            if(elementById.length==i){
+
+                i = 0;
+                let j = 0;
+                document.getElementById("label").style.display="none";
+                document.getElementById("label1").style.display="block";
+
+                let k = setInterval(function () {
+                    let count1 = innerText.substring(0,i);
+                    document.getElementById("label1").innerText = count1;
+                    j++;
+
+                    if(innerText.length==j) {
+                        j = 0;
+                    }
+
+                },100);
+            }
+
+        },100);
+    </script>
+</body>
+</html>

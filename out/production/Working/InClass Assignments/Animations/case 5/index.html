@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animations Case 5</title>
+    <link href="normalize.css" rel="stylesheet">
+
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            width: 99vw;
+            height: 98vh;
+        }
+
+        body > section {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 551%;
+            display: inline-block;
+            height: 99vh;
+            animation: slidePhotos 8s infinite alternate;
+            animation-delay: 3s;
+        }
+
+        body > section > div {
+            width: 100vw;
+            height: 100%;
+            display: inline-block;
+        }
+
+        body > section > div > img {
+            width: 100%;
+            height: 100%;
+        }
+        @keyframes slidePhotos {
+            0% {
+                left: 0;
+            }
+            25% {
+                left: -99vw;
+            }
+            50% {
+                left: -198vw;
+            }
+            75% {
+                left: -297vw;
+            }
+            100% {
+                left: -396vw;
+            }
+        }
+    </style>
+</head>
+<body>
+  <section>
+      <div><img src="../case%205/assests/gary-lopater-PBHwSmhyt9w-unsplash.jpg"></div>
+      <div><img src="../case%205/assests/jirasin-yossri-W_29nYyiIpA-unsplash.jpg"></div>
+      <div><img src="../case%205/assests/nils-leonhardt-YeBI31kK2_4-unsplash.jpg"></div>
+      <div><img src="../case%205/assests/quino-al-mBQIfKlvowM-unsplash.jpg"></div>
+      <div><img src="../case%205/assests/sebastiaan-stam-RChZT-JlI9g-unsplash.jpg"></div>
+  </section>
+</body>
+</html>

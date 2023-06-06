@@ -1,0 +1,250 @@
+@media all and (max-width: 1024px) {
+    body > main > section:nth-child(2) {
+        position: relative;
+        height: 600px;
+        display: flex;
+        background-color: #F8FEFF;
+        margin-top: 5vh;
+    }
+
+    body > main > section:nth-child(2) > section {
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: 510px;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 510px;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article {
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 2vw;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article > h5 {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: bolder;
+        font-size: 0.8vw;
+        color: #4B4954;
+        text-align: right;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 1.8vw;
+        right: 1vw;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article > dfn > h1 {
+        font-family: "Roboto",sans-serif;
+        font-weight: bolder;
+        font-size: 5vw;
+        color: #35858B;
+        letter-spacing: -3.5px;
+        text-align: right;
+        font-style: normal;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article > h3:nth-child(3) {
+        font-family: 'Akshar Unicode', sans-serif;
+        font-weight: bolder;
+        font-size: 2vw;
+        color: #4B4954;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 7.5vw;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article > p:nth-child(4) {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: lighter;
+        font-size: 1.2vw;
+        color: #4B4954;
+        text-align: right;
+        padding-top: 1.5vw;
+
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article > p:nth-child(5) {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: lighter;
+        font-size: 1.2vw;
+        color: #4B4954;
+        text-align: right;
+        padding-top: 1vw;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article > h3:nth-child(6) {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: bolder;
+        font-size: 2vw;
+        color: #4B4954;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 25vw;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article > p:nth-child(7) {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: lighter;
+        font-size: 1.25vw;
+        color: #4B4954;
+        text-align: right;
+        margin-top: 7vw;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article > h4:nth-child(8) {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: bolder;
+        font-size: 1.4vw;
+        color: #4B4954;
+        letter-spacing: 0.1vw;
+        text-align: right;
+        position: absolute;
+        top: 31vw;
+        right: 0;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > article > h4:nth-child(9) {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.1vw;
+        font-size: 1.4vw;
+        color: #4B4954;
+        text-align: right;
+        position: absolute;
+        top: 32.8vw;
+        right: 0;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > nav {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        right: -90px;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > nav > ul {
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > nav > ul > li {
+        display: inline-block;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > nav > ul > li > a > img {
+        height: 4.5vw;
+        transition: 0.3s;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(1) > nav > ul > li > a > img:hover {
+        transform: scale(1.5);
+    }
+
+
+    body > main > section:nth-child(2) > section:nth-child(2) > img:nth-child(1) {
+        width: 20%;
+        position: absolute;
+        top: 58%;
+        left: 9%;
+        z-index: 2;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > img:nth-child(2) {
+        width: 20%;
+        position: absolute;
+        top: 30%;
+        right: 15%;
+        z-index: 2;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > img:nth-child(3) {
+        width: 20%;
+        position: absolute;
+        bottom: 8%;
+        right: 30%;
+        z-index: 2;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > img:nth-child(4) {
+        width: 60%;
+        height: 75%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 90px;
+        z-index: 1;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > h5 {
+        font-family: "Roboto",sans-serif;
+        font-weight: bolder;
+        font-size: 1.5vw;
+        color: #35858B;
+        z-index: 3;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > h4 {
+        font-family: "Akshar",sans-serif;
+        font-weight: bolder;
+        font-size: 0.89vw;
+        color: #4B4954;
+        letter-spacing: -0.5px;
+        z-index: 3;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > h5:nth-child(5) {
+        position: absolute;
+        top: 57%;
+        left: 18%;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > h5:nth-child(6) {
+        position: absolute;
+        top: 29%;
+        right: 21%;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > h5:nth-child(7) {
+        position: absolute;
+        bottom: 10%;
+        right: 37%;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > h4:nth-child(8) {
+        position: absolute;
+        top: 64%;
+        left: 12%;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > h4:nth-child(9) {
+        position: absolute;
+        top: 36%;
+        right: 17%;
+    }
+
+    body > main > section:nth-child(2) > section:nth-child(2) > h4:nth-child(10) {
+        position: absolute;
+        bottom: 10%;
+        right: 33%;
+    }
+}

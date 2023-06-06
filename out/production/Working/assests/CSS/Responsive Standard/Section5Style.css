@@ -1,0 +1,80 @@
+body > main > section:nth-child(5) {
+    position: relative;
+    width: 100%;
+}
+
+body > main > section:nth-child(5) > img {
+    width: 100%;
+}
+
+body > main > section:nth-child(5) > section {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 90%;
+    display: flex;
+}
+
+body > main > section:nth-child(5) > section > div {
+    width: 25%;
+}
+
+body > main > section:nth-child(5) > section > div > img {
+    width: 20%;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px #A6A6A6;
+    cursor: pointer;
+    position: relative;
+    top: 15%;
+    transition: 0.3s;
+}
+
+body > main > section:nth-child(5) > section > div > img:hover {
+    box-shadow: 0px 0px 5px #A6A6A6;
+}
+
+body > main > section:nth-child(5) > section > div > h3 {
+    font-family: 'Akshar Unicode', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #4B4954;
+    position: relative;
+    top: 13%
+}
+
+body > main > section:nth-child(5) > section > div > h4 {
+    font-family: "Akshar Unicode",sans-serif;
+    font-weight: lighter;
+    font-size: 17px;
+    color: #4B4954;
+    padding-top: 20px;
+    position: relative;
+    top: 5%
+}
+
+body > main > section:nth-child(5) > section > div:nth-child(4) > h4 {
+    font-family: "Akshar Unicode",sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    color: #4B4954;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    left: 14%;
+}
+
+body > main > section:nth-child(5) > section > div:nth-child(4) > dfn > h1 {
+    font-family: "Roboto",sans-serif;
+    font-weight: bolder;
+    font-size: 61px;
+    color: #35858B;
+    letter-spacing: -3.5px;
+    text-align: center;
+    position: relative;
+    top: 14%;
+    font-style: normal;
+}

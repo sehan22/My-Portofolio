@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Sehan Ranaweera</title>
+  <meta name="keywords" content="Sehan Gayanath Ranaweera Arachchige">
+  <meta name="discription" content="This is the for testing my webpage discription">
+  <meta name="author" content="Sehan Ranaweera">
+  <meta name="owner" content="Sehan Ranaweera">
+  <meta name="robot" content="index">
+  <meta name="theme-color" content="yellow">
+  <meta name="viewport" content="width=device-width initial-scale=1 user-scalable=no">
+  <!-- <meta name="http-equiv="refresh" content="3;https://www.ijse.lk"> -->
+  <link rel ="icon" href="yin-yang.png">
+  <link href="../normalize.css" , rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/coiny" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/akshar-unicode" rel="stylesheet">
+  <link rel="stylesheet" href="CertificateCardStyle.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    header {
+      background-color: #D9F6FB;
+      z-index: 3;
+      position: sticky;
+      top: 0;
+      width: 100%;
+      height: 100px;
+    }
+
+    header > img:nth-child(1) {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 45px;
+      width: 170px;
+      height: 59px;
+    }
+
+    header > nav > ul {
+      position: absolute;
+      margin: auto;
+      right: 0;
+      top: 35px;
+      bottom: 0;
+
+    }
+
+    header > nav > ul > li {
+      position: relative;
+      font-family: "Roboto Light",sans-serif;
+      font-weight: bold;
+      font-size: 23px;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 140px;
+      margin-left: 40px;
+      display: inline-block;
+    }
+
+    header > nav > ul > li > a {
+      color: black;
+      text-decoration: none;
+    }
+
+    header > nav > ul > li > a:hover {
+      color: #4B4954;
+    }
+
+    header > nav > ul > li:nth-child(1) > a:nth-child(1) {
+      color: white;
+      background-color: #05BFDB;
+      text-decoration: none;
+      box-shadow: 2px 2px 10px -2px #0000005c;
+      padding: 7px;
+      border-radius: 10px;
+    }
+
+    main > section:nth-child(1) > article > nav > ul > li:nth-child(5) {
+      position: absolute;
+      top: 50%;
+      left: 135%;
+      transform: translate(-50%,-50%);
+    }
+
+    main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button {
+      position: relative;
+      background: none;
+      border: 2px solid #000000;
+      font-family: "Roboto", sans-serif;
+      font-weight: bolder;
+      padding: 12px 20px;
+      min-width: 175px;
+      cursor: pointer;
+      transition: color 0.4s linear;
+    }
+
+    main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button:hover {
+      color: #ffffff;
+    }
+
+    main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 105%;
+      background: #4B4954;
+      z-index: -1;
+      transition: transform 0.5s;
+      transform-origin: 0 0;
+      transition-timing-function: cubic-bezier(0.9,1.6,0.4,0.7);
+    }
+
+    main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button::before {
+      transform: scaleX(0);
+    }
+
+    main > section:nth-child(1) > article > nav > ul > li:nth-child(5) > button:hover::before {
+      transform: scaleX(1);
+    }
+
+    main > section:nth-child(1) {
+      height: 750px;
+    }
+
+    main > section:nth-child(2) {
+    }
+
+    main > section:nth-child(3) {
+      height: 80px;
+    }
+
+    main > section:nth-child(4) {
+      height: 900px;
+    }
+
+    main > section:nth-child(5) {
+      height: 1200px;
+    }
+
+    main > section:nth-child(6) {
+      height: 600px;
+      border: 1px solid black;
+    }
+
+    main > section:nth-child(1) > img:nth-child(1) {
+      width: 100%;
+      height: 750px;
+    }
+
+    main > section:nth-child(1) > img:nth-child(2) {
+      position: absolute;
+      top: 267px;
+      left: 1010px;
+      width: 30vw;
+      height: 3vh;
+    }
+
+    main > section:nth-child(1) > article > h1 {
+      position: absolute;
+      top: 200px;
+      left: 750px;
+      font-family: 'Akshar Unicode', sans-serif;
+      font-weight: bolder;
+      font-size: 60px;
+      color: #4B4954;
+    }
+
+    main > section:nth-child(1) > article > h2 {
+      position: absolute;
+      top: 400px;
+      left: 750px;
+      font-family: 'Coiny', sans-serif;
+      font-weight: bolder;
+      font-size: 60px;
+      color: black;
+    }
+
+    main > section:nth-child(1) > article > h2:nth-child(2) {
+      top: 290px;
+      left: 800px;
+      font-family: 'Coiny', sans-serif;
+      font-weight: bolder;
+      font-size: 60px;
+      color: black;
+    }
+
+    main > section:nth-child(1) > article > h2:nth-child(3) {
+      top: 290px;
+      left: 1116px;
+      font-family: 'Coiny', sans-serif;
+      font-weight: bolder;
+      font-size: 60px;
+      color: #088395;
+    }
+
+    main > section:nth-child(1) > article > h4:nth-child(4) {
+      position: absolute;
+      top: 380px;
+      left: 900px;
+      font-family: 'Akshar', sans-serif;
+      font-weight: bolder;
+      font-size: 40px;
+      color: black;
+    }
+
+    main > section:nth-child(1) > article > h4:nth-child(5) {
+      position: absolute;
+      top: 380px;
+      left: 1305px;
+      font-family: 'Akshar', sans-serif;
+      font-weight: bolder;
+      font-size: 40px;
+      color: black;
+    }
+
+    main > section:nth-child(1) > article > h3:nth-child(6) {
+      position: absolute;
+      top: 500px;
+      left: 908px;
+      font-family: 'Akshar', sans-serif;
+      font-weight: lighter;
+      color: black;
+    }
+
+    main > section:nth-child(1) > article > nav > ul {
+      position: absolute;
+      top: 602px;
+      left: 910px;
+    }
+
+    main > section:nth-child(1) > article > nav > ul > li {
+      margin-left: 30px;
+      display: inline-block;
+    }
+
+    main > section:nth-child(1) > article > nav > ul > li > img {
+      height: 40px;
+    }
+
+    /*            main > section:nth-child(2) > article {
+                    text-align: center;
+                }
+
+                main > section:nth-child(2) > article > h1 {
+                    position: relative;
+                    top: 0;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: bolder;
+                    font-size: 40px;
+                }
+
+                main > section:nth-child(2) > article > h3 {
+                    font-family: "Akshar", sans-serif;
+                    font-weight: lighter;
+                    line-height: 25px;
+                    letter-spacing: 1px;
+                }
+
+                main > section:nth-child(2) > section {
+                    position: relative;
+                    top: 20px;
+                    margin: auto;
+                    width: 80%;
+                    height: 50%;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-gap: 50px;
+                }
+
+                main > section:nth-child(2) > section > div > h2 {
+                    font-family: "Akshar", sans-serif;
+                    font-weight: bold;
+                    text-align: center;
+                }
+
+                main > section:nth-child(2) > section > div {
+                    box-shadow: 2px 2px 10px -2px #0000005c;
+                    border: 1px solid #EEEEEE;
+                    border-radius: 10px;
+                }
+
+                main > section:nth-child(2) > section > div > img {
+                    height: 80%;
+                    width: 100%;
+                }*/
+
+    main > section:nth-child(3) > article {
+      height: 100px;
+    }
+
+    main > section:nth-child(3) > article > h3 {
+      position: relative;
+      top: 0px;
+      font-family: "Akshar", sans-serif;
+      font-weight: lighter;
+      text-align: center;
+    }
+
+    main > section:nth-child(4) > section > article {
+      text-align: center;
+    }
+
+    main > section:nth-child(4) > section > article > h1 {
+      position: relative;
+      top: 0;
+      font-family: "Roboto", sans-serif;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+
+    main > section:nth-child(4) > section > article > h3 {
+      font-family: "Akshar", sans-serif;
+      font-weight: lighter;
+      line-height: 25px;
+      letter-spacing: 1px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) {
+      position: relative;
+      margin: auto;
+      width: 70%;
+      height: 50%;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 80px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div {
+      position: relative;
+      top: 40px;
+      box-shadow: 2px 2px 10px -2px #0000005c;
+      border-radius: 100px;
+
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div:nth-child(1) {
+      background-color: #F3FDFF;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div:nth-child(2) {
+      background-color: #FDF6FF;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div:nth-child(3) {
+      background-color: #FFF6F6;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > img {
+      border-radius: 100px;
+      height: 70%;
+      width: 100%;
+      box-shadow: 0px 5px 5px -5px #0000005c;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > div > h2 {
+      font-family: "Akshar", sans-serif;
+      font-weight: bold;
+      position: relative;
+      text-align: center;
+      color: #4B4954;
+      top: 30px;
+    }
+
+    main > section:nth-child(4) > article > h3 {
+      font-family: "Akshar", sans-serif;
+      font-weight: lighter;
+      text-align: center;
+      position: relative;
+      height: 100px;
+      top: 150px;
+    }
+
+    main > section:nth-child(5) > article {
+      position: relative;
+      top: 0;
+      text-align: center;
+    }
+
+    main > section:nth-child(5) > article > h1 {
+      font-family: "Akshar", sans-serif;
+      font-weight: bold;
+    }
+
+    main > section:nth-child(5) > article > h3 {
+      font-family: "Akshar", sans-serif;
+      font-weight: lighter;
+    }
+
+    main > section:nth-child(5) > section {
+      position: relative;
+      margin: auto;
+      top:30px;
+      width: 80%;
+      height: 105vh;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 80px;
+    }
+
+    main > section:nth-child(5) > section > div {
+      box-shadow: 2px 2px 10px -2px #0000005c;
+    }
+
+    main > section:nth-child(5) > section > div > h3 {
+      text-align: center;
+      font-family: "Akshar", sans-serif;
+      font-weight: bold;
+    }
+
+    main > section:nth-child(5) > section > div > img {
+      position: relative;
+      top: 0px;
+      left: 40px;
+      width: 85%;
+      height: 24vh;
+    }
+
+    main > section:nth-child(5) > section > div > h4 {
+      text-align: center;
+      font-family: "Akshar", sans-serif;
+      font-weight: normal;
+    }
+
+    main > section:nth-child(5) > section > div > button {
+      background-color: #05BFDB;
+      border-color: transparent;
+      color: white;
+      position: relative;
+      left: 160px;
+      padding: 13px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px -2px #0000005c;
+      font-family: "Akshar", sans-serif;
+      font-weight: normal;
+      cursor: pointer;
+    }
+
+    main > section:nth-child(5) > section > div > button:hover {
+      background-color: white;
+      color: #05BFDB;
+      font-weight: bolder;
+    }
+
+    main > section:nth-child(5) > section > div > button:active {
+      background-color: #05BFDB;
+      color: white;
+      font-weight: bolder;
+    }
+
+    main > section:nth-child(6) > h1 {
+      font-family: "Roboto", sans-serif;
+      font-weight: bolder;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    main > section:nth-child(6) {
+      position: relative;
+    }
+
+    main > section:nth-child(6) > section {
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+      width: 80vw;
+      height: 50vh;
+      background-color: #EFFAFF;
+      border-radius: 20px;
+      box-shadow: 0px 0px 15px -2px #0000005c;
+    }
+
+    main > section:nth-child(6) > section > section {
+      position: relative;
+      border-right: 1px solid #ECECEC;
+      width: 50%;
+      height: 100%;
+    }
+
+    main > section:nth-child(6) > section > section > div {
+    }
+
+    main > section:nth-child(6) > section > section > div > img {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 55%;
+      height: 90%;
+    }
+
+    main > section:nth-child(6) > section > article {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      text-align: center;
+    }
+
+    main > section:nth-child(6) > section > article > h2:nth-child(1) {
+      font-family: "Akshar", sans-serif;
+      font-weight: bold;
+      position: absolute;
+      top:10px;
+      left: 0;
+      right: 0;
+    }
+
+    main > section:nth-child(6) > section > article > h3 {
+      position: absolute;
+      top: 50px;
+      position: absolute;
+      font-family: "Akshar", sans-serif;
+      font-weight: lighter;
+      line-height: 30px;
+    }
+
+    main > section:nth-child(6) > section > article > h3:nth-child(3) {
+      font-family: "Akshar", sans-serif;
+      font-weight: bold;
+      position: absolute;
+      top: 300px;
+      left: 0;
+      right: 0;
+    }
+
+    main > section:nth-child(6) > section > article > h3:nth-child(4) {
+      font-family: "Akshar", sans-serif;
+      font-weight: lighter;
+      position: absolute;
+      top: 330px;
+      right: 0;
+      left: 0;
+    }
+
+    main > section:nth-child(6) > section > article > h3:nth-child(5) {
+      font-family: "Akshar", sans-serif;
+      font-weight: bold;
+      position: absolute;
+      top: 370px;
+      left: 30px;
+    }
+
+    main > section:nth-child(6) > section > article > nav > ul > li {
+      font-family: "Akshar", sans-serif;
+      font-weight: bold;
+      margin-left: 20px;
+      display: inline-block;
+      position: relative;
+      top: 410px;
+    }
+
+    main > section:nth-child(6) > section > article > nav > ul > li > a {
+      text-decoration: none;
+      color: #4B4954;
+    }
+
+    footer {
+      position: relative;
+      height: 90px;
+      width: 100%;
+      background-color: #4B4954;
+      bottom: 0;
+    }
+
+    footer > h1 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: "Akshar", sans-serif;
+      font-weight: bolder;
+      color: white;
+
+    }
+
+    section:nth-child(7) {
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    legend {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    label {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"] {
+      width: 80%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    section:nth-child(7) > button {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #007294;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <img src="assests/1/Untitled-1%201.png">
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#Certificates">Certificates</a></li>
+      <li><a href="#Qualification">Qualification</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <img src="assests/1/Group%20109.png">
+    <img src="assests/1/Group%20106.png">
+
+    <article>
+      <h1 data-aos="fade-right">Hi There,</h1>
+      <h2>I'm Sehan</h2>
+      <h2>Ranaweera</h2>
+      <h4>Software Developer ,</h4>
+      <h4>UI & UX Designer</h4>
+      <h3>I'm Sehan Ranaweera from Matara Sri Lanka.Software Developer and<br>
+        UI & UX Designer based in Sri Lanka.</h3>
+
+      <nav>
+        <ul>
+          <li><img src="assests/1/Github%20-%20Original.png"></li>
+          <li><img src="assests/1/LinkedIn%20-%20Negative.png"></li>
+          <li><img src="assests/1/Facebook%20-%20Negative.png"></li>
+          <li><img src="assests/1/Instagram%20-%20Negative.png"></li>
+          <li><button type="button">Download My CV</button></li>
+        </ul>
+      </nav>
+    </article>
+  </section>
+
+  <!--        <section>
+              <article>
+                  <dfn id="Certificates"></dfn>
+                  <h1>Certificates</h1>
+                  <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively<br>
+                      identifies the identity of an individual or organization. Using public key cryptography, its authenticity can be<br>
+                      verified to ensure that the software or website you are using is legitimate.</h3>
+              </article>
+
+
+              <section class="container">
+                  <div>
+                      <img src="assests/2/java.png">
+                      <h2>Java certificates</h2>
+                  </div>
+                  <div>
+                      <img src="assests/2/sql.png">
+                      <h2>SQL certificates</h2>
+                  </div>
+                  <div>
+                      <img src="assests/2/phython.png">
+                      <h2>Phython certificates</h2>
+                  </div>
+              </section>
+          </section>-->
+
+
+  <section class="main">
+    <article>
+      <dfn id="Certificates"></dfn>
+      <h1>Certificates</h1>
+      <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
+        identifies the identity of an individual or organization. Using public key cryptography, its authenticity can be<br>
+        verified to ensure that the software or website you are using is legitimate.</h3>
+    </article>
+    <section class="mainContainer">
+      <div class="container">
+        <div class="card">
+          <img src="assests/2/sql.png" alt="certificate">
+          <div class="intro">
+            <h1>Java Certificate</h1>
+            <p>A <span>certificate</span> or digital certificate is a unique, digitally signed document which authoritatively<br>
+              identifies the identity of an individual or organization.</p>
+            <button type="submit"><a href="http://github.com">VIST</a></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assests/2/sql.png" alt="certificate">
+          <div class="intro">
+            <h1>SQL Certificate</h1>
+            <p>A <span>certificate</span> or digital certificate is a unique, digitally signed document which authoritatively<br>
+              identifies the identity of an individual or organization.</p>
+            <button type="submit">VIST</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assests/2/phython.png" alt="certificate">
+          <div class="intro">
+            <h1>Phython Certificate</h1>
+            <p>A <span>certificate</span> or digital certificate is a unique, digitally signed document which authoritatively<br>
+              identifies the identity of an individual or organization.</p>
+            <button type="submit">VIST</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <article>
+      <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
+        identifies the identity of an individual or organization. Using public key cryptography,<br> its authenticity can be
+        verified to ensure that the software or website you are using is legitimate.</h3>
+    </article>
+  </section>
+
+  <section>
+    <section>
+      <article>
+        <dfn id="Qualification"></dfn>
+        <h1>Qualifications</h1>
+        <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
+          identifies the identity of an individual or organization. Using public key cryptography,<br> its authenticity can be
+          verified to ensure that the software or website you are using is legitimate.</h3>
+      </article>
+    </section>
+
+    <section>
+      <div>
+        <img src="assests/2/Group%20109.png">
+        <h2>GCE Advanced Level Exam</h2>
+      </div>
+      <div>
+        <img src="assests/2/ijse%201.png">
+        <h2>Student Of IJSE institution</h2>
+      </div>
+      <div>
+        <img src="assests/2/Group%20110.png">
+        <h2>GCE Ordinary Level Exam</h2>
+      </div>
+    </section>
+
+    <article>
+      <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively<br>
+        identifies the identity of an individual or organization.  Using public key cryptography, its authenticity can be<br>
+        verified to ensure that the software or website you are using is legitimate.</h3>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <dfn id="Projects"></dfn>
+      <h1>Projects</h1>
+      <h3>A certificate or digital certificate is a unique, digitally signed document which authoritatively
+        identifies the identity of an individual or organization.  Using public key cryptography,<br> its authenticity can be
+        verified to ensure that the software or website you are using is legitimate.</h3>
+    </article>
+
+    <section>
+      <div>
+        <h3>D24 Hostel Management Hibernate Project</h3>
+        <img src="assests/3/Screenshot%20(119).png">
+        <h4>A certificate or digital certificate is a unique, digitally signed <br>document which authoritatively
+          identifies the identity of an <br>individual or organization.Using public key cryptography</h4>
+        <button type="button">Learn More..</button>
+      </div>
+      <div>
+        <h3>FindLearn Education Center Final Project</h3>
+        <img src="assests/3/Screenshot%20(19)%202.png">
+        <h4>A certificate or digital certificate is a unique, digitally signed <br>document which authoritatively
+          identifies the identity of an <br>individual or organization.Using public key cryptography</h4>
+        <button type="button">Learn More..</button>
+      </div>
+      <div>
+        <h3>Connect 4 Game OOP Project</h3>
+        <img src="assests/3/Screenshot%20(22)%202.png">
+        <h4>A certificate or digital certificate is a unique, digitally signed <br>document which authoritatively
+          identifies the identity of an <br>individual or organization.Using public key cryptography</h4>
+        <button type="button">Learn More..</button>
+      </div>
+      <div>
+        <h3>BlueOcean Project JavaFX Project</h3>
+        <img src="assests/3/Screenshot%20(21)%201.png">
+        <h4>A certificate or digital certificate is a unique, digitally signed <br>document which authoritatively
+          identifies the identity of an <br>individual or organization.Using public key cryptography</h4>
+        <button type="button">Learn More..</button>
+      </div>
+      <div>
+        <h3>Thogakade JavaFX Project</h3>
+        <img src="assests/3/Screenshot%20(24)%201.png">
+        <h4>A certificate or digital certificate is a unique, digitally signed <br>document which authoritatively
+          identifies the identity of an <br>individual or organization.Using public key cryptography</h4>
+        <button type="button">Learn More..</button>
+      </div>
+      <div>
+        <h3>Student Marks Management System Project</h3>
+        <img src="assests/3/Screenshot%20(23)%201.png">
+        <h4>A certificate or digital certificate is a unique, digitally signed <br>document which authoritatively
+          identifies the identity of an <br>individual or organization.Using public key cryptography</h4>
+        <button type="button">Learn More..</button>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <dfn id="About"></dfn>
+    <h1>About</h1>
+
+    <section>
+      <section>
+        <div>
+          <img src="assests/4/318346245_1281731276007426_283333058733606160_n%201.png">
+        </div>
+      </section>
+
+      <article>
+        <h2>About Myself</h2>
+        <h3>I'm Sehan Ranaweera  from Matara Sri Lanka.I have passed G.C.E.(O/L) & GCE(A/L)
+          in Rahula College Matara.I'm Software Developer and UI & UX Designer based
+          in Sri Lanka.I'm following a software engineering Diploma in IJSE institute in Galle.
+          I hope to be agraduate in software engineering at the end of the diploma.<br><br>
+          I also do UI UX design, logo design, business card design, graphic design,
+          photo editing and music production.
+        </h3>
+
+        <h3>Skills..</h3>
+        <h3>Java,HTML,CSS,SQL,HQL,Phython,JavaFX</h3>
+
+        <h3>Find Me on Social Media..</h3>
+        <nav>
+          <ul>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="https://www.linkedin.com/in/sehan-ranaweera-3044b8248/">LinkIn</a></li>
+            <li><a href="https://github.com/sehan22">GitHub</a></li>
+            <li><a href="#">Figma</a></li>
+            <li><a href="#">Slack</a></li>
+            <li><a href="https://wa.me/qr/SLKJU7VCNRZQL1">Whatsapp</a></li>
+            <li><a href="https://www.facebook.com/sehan.ranaweera.92/">FaceBook</a></li>
+            <li><a href="https://www.instagram.com/sehan_ranaweera/">Instergram</a></li>
+          </ul>
+        </nav>
+      </article>
+    </section>
+  </section>
+
+  <section>
+    <dfn id="Contact"></dfn>
+    <fieldset>
+      <legend><h1>Contact me</h1></legend><br><br>
+
+      <lable>Name : </lable><input id="name" type="text"><br><br>
+
+      <lable>Last Name : </lable><input id="lastname" type="text"><br><br>
+
+      <lable>Phone Number : </lable><input id="phonenumber" type="tel"><br><br>
+
+      <lable>Email : </lable><input id="email" type="email"><br><br>
+
+      <lable>Message : </lable><input id="message" type="text"><br><br>
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+
+</main>
+
+<footer>
+  <h1>Developed by Sehan Ranaweera</h1>
+</footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body > main > section:nth-child(8) {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+body > main > section:nth-child(8) > section {
+    display: flex;
+    width: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 8%;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) {
+    width: 510px;
+    height: 550px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #35858B;
+    box-shadow: 5px 5px 15px -5px #A6A6A6;
+    border-radius: 3px;
+    z-index: 2;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(2) {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1000px;
+    height: 650px;
+    margin-left: -20%;
+    background-color: white;
+    box-shadow: 5px 5px 20px 0px #A6A6A6;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > h4 {
+    font-family: "Akshar Unicode",sans-serif;
+    font-weight: bolder;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+    left: 160px;
+    top: 50px;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > dfn > h1 {
+    font-family: "Roboto",sans-serif;
+    font-weight: bolder;
+    font-size: 61px;
+    color: white;
+    letter-spacing: -3.5px;
+    position: relative;
+    text-align: center;
+    font-style: normal;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav > ul > li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav > ul > li > a {
+    text-decoration: none;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(3) > ul > li > a > img {
+    width: 3vw;
+    transition: 0.3s;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(3) > ul > li > a > img:hover {
+    transform: scale(1.2);
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(3) > ul > li:nth-child(4) > a > img {
+    width: 2.5vw;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(4) {
+    position: absolute;
+    top: 19vh;
+    left: 4vw;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(4) > ul > li {
+    margin-bottom: 51px;
+    transition: 0.5s;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(4) > ul > li:hover {
+    transform: scale(0.9);
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(1) > nav:nth-child(4) > ul > li > a {
+    font-family: "Akshar Unicode",sans-serif;
+    font-weight: bolder;
+    font-size: 21px;
+    color: white;
+}
+
+
+body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset {
+    position: relative;
+    margin-left: 220px;
+    margin-top: 65px;
+    height: 500px;
+    width: 700px;
+    border: none;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > h3 {
+    font-family: "Roboto",sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #35858B;
+    letter-spacing: 0;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > label {
+    position: relative;
+    left: 20px;
+    top: 15px;
+    font-family: "Roboto",sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    color: #4B4954;
+
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > input {
+    left: 150px;
+    position: absolute;
+    width: 500px;
+    height: 40px;
+    font-family: "Roboto",sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #4B4954;
+    border: 2px solid #A6A6A6;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.5s;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > input:focus {
+    border: 2px solid #4FBDBA;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > button {
+    position: relative;
+    left: 545px;
+    width: 95px;
+    height: 40px;
+    font-family: 'Akshar Unicode', sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    color: white;
+    background-color: #35858B;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px -5px #A6A6A6;
+    border-radius: 3px;
+    transition: 0.5s;
+    border: 2px solid #35858B;
+}
+
+body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > button:hover {
+    box-shadow: 5px 5px 10px -10px #A6A6A6;
+    color: #35858B;
+    background-color: white;
+    border: 2px solid #35858B;
+}
+
+

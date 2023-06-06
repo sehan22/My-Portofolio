@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM manipulation part Two</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    #loader {
+      height: 100px;
+      background: url("assests/images/image.gif");
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+
+<div class="row mt-5">
+  <div class="col-1">
+    <h1 id="count">01</h1>
+  </div>
+  <div id="loader" class="col-2">
+
+  </div>
+</div>
+<button id="btn" class="btn btn-danger" id="btnStart">Start</button>
+<button id="btn1" class="btn btn-danger" id="btnEnd">End</button>
+
+<script>
+  /*let colours=["red","green","orange","pink"];
+  let newColours=new Array("green","pink");*/
+  document.getElementById("loader").style.visibility="hidden";
+
+  var id;
+
+  document.getElementById("btn").addEventListener("click",function () {
+    document.getElementById("loader").style.visibility="visible";
+
+
+    setTimeout(function () {
+      var i = 0;
+      clearInterval(id)
+      id = setInterval(function () {
+
+          document.getElementById("loader").style.visibility="hidden";
+
+
+        if (i<10) {
+          document.getElementById("count").innerText = "0" + i;
+        } else {
+          document.getElementById("count").innerText = i;
+        }
+
+        if(i == 100){
+          clearInterval(id);
+        }
+
+        i++;
+      },100);
+    },2000)
+  });
+
+  document.getElementById("btn1").addEventListener("click",function (){
+    clearInterval(id);
+    document.getElementById("count").innerText = "01";
+  });
+</script>
+
+</body>
+</html>
