@@ -584,11 +584,20 @@
     var address = $('#txtAddress').val();
     var tel = $('#txtPhoneNumber').val();
 
+    var i = 0;
+
+    var customers = [];
+    customers.push(id);
+    customers.push(name);
+    customers.push(address);
+    customers.push(tel);
+    console.log(customers);
+    console.log(customers.sort());
+
     let customerTable = $('customerTable');
 
-    let tr=$('<tr> <td>'+id+'</td> <td>'+name+'</td> <td>'+address+'</td> <td>'+tel+'</td></tr>');
-    
-    $("#customerTable").append(tr)
+    let tr=$('<tr> <td>'+customers[customers.length-4]+'</td> <td>'+customers[customers.length-3]+'</td> <td>'+customers[customers.length-2]+'</td> <td>'+customers[customers.length-1]+'</td></tr>');
+    $("#customerTable").append(tr);
   });
 /*  document.getElementById("btnCustomerSave").addEventListener("click",function () {
     var row = document.createElement('tr');
