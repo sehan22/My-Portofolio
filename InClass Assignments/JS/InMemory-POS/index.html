@@ -579,18 +579,16 @@
     var col3 = $('td').create;
     var col4 = $('td').create;
 
-    col.txtContent = $('#txtCustomerId').val();
-    col2.txtContent = $('#txtCustomerName').val();
-    col3.txtContent = $('#txtAddress').val();
-    col4.txtContent = $('#txtPhoneNumber').val();
-
-    row.append(col);
-    row.append(col2);
-    row.append(col3);
-    row.append(col4);
+    var id = $('#txtCustomerId').val();
+    var name = $('#txtCustomerName').val();
+    var address = $('#txtAddress').val();
+    var tel = $('#txtPhoneNumber').val();
 
     let customerTable = $('customerTable');
-    customerTable.append(row);
+
+    let tr=$('<tr> <td>'+id+'</td> <td>'+name+'</td> <td>'+address+'</td> <td>'+tel+'</td></tr>');
+    
+    $("#customerTable").append(tr)
   });
 /*  document.getElementById("btnCustomerSave").addEventListener("click",function () {
     var row = document.createElement('tr');
