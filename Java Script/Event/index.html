@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events in JS</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<h1 id="content">Institute of Java and Software Engineering</h1>
+
+<script src="/Java%20Script/assets/js/jquery-3.7.0.min.js"></script>
+<!--<script>
+
+    let h1Content = $("#content").text();
+    let h2Content = document.getElementById("content");
+    let count=0;
+
+    setInterval(animateText,50);
+    function animateText(){
+        let content = h1Content.substring(0, count);
+        $("#content").text(content);
+        count++;
+        if(count==h1Content.length){
+            count = 0;
+        }
+    }
+
+    //Events
+    window.addEventListener("mousemove",function (eData) {
+        console.log("Mouse is moving",eData.pageX,eData.pageY);
+        h2Content.style.position='relative';
+        h2Content.position().top = eData.pageY+'px';
+        h2Content.position().left = eData.pageX+'px';
+    });
+
+</script>-->
+
+<script>
+    let test = document.getElementById('content');
+
+
+    window.addEventListener("mousemove", function (eData) {
+
+        test.style.position = 'absolute';
+        test.style.top = eData.pageY + 'px';
+        test.style.left = eData.pageX + 'px';
+        test.style.opacity = 255;
+
+        let timeout = setTimeout(function () {
+            textDisplayToNone();
+        }, 1000);
+
+        clearTimeout(timeout)
+    });
+
+    function textDisplayToNone() {
+        test.style.opacity = 0;
+    }
+
+    //////////////////////////
+
+    let sampleText = $('#content').text();
+    let sampleTextLength = sampleText.length;
+    let j;
+
+
+    let count = 0;
+
+    setInterval(function () {
+        textAnim();
+    }, 100);
+
+    function textAnim() {
+        count++;
+        if (count <= sampleTextLength) {
+            j = sampleText.substring(0, count);
+            $('#content').text(j);
+        } else {
+            count = 0;
+        }
+    }
+
+</script>
+
+</body>
+</html>
