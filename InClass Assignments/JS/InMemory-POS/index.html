@@ -571,6 +571,8 @@
 <script src="../Queue/js/jquery-3.7.0.min.js"></script>
 
 <script>
+  var cusDetalis = [];
+
   $("#btnCustomerSave").click("click",function () {
     var row = $('tr').create;
 
@@ -586,18 +588,47 @@
 
     var i = 0;
 
-    var customers = [];
+    //1st method
+
+/*    var customers = [];
     customers.push(id);
     customers.push(name);
     customers.push(address);
     customers.push(tel);
     console.log(customers);
-    console.log(customers.sort());
 
     let customerTable = $('customerTable');
 
     let tr=$('<tr> <td>'+customers[customers.length-4]+'</td> <td>'+customers[customers.length-3]+'</td> <td>'+customers[customers.length-2]+'</td> <td>'+customers[customers.length-1]+'</td></tr>');
+    $("#customerTable").append(tr);*/
+
+    //2nd method
+    var customer = {
+      cusId: id,
+      cusName: name,
+      cusAdd: address,
+      cusTel: tel
+    }
+
+    cusDetalis.push(customer);
+
+    let customerTable = $('customerTable');
+
+    let tr=$('<tr> <td>'+cusDetalis[cusDetalis.length-1]+'</td> <td>'+cusDetalis[cusDetalis.length-1]+'</td> <td>'+cusDetalis[cusDetalis.length-1]+'</td> <td>'+cusDetalis[cusDetalis.length-1]+'</td></tr>');
     $("#customerTable").append(tr);
+
+
+/*    var customers = [];
+    customers.push(id);
+    customers.push(name);
+    customers.push(address);
+    customers.push(tel);
+    console.log(customers);
+
+    let customerTable = $('customerTable');
+
+    let tr=$('<tr> <td>'+customers[customers.length-4]+'</td> <td>'+customers[customers.length-3]+'</td> <td>'+customers[customers.length-2]+'</td> <td>'+customers[customers.length-1]+'</td></tr>');
+    $("#customerTable").append(tr);*/
   });
 /*  document.getElementById("btnCustomerSave").addEventListener("click",function () {
     var row = document.createElement('tr');

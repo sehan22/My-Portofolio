@@ -1,45 +1,48 @@
 body > main > section:nth-child(8) {
     width: 100%;
-    height: 80vh;
-    position: relative;
+    height: 70vh;
+    background-color: #343a40;
 }
 
 body > main > section:nth-child(8) > section {
     display: flex;
-    width: max-content;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-top: 50px;
-    margin-left: 8%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+body > main > section:nth-child(8) > section >  section {
+    margin:20px;
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(1) {
     width: 510px;
     height: 550px;
     position: relative;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: #35858B;
-    box-shadow: 5px 5px 15px -5px #A6A6A6;
-    border-radius: 3px;
+    background-color: #343a40;
+    box-shadow: 0 0 15px -5px #000000;
+    border-radius: 10px;
     z-index: 2;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #35858B, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to right, #35858B, rgba(0, 0, 0, 0)) 1 15%;
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(2) {
     position: relative;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    width: 1000px;
-    height: 650px;
-    margin-left: -20%;
-    background-color: white;
-    box-shadow: 5px 5px 20px 0px #A6A6A6;
-    border-radius: 5px;
+    width: 800px;
+    height: 550px;
+    background-color: #343a40;
+    box-shadow: 0 0 20px -5px #000000;
+    border-radius: 10px;
     z-index: 1;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #35858B, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to left, #35858B, rgba(0, 0, 0, 0)) 1 15%;
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(1) > h4 {
@@ -118,48 +121,51 @@ body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset 
     border: none;
 }
 
-body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > h3 {
+body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > h3:nth-child(1) {
     font-family: "Roboto",sans-serif;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 35px;
     color: #35858B;
     letter-spacing: 0;
-}
-
-body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > label {
     position: relative;
-    left: 20px;
-    top: 15px;
-    font-family: "Roboto",sans-serif;
-    font-weight: bolder;
-    font-size: 17px;
-    color: #4B4954;
-
+    margin: auto;
+    bottom: 20px;
+    right: 180px;
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > input {
-    left: 150px;
+    right: 250px;
+    margin-top: 5px;
     position: absolute;
-    width: 500px;
+    width: 600px;
     height: 40px;
     font-family: "Roboto",sans-serif;
     font-weight: lighter;
     font-size: 14px;
-    color: #4B4954;
-    border: 2px solid #A6A6A6;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #35858B, rgba(0, 0, 0, 0)) 1 10%;
+    border-image: linear-gradient(to bottom, #35858B, rgba(0, 0, 0, 0)) 1 15%;
     border-radius: 3px;
     box-sizing: border-box;
     outline: none;
     transition: 0.5s;
+    background-color: #343a40;
+}
+
+#message {
+    height: 100px;
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > input:focus {
-    border: 2px solid #4FBDBA;
+    border: 2px solid #007294;
 }
 
 body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset > button {
     position: relative;
-    left: 545px;
+    left: 370px;
+    top: 70px;
     width: 95px;
     height: 40px;
     font-family: 'Akshar Unicode', sans-serif;
@@ -168,7 +174,7 @@ body > main > section:nth-child(8) > section >  section:nth-child(2) > fieldset 
     color: white;
     background-color: #35858B;
     cursor: pointer;
-    box-shadow: 5px 5px 10px -5px #A6A6A6;
+    box-shadow: 5px 5px 10px -5px #000000;
     border-radius: 3px;
     transition: 0.5s;
     border: 2px solid #35858B;
