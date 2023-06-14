@@ -6,4 +6,5 @@ body > footer {
     font-size: 15px;
     color: white;
     font-family: "Roboto",sans-serif;
+    bottom: 0;
 }

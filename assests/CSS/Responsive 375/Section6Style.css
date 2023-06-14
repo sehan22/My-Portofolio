@@ -126,8 +126,11 @@
 
     body > main > section:nth-child(6) > section:nth-child(2) > section > div > a > h2 {
         position: absolute;
-        left: 30%;
-        top: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        top: 88%;
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
         font-size: 12px;
@@ -192,8 +195,11 @@
 
     body > main > section:nth-child(6) > section:nth-child(3) > section > div > a > h2 {
         position: absolute;
-        left: 30%;
-        top: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        top: 88%;
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
         font-size: 12px;
@@ -282,8 +288,11 @@
 
     body > main > section:nth-child(6) > section:nth-child(4) > section > div > a > h2 {
         position: absolute;
-        left: 30%;
-        top: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        top: 88%;
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
         font-size: 12px;
@@ -348,9 +357,165 @@
 
     body > main > section:nth-child(6) > section:nth-child(5) > section > div > a > h2 {
         position: absolute;
-        left: 30%;
-        top: 80%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        top: 88%;
         font-family: "Akshar Unicode",sans-serif;
+        font-weight: bolder;
+        font-size: 12px;
+        color: white;
+        letter-spacing: 10px;
+    }
+
+    body > main > section:nth-child(6) > h3:nth-child(6) {
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: #4B4954;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) {
+        position: relative;
+        width: 100%;
+        height: 650px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) > section {
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) > section > h2 {
+        position: absolute;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) > section > div {
+        width: 280px;
+        height: 180px;
+        box-shadow: 5px 5px 10px 0 #A6A6A6;
+        background-color: #072227;
+        position: absolute;
+        transition: 0.3s;
+        border-radius: 3px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) > section > div:nth-child(1) {
+        position: absolute;
+        top: 0;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) > section > div:nth-child(2) {
+        position: absolute;
+        top: 240px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) > section > div:nth-child(3) {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) > section > div:hover {
+        box-shadow: 3px 3px 10px -5px #A6A6A6;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) > section > div > img {
+        width: 100%;
+        height: 80%;
+        border-radius: 3px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(7) > section > div > a > h2 {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        margin: auto;
+        top: 88%;
+        font-family: "Akshar Unicode",sans-serif;
+        font-weight: bolder;
+        font-size: 12px;
+        color: white;
+        letter-spacing: 10px;
+    }
+
+
+    body > main > section:nth-child(6) > section:nth-child(8) {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        margin-top: 50px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(8) > section {
+        width: 80%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(8) > section > h2 {
+        position: absolute;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(8) > section > div {
+        width: 280px;
+        height: 180px;
+        box-shadow: 5px 5px 10px 0 #A6A6A6;
+        background-color: #072227;
+        position: absolute;
+        transition: 0.3s;
+        border-radius: 3px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(8) > section > div:nth-child(1) {
+        position: absolute;
+        top: 0;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(8) > section > div:nth-child(2) {
+        position: absolute;
+        top: 240px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(8) > section > div:nth-child(3) {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(8) > section > div:hover {
+        box-shadow: 3px 3px 10px -5px #A6A6A6;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(8) > section > div > img {
+        width: 100%;
+        height: 80%;
+        border-radius: 3px;
+    }
+
+    body > main > section:nth-child(6) > section:nth-child(8) > section > div > a > h2 {
+        position: absolute;
+        right: 0;
+        text-align: center;
+        margin: auto;
+        top: 88%;
+        font-family: "Akshar Unicode", sans-serif;
         font-weight: bolder;
         font-size: 12px;
         color: white;

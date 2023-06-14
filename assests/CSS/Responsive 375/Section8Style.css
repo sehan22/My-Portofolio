@@ -1,63 +1,71 @@
 @media all and (max-width: 375px) {
 
     body > main > section:nth-child(8) > section {
+        margin: auto;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 1200px;
+        background-color: #343a40;
         display: flex;
         position: relative;
-        width: 100%;
-        height: 100%;
         justify-content: center;
         align-items: center;
     }
 
-    body > main > section:nth-child(8) > section > section {
-        margin: 20px;
-    }
-
     body > main > section:nth-child(8) > section > section:nth-child(1) {
-        width: 510px;
-        height: 550px;
-        position: relative;
+        width: 350px;
+        height: 400px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        align-items: center;
+        margin: 50px auto auto;
         background-color: #343a40;
         box-shadow: 0 0 15px -5px #000000;
-        border-radius: 10px;
+        border-radius: 20px;
         z-index: 2;
         border-width: 3px;
         border-style: solid;
-        border-image: linear-gradient(to right, #35858B, rgba(0, 0, 0, 0)) 1 100%;
-        border-image: linear-gradient(to right, #35858B, rgba(0, 0, 0, 0)) 1 15%;
+        border-image: linear-gradient(to bottom, #35858B, rgba(0, 0, 0, 0)) 1 100%;
+        border-image: linear-gradient(to bottom, #35858B, rgba(0, 0, 0, 0)) 1 15%;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(2) {
-        position: relative;
-        width: 800px;
+        position: absolute;
+        width: 350px;
         height: 550px;
+        left: 0;
+        right: 0;
+        align-items: center;
+        margin: 500px auto auto;
         background-color: #343a40;
         box-shadow: 0 0 20px -5px #000000;
         border-radius: 10px;
         z-index: 1;
         border-width: 3px;
         border-style: solid;
-        border-image: linear-gradient(to left, #35858B, rgba(0, 0, 0, 0)) 1 100%;
-        border-image: linear-gradient(to left, #35858B, rgba(0, 0, 0, 0)) 1 15%;
+        border-image: linear-gradient(to top, #35858B, rgba(0, 0, 0, 0)) 1 100%;
+        border-image: linear-gradient(to top, #35858B, rgba(0, 0, 0, 0)) 1 15%;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(1) > h4 {
         font-family: "Akshar Unicode", sans-serif;
         font-weight: bolder;
-        font-size: 12px;
+        font-size: 7px;
         color: white;
         letter-spacing: 2px;
         position: relative;
         left: 160px;
-        top: 50px;
+        top: 20px;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(1) > dfn > h1 {
         font-family: "Roboto", sans-serif;
         font-weight: bolder;
-        font-size: 61px;
+        font-size: 31px;
         color: white;
-        letter-spacing: -3.5px;
+        letter-spacing: 1px;
         position: relative;
         text-align: center;
         font-style: normal;
@@ -65,7 +73,7 @@
 
     body > main > section:nth-child(8) > section > section:nth-child(1) > nav > ul > li {
         list-style-type: none;
-        margin: 10px;
+        margin: 20px;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(1) > nav > ul > li > a {
@@ -73,8 +81,10 @@
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(1) > nav:nth-child(3) > ul > li > a > img {
-        width: 3vw;
+        width: 35px;
         transition: 0.3s;
+        position: relative;
+        right: 30px;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(1) > nav:nth-child(3) > ul > li > a > img:hover {
@@ -82,13 +92,13 @@
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(1) > nav:nth-child(3) > ul > li:nth-child(4) > a > img {
-        width: 2.5vw;
+        width: 32px;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(1) > nav:nth-child(4) {
         position: absolute;
-        top: 19vh;
-        left: 4vw;
+        top: 80px;
+        left: 20px;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(1) > nav:nth-child(4) > ul > li {
@@ -103,38 +113,39 @@
     body > main > section:nth-child(8) > section > section:nth-child(1) > nav:nth-child(4) > ul > li > a {
         font-family: "Akshar Unicode", sans-serif;
         font-weight: bolder;
-        font-size: 21px;
+        font-size: 16px;
         color: white;
     }
 
 
     body > main > section:nth-child(8) > section > section:nth-child(2) > fieldset {
-        position: relative;
-        margin-left: 220px;
-        margin-top: 65px;
-        height: 500px;
-        width: 700px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 80px;
+        height: 460px;
+        width: 300px;
         border: none;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(2) > fieldset > h3:nth-child(1) {
         font-family: "Roboto", sans-serif;
         font-weight: bolder;
-        font-size: 35px;
+        font-size: 21px;
         color: #35858B;
         letter-spacing: 0;
         position: relative;
-        margin: auto;
-        bottom: 20px;
-        right: 180px;
+        left: 70px;
+        margin-top: -59px;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(2) > fieldset > input {
-        right: 250px;
-        margin-top: 5px;
+        margin-top: 55px;
+        left: 10px;
         position: absolute;
-        width: 600px;
-        height: 40px;
+        width: 300px;
+        height: 50px;
         font-family: "Roboto", sans-serif;
         font-weight: lighter;
         font-size: 14px;
@@ -151,7 +162,7 @@
     }
 
     #message {
-        height: 100px;
+        height: 140px;
     }
 
     body > main > section:nth-child(8) > section > section:nth-child(2) > fieldset > input:focus {
@@ -160,8 +171,8 @@
 
     body > main > section:nth-child(8) > section > section:nth-child(2) > fieldset > button {
         position: relative;
-        left: 370px;
-        top: 70px;
+        left: 90px;
+        top: 162px;
         width: 95px;
         height: 40px;
         font-family: 'Akshar Unicode', sans-serif;

@@ -67,12 +67,12 @@
     body > main > section:nth-child(1) section:nth-child(3) > article > h1 {
         font-family: "Roboto",sans-serif;
         font-weight: bolder;
-        font-size: 31px;
+        font-size: 29px;
         letter-spacing: -1px;
         text-align: left;
         color: #35858B;
         position: absolute;
-        top: 11.85vw;
+        top: 12.56vw;
         left: 70px;
     }
 
@@ -175,7 +175,7 @@
 
     body > main > section:nth-child(1) section:nth-child(3) > nav {
         position: absolute;
-        bottom: 3.8vw;
+        bottom: 6vw;
         left: 0;
         margin: auto;
         z-index: 1;
