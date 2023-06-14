@@ -2,200 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS Data Types</title>
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="assests/css/bootstrap.css">
+
+    <style>
+        .button:active {
+            background-color: white;
+        }
+    </style>
 </head>
-<body>
-<h1>JS Data Types</h1>
-<p>What are the data types.?</p>
-<p>Data types are types which we can use to
-    assign different types of data</p>
-<br>
-<h3>So in JS we Have 9 data types</h3>
-<ul>
-    <li>Primitive Data Types
-        <ul>
-            <li>String</li>
-            <li>Number</li>
-            <li>Boolean</li>
-            <li>Undefined</li>
-            <li>Symbol</li>
-            <li>BigInt</li>
-        </ul>
-    </li>
-    <li>Structural Data Types
-        <ul>
-            <li>Objects</li>
-            <li>Function</li>
-        </ul>
-    </li>
-    <li>Structural Root Primitive
-        <ul>
-            <li>Null</li>
-        </ul>
-    </li>
-</ul>
+<body class="bg-light">
+    <div class="container bg-light h3 position-absolute top-50 start-50 translate-middle" style="height: 910px; width: 600px;box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border-radius: 30px;">
+        <div class="row bg-light" style="border-radius: 30px">
 
-<script>
+            <div class="col-xxl-12" style="height: 100px">
+                <div class="row justify-content-center">
+                    <h1 class="text-dark text-center mt-3">Calculator</h1>
+                </div>
+            </div>
 
-    //Data types
+            <div class="col-xxl-12 bg-light" style="height: 200px">
+                <div class="row justify-content-center mt-1">
+                    <input class="inputNumbers" placeholder="0" style="width: 450px; height: 190px;box-shadow: 5px 5px 32px rgba(13,39,80,0.25) inset,-10px 10px 15px #fff;border: none; background-color: transparent; color: #2c3034; border-radius: 10px; font-size: 50px; text-align: right">
+                </div>
+            </div>
 
-    //Primitive DataTyped
-    //01.String
-    //02.Number
-    //03.Boolean
-    //04.Undefined
-    //05.Symbol
-    //06.BigInt
+            <div class="col-xxl-12 mt-3" style="height: 100px">
+                <div class="row mt-3 justify-content-center" style="height: 90px">
+                    <button id="btnC" class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">C</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">%</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent"><img src="assests/images/icons8-clear-50.png" style="width: 50%"></button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">/</button>
+                </div>
+            </div>
 
-    //Structural Primitive
-    //07.Object
-    //08.Function
+            <div class="col-xxl-12 mt-3" style="height: 100px">
+                <div class="row mt-3 justify-content-center" style="height: 90px">
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">7</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">8</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">9</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">*</button>
+                </div>
+            </div>
 
-    //Root Structural Primitive
-    //09.Null
+            <div class="col-xxl-12 mt-3" style="height: 100px">
+                <div class="row mt-3 justify-content-center" style="height: 90px">
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">4</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">5</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">6</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">-</button>
+                </div>
+            </div>
 
+            <div class="col-xxl-12 mt-3" style="height: 100px">
+                <div class="row mt-3 justify-content-center" style="height: 90px">
+                    <button class="button col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">1</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">2</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">3</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">+</button>
 
-    // 01.String
-    //There are three ways of assigning string values
-    // let name = "Iman DOI";
-    // let age = '100';
+                </div>
+            </div>
 
-    //special with js (String literals)
-    // let address = `
-    // No 123  A/9
-    // ${name}
-    // IJSE
-    // Panadura
-    // `;
+            <div class="col-xxl-12 mt-3" style="height: 100px">
+                <div class="row mt-3 justify-content-center" style="height: 90px">
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">AC</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">0</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">.</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">=</button>
+                </div>
+            </div>
 
-
-    // String related methods
-    // let string = "   Institute of Software Engineering    ";
-
-    // let a=string.toUpperCase();
-    // console.log(a);
-    //
-    // let b=string.toLowerCase();
-    // console.log(b);
-
-    //remove all the white spaces on both sides of the string
-    // console.log(string.length);
-    // let c = string.trim();
-    // console.log(c);
-    // console.log(c.length);
-
-
-    // console.log(string.length);
-    // let d=string.trimLeft();//remove the white spaces of the string only from left side
-    // console.log(d);
-    // console.log(d.length);
-
-
-    // console.log(string.length);
-    // let e=string.trimRight(); // if you wanted to remove the white spaces from a string
-    // //from the right side you can use this
-    // console.log(e);
-    // console.log(e.length);
-
-
-    //return the character of the String
-    // string.charAt(3); // I
-
-    //this will return the Char Code of the String
-    //  string.charCodeAt(3); // I = 73
-
-
-    // string.indexOf("I");
-    // return the first index number of the character
-    //if there is no string it will return -1
-
-    // string.substring(0,10);
-    //can select a range of string between two index numbers
-
-    // string.split(",");// returns an array
-    //will separator and return an array of values using the given separator
-
-
-
-    //02.Numbers
-    let decimal=20;
-    console.log(typeof decimal);//number
-
-    let binaryNumber=0b101;
-    console.log(typeof binaryNumber); //number
-
-    let ocatalNumber=0o17;
-    console.log(typeof ocatalNumber);//number
-
-    let hexaDecimal=0xA;
-    console.log(typeof hexaDecimal);//number
-
-    let floatingPoint=20.34;
-    console.log(typeof floatingPoint);//number
-
-
-    // but if you exceeded the value which you can use
-    //under number type
-    // Number.MAX_SAFE_INTEGER (9,007,199,254,740,991);
-
-    // then there is a new type called BigInt which was introduced to JS later
-
-    //How to create a BigInt data type value
-    let bigInt=100n;
-    console.log(typeof bigInt); //bigint
-
-
-
-    //03.Boolean
-    let married=true;
-    let haveAGF=false;
-
-    //04.Undefined
-    //JS is a loose-type language
-    //so there is no type for variables
-    //type is defined by the value which we
-    //assigned, so if there is no value
-    //there should be a type for identifiers
-    //So that is where undefined is used
-
-
-
-    //05.Symbol
-    //
-
-    //06.BigInt
-
-
-    //07.Objects
-    let name="Ushan";
-    let age =20;
-    let married=true;
-
-    var details=["Ushan",20,true];
-
-    //literal-base
-    let customer={
-        name:"Ushan",
-        age:20,
-        married:true
-    }
-
-    //dot notation
-    customer.name;
-    customer.age;
-    customer.married;
-
-    //bracket notation
-    customer['name'];
-
-
-    //08.Functions
-    //Discuss this externally in Case 06
-
-
-    //09. Null
-
-
-</script>
+        </div>
+    </div>
+    <script src="assests/JScript/jquery-3.7.0.min.js"></script>
 </body>
 </html>

@@ -165,8 +165,8 @@ body > main > section:nth-child(1) section:nth-child(3) > div > button:nth-child
 
 body > main > section:nth-child(1) section:nth-child(3) > nav {
     position: absolute;
-    bottom: 262px;
-    left: 450px;
+    bottom: 180px;
+    left: 430px;
     margin: auto;
 }
 
