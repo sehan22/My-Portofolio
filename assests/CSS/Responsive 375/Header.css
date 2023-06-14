@@ -1,4 +1,13 @@
 @media all and (max-width: 375px) {
+    body{
+        overflow-y: scroll;
+        overflow-x:hidden ;
+    }
+
+    body::-webkit-scrollbar{
+        display: none;
+    }
+
     body > header {
         position: sticky;
         top: 0;

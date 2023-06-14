@@ -85,7 +85,7 @@
         width: 100%;
         height: max-content;
         position: absolute;
-        top: 45px;
+        top: 50px;
     }
 
     body > main > section:nth-child(2) > section:nth-child(1) > article > p:nth-child(5) {
@@ -120,7 +120,7 @@
         color: #4B4954;
         text-align: center;
         position: absolute;
-        top: 195px;
+        top: 200px;
     }
 
     body > main > section:nth-child(2) > section:nth-child(1) > article > h4:nth-child(8) {
@@ -199,7 +199,7 @@
     }
 
     body > main > section:nth-child(2) > section:nth-child(2) {
-        opacity: 0;
+        display: none;
     }
 
     body > main > section:nth-child(2) > section:nth-child(2) > img:nth-child(3) {

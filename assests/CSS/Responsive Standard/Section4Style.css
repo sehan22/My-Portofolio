@@ -46,6 +46,10 @@ body > main > section:nth-child(4) > section:nth-child(1) > p {
     font-size: 17px;
     color: #4B4954;
     text-align: center;
+    width:60%;
+    justify-content: center;
+    margin: auto;
+    padding-top: 30px;
 }
 
 body > main > section:nth-child(4) > section:nth-child(2) {

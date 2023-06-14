@@ -1,4 +1,5 @@
 @media all and (max-width: 768px) {
+
     body > header {
         position: sticky;
         top: 0;
