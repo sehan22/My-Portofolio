@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KNIGHT</title>
+
+    <style>
+        * {
+            background-color: #2c3034;
+            margin: 0;
+            padding: 0;
+        }
+
+        body > h1 {
+            color: #bb2d3b;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            position: absolute;
+            margin: auto;
+            top: 300px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            justify-content: center;
+        }
+
+        body > div:nth-child(2) {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 800px;
+            height: 200px;
+            border-top: 5px solid #cbccce;
+            border-bottom: 5px solid #cbccce;
+        }
+
+        body > div:nth-child(2) > div {
+            position: relative;
+            height: 60px;
+            margin: 10px;
+            flex-grow: 1;
+            background-color: white;
+        }
+
+        body > div:nth-child(3) {
+            width: 250px;
+            height: 60px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 350px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        body > div:nth-child(3) > button {
+            margin: 10px;
+            height: 40px;
+            flex-grow: 1;
+            position: relative;
+            left: 0;
+            right: 0;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #bb2d3b;
+            border: none;
+            box-shadow: 0 0 20px -5px black;
+            color: white;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+
+        body > div:nth-child(3) > button:focus {
+            box-shadow: 0 0 10px -5px black;
+        }
+
+        body > div:nth-child(3) > button:nth-child(1) {
+            background-color: white;
+            color: #bb2d3b;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Knight Rider</h1>
+
+    <div class="lightsContainer">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </div>
+
+    <div>
+        <button type="button" id="btnStart">Start</button>
+        <button type="button" id="btnEnd">End</button>
+    </div>
+
+    <script src="assests/JS/jquery-3.7.0.min.js"></script>
+
+    <script>
+        let light = document.getElementsByClassName("light");
+
+        let audioKnightRider=new Audio();
+        audioKnightRider.src="assests/audio/knightrider-20091.mp3";
+
+        let colorArr = ["#FF7676","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF",'#FFFFFF',"#FFCCCC","#FF7676","#FF0000"];
+        let colorArr2 = ["#FF7676","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF","#FFFFFF",'#FFFFFF',"#FFCCCC","#FF7676","#FF0000"];
+
+        console.log(colorArr2.length);
+        console.log(light.length);
+
+        let interval;
+        let isDo=true;
+        let count=0;
+
+        $("#btnStart").click(function (){
+            audioKnightRider.play();
+            clearInterval(interval);
+
+            interval = setInterval(function (){
+
+                if (isDo){
+                    for (let i = 0; i <light.length; i++) {
+                        light[i].style.backgroundColor = colorArr[i];
+                    }
+
+                    let value = colorArr.pop();
+                    colorArr.unshift(value);
+                    count++;
+
+                    if (count == 12){
+                        isDo = false;
+                    }
+
+                }if (isDo == false){
+
+                    let lastColor = colorArr2.shift();
+                    colorArr2.push(lastColor);
+
+                    for (let i = 0; i < light.length; i++) {
+                        light[i].style.backgroundColor = colorArr2[i];
+                    }
+                    count--;
+
+                    if (count == 1){
+                        isDo = true;
+                    }
+                }
+
+            },100);
+        });
+
+        $("#btnEnd").click(function (){
+            audioKnightRider.pause();
+            clearInterval(interval);
+        });
+    </script>
+</body>
+</html>

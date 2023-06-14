@@ -165,19 +165,19 @@ body > main > section:nth-child(1) section:nth-child(3) > div > button:nth-child
 
 body > main > section:nth-child(1) section:nth-child(3) > nav {
     position: absolute;
-    bottom: 18.5vh;
-    left: 22vw;
+    bottom: 262px;
+    left: 450px;
     margin: auto;
 }
 
 body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 1.5vw;
+    margin-right: 30px;
 }
 
 body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a {
-    font-size: 2vw;
+    font-size: 40px;
 }
 
 body > main > section:nth-child(1) section:nth-child(3) > nav > ul > li > a > i{
