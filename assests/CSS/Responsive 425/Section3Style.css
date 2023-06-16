@@ -1,10 +1,9 @@
-@media all and (max-width: 768px) {
+@media all and (max-width: 425px) {
     body > main > section:nth-child(3) {
         position: relative;
         width: 100%;
-        height: 150px;
-        display: flex;
-        margin-top: -50px;
+        height: 850px;
+        margin-top: -20px;
     }
 
     body > main > section:nth-child(3) > section {
@@ -14,34 +13,64 @@
     body > main > section:nth-child(3) > section:nth-child(1) {
         position: absolute;
         left: 0;
-        width: 65%;
-        height: 150px;
+        width: 100%;
+        top: 150px;
+        height: 700px;
+        background-color: white;
     }
 
     body > main > section:nth-child(3) > section:nth-child(2) {
         position: absolute;
         right: 0;
-        width: 35%;
+        width: 100%;
         height: 150px;
     }
 
     body > main > section:nth-child(3) > section:nth-child(1) > div {
-        display: flex;
         position: absolute;
         right: 0;
+        left: 0;
+        margin: 30px auto auto;
+        width: 300px;
+        height: 700px;
     }
 
     body > main > section:nth-child(3) > section:nth-child(1) > div > div{
-        width: 130px;
-        height: 130px;
+        position: absolute;
+        width: 200px;
+        height: 200px;
         overflow: hidden;
-        position: relative;
-        right: 0;
-        margin: auto auto auto 15px;
         background-color: white;
         box-shadow: 5px 5px 20px -5px #A6A6A6;
         border-radius: 2px;
         transition: 0.5s;
+        z-index: 2;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(1) > div > div:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin: auto;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(1) > div > div:nth-child(2) {
+        position: absolute;
+        top: 220px;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin: auto;
+    }
+
+    body > main > section:nth-child(3) > section:nth-child(1) > div > div:nth-child(3) {
+        position: absolute;
+        top: 440px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     body > main > section:nth-child(3) > section:nth-child(1) > div > div:hover {
@@ -81,7 +110,7 @@
     }
 
     body > main > section:nth-child(3) > section:nth-child(1) > div > div > p {
-        opacity: 0;
+        display: none;
     }
 
     body > main > section:nth-child(3) > section:nth-child(1) > div > div:hover > h2 {
@@ -93,7 +122,7 @@
     }
 
     body > main > section:nth-child(3) > section:nth-child(2) > article {
-        width: 180px;
+        width: 250px;
         height: 180px;
         max-height: 180px;
         min-height: 180px;
@@ -101,7 +130,8 @@
         margin: auto;
         top: 10px;
         bottom: 0;
-        left: 10%;
+        left: 0;
+        right: 0;
         text-align: center;
     }
 
@@ -122,6 +152,10 @@
         color: #35858B;
         letter-spacing: 1px;
         position: relative;
+        margin: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 
     body > main > section:nth-child(3) > section:nth-child(2) > article > h4 {
@@ -130,7 +164,11 @@
         font-size: 12px;
         color: #4B4954;
         padding-top: 25px;
-        position: relative;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 250px;
+        text-align: center;
     }
 
     body > main > section:nth-child(3) > section:nth-child(2) > article > button {
@@ -141,8 +179,11 @@
         font-weight: bold;
         font-size: 9px;
         color: white;
-        position: relative;
-        bottom: 85px;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        right: 0;
+        margin: auto;
         border-radius: 2px;
         letter-spacing: 1px;
         box-shadow: 5px 5px 20px -5px #A6A6A6;
