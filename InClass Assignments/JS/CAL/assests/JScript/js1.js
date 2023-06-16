@@ -3,6 +3,9 @@ let buttons = document.querySelectorAll('button');
 
 let string = "";
 let array = Array.from(buttons);
+
+string.value
+
 array.forEach(button => {
     button.addEventListener('click',(e) => {
         if (e.target.innerHTML == '=') {
@@ -14,6 +17,9 @@ array.forEach(button => {
             string = '';
             input.value = string;
         }
+
+        else if    
+
         else if (e.target.innerHTML == 'DEL') {
             string = string.substring(0, string.length-1);
             input.value = string;
@@ -25,3 +31,4 @@ array.forEach(button => {
         }
     })
 })
+
