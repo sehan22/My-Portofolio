@@ -195,13 +195,13 @@
 
       <div class="col-xxl-2" style="height: 70px">
         <div class="row justify-content-end">
-          <button class="btn btn-outline-danger col-xxl-6" type="submit">Cancel</button>
+          <button id="btnCustomerUpdate" class="btn btn-outline-danger col-xxl-6" type="submit">Update</button>
         </div>
       </div>
 
       <div class="col-xxl-2" style="height: 70px">
         <div class="row justify-content-center">
-          <button class="btn btn-outline-warning col-xxl-6" type="submit">Delete</button>
+          <button id="btnCustomerDelete" class="btn btn-outline-warning col-xxl-6" type="submit">Delete</button>
         </div>
       </div>
 
@@ -210,6 +210,7 @@
           <button id="btnCustomerSave" class="btn btn-outline-success col-xxl-6" type="submit">Save</button>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -296,19 +297,20 @@
 
       <div class="col-xxl-6">
         <div class="row justify-content-center">
-          <input class="col-xxl-11 text-light" id="txtProductDiscription" type="text" name="customer id" placeholder="Description" style="height: 60px; background-color: transparent;">
+          <input class="col-xxl-11 text-light" id="txtProductDescription" type="text" name="customer id" placeholder="Description" style="height: 60px; background-color: transparent;">
         </div>
       </div>
 
       <div class="col-xxl-6">
         <div class="row justify-content-center">
-          <input class="col-xxl-11 text-light" id="txtUnitPrice" type="number" name="customer id" placeholder="Unit Price" style="height: 60px; background-color: transparent;">
+          <!--<input class="col-xxl-11 text-light" id="txtUnitPrice" type="number" name="customer id" placeholder="Unit Price" style="height: 60px; background-color: transparent;">-->
+          <input class="col-xxl-11 text-light" id="txtUnitPrice" type="text" name="customer id" placeholder="Unit Price" style="height: 60px; background-color: transparent;">
         </div>
       </div>
 
       <div class="col-xxl-6">
         <div class="row justify-content-center">
-          <input class="col-xxl-11 text-light" id="txtQTY" type="number" name="customer id"  placeholder="QTY" style="height: 60px; background-color: transparent;">
+          <input class="col-xxl-11 text-light" id="txtQty" type="text" name="customer id" placeholder="QTY" style="height: 60px; background-color: transparent;">
         </div>
       </div>
 
@@ -320,13 +322,13 @@
 
       <div class="col-xxl-2" style="height: 70px">
         <div class="row justify-content-end">
-          <button class="btn btn-outline-danger col-xxl-6" type="submit">Cancel</button>
+          <button id="btnUpdateItem" class="btn btn-outline-danger col-xxl-6" type="submit">Update</button>
         </div>
       </div>
 
       <div class="col-xxl-2" style="height: 70px">
         <div class="row justify-content-center">
-          <button class="btn btn-outline-warning col-xxl-6" type="submit">Delete</button>
+          <button id="btnDeleteItem" class="btn btn-outline-warning col-xxl-6" type="submit">Delete</button>
         </div>
       </div>
 
@@ -340,10 +342,9 @@
 
   <div class="container bg-dark mt-5" id="itemsTable" style="box-shadow: 0 0 40px 0 #000000">
     <div class="p-5">
-      <table class="table text-light" id="itemTable">
+      <table id="itemTable" class="table text-light">
         <thead>
         <tr>
-          <th scope="col">#</th>
           <th scope="col">Product Id</th>
           <th scope="col">Description</th>
           <th scope="col">Unit Price(Rs.)</th>
@@ -351,22 +352,19 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <th scope="row">1</th>
+<!--        <tr>
           <td>P001</td>
           <td>Headset</td>
           <td>2500</td>
           <td>15</td>
         </tr>
         <tr>
-          <th scope="row">2</th>
           <td>P002</td>
           <td>School Bag</td>
           <td>3200</td>
           <td>10</td>
         </tr>
         <tr>
-          <th scope="row">3</th>
           <td>P003</td>
           <td>Volleyball</td>
           <td>4700</td>
@@ -374,12 +372,11 @@
         </tr>
 
         <tr>
-          <th scope="row">4</th>
           <td>P004</td>
           <td>Sprite  Bottle</td>
           <td>320</td>
           <td>23</td>
-        </tr>
+        </tr>-->
         </tbody>
       </table>
     </div>
@@ -568,6 +565,8 @@
   </div>
 </footer>
 
+<script src="assests/js/jquery-3.7.0.min.js"></script>
+
 <script>
   document.getElementById("btnCustomerSave").addEventListener("click",function () {
     var row = document.createElement('tr');
@@ -591,28 +590,211 @@
     customerTable.appendChild(row);
   });
 
+/*  document.getElementById("btnCustomerUpdate").addEventListener("click", function () {
+    var selectedRow = document.querySelector("#customerTable tr.selected");
+    console.log(selectedRow)
+    if (selectedRow) {
+      var col1 = selectedRow.cells[0];
+      var col2 = selectedRow.cells[1];
+      var col3 = selectedRow.cells[2];
+      var col4 = selectedRow.cells[3];
+
+      col1.textContent = txtCustomerId.value;
+      col2.textContent = txtCustomerName.value;
+      col3.textContent = txtAddress.value;
+      col4.textContent = txtPhoneNumber.value;
+
+      selectedRow.classList.remove("selected");
+    }
+  });*/
+
+  $("#btnCustomerUpdate").click(function () {
+
+    alert("need update")
+    cusID = $('#txtProductId').val();
+    cusName = $('#txtProductDescription').val();
+    cusAddress = $('#txtUnitPrice').val();
+    cusContact = $('#txtQTY').val();
+
+    console.log(cusID, cusName, cusAddress, cusContact);
+
+    // Find the customer to update in the existing customers array (assuming it's named 'allCustomers')
+    let customerToUpdate = allCustomers.find(function (customer) {
+      return customer.ID === cusID;
+    });
+
+    if (customerToUpdate) {
+      // Update the customer details
+      customerToUpdate.name = cusName;
+      customerToUpdate.address = cusAddress;
+      customerToUpdate.content = cusContact;
+
+      console.log(allCustomers);
+
+      // Find the corresponding table row and update its content
+      let rowToUpdate = $("#cusTableBody").find("td:contains(" + cusID + ")").closest("tr");
+      rowToUpdate.html('<td>' + cusID + '</td><td>' + cusName + '</td><td>' + cusAddress + '</td><td>' + cusContact + '</td>');
+
+      console.log("Customer updated successfully.");
+    } else {
+      console.log("Customer with ID " + cusID + " not found.");
+    }
+  });
+
+
 
   document.getElementById("btnSaveItem").addEventListener("click",function () {
-    let row = document.createElement('tr');
+    var itemrow = document.createElement('tr');
 
-    let col = document.createElement('td');
-    let col2 = document.createElement('td');
-    let col3 = document.createElement('td');
-    let col4 = document.createElement('td');
+    var itemcol = document.createElement('td');
+    var itemcol2 = document.createElement('td');
+    var itemcol3 = document.createElement('td');
+    var itemcol4 = document.createElement('td');
 
-    col.textContent = txttxtProductId.value;
-    col2.textContent = txtProductDiscription.value;
-    col3.textContent = txtUnitPrice.value;
-    col4.textContent = txtQTY.value;
+    itemcol.textContent = txtProductId.value;
+    itemcol2.textContent = txtProductDescription.value;
+    itemcol3.textContent = txtUnitPrice.value;
+    itemcol4.textContent = txtQty.value;
 
-    row.appendChild(col);
-    row.appendChild(col2);
-    row.appendChild(col3);
-    row.appendChild(col4);
+    itemrow.appendChild(itemcol);
+    itemrow.appendChild(itemcol2);
+    itemrow.appendChild(itemcol3);
+    itemrow.appendChild(itemcol4);
 
-    let customerTable = document.getElementById("itemsTable");
-    customerTable.appendChild(row);
+    let itemTable = document.getElementById("itemTable");
+    itemTable.appendChild(itemrow);
   });
+
+  $("#customerTable").on("click", "tr", function () {
+    let selectedRow = $(this);
+    let selectedID = selectedRow.find("td:eq(0)").text();
+    let selectedName = selectedRow.find("td:eq(1)").text();
+    let selectedAddress = selectedRow.find("td:eq(2)").text();
+    let selectedContact = selectedRow.find("td:eq(3)").text();
+
+    $('#txtCustomerId').val(selectedID);
+    $('#txtCustomerName').val(selectedName);
+    $('#txtAddress').val(selectedAddress);
+    $('#txtPhoneNumber').val(selectedContact);
+  });
+
+  $("#itemTable").on("click", "tr", function () {
+    let selectedRow = $(this);
+    let selectedID = selectedRow.find("td:eq(0)").text();
+    let selectedName = selectedRow.find("td:eq(1)").text();
+    let selectedAddress = selectedRow.find("td:eq(2)").text();
+    let selectedContact = selectedRow.find("td:eq(3)").text();
+
+    $('#txtProductId').val(selectedID);
+    $('#txtProductDescription').val(selectedName);
+    $('#txtUnitPrice').val(selectedAddress);
+    $('#txtQTY').val(selectedContact);
+  });
+
+  $("#btnCustomerUpdate").on("click", function () {
+    // Get the selected row
+    var selectedRow = $("#customerTable tr.selected");
+
+    // If a row is selected, update its data
+    if (selectedRow.length > 0) {
+      selectedRow.children("td:eq(0)").text($("#txtCustomerId").val());
+      selectedRow.children("td:eq(1)").text($("#txtCustomerName").val());
+      selectedRow.children("td:eq(2)").text($("#txtAddress").val());
+      selectedRow.children("td:eq(3)").text($("#txtPhoneNumber").val());
+
+      // Clear the selection
+      selectedRow.removeClass("selected");
+    }
+  });
+
+  $("#txtCustomerId").on("input", function() {
+    validateCustomerId();
+  });
+
+  function validateCustomerId() {
+    var customerId = $("#txtCustomerId").val();
+    var customerIdRegex = /^C\d{2}-\d{3}$/;
+
+    if (customerIdRegex.test(customerId)) {
+      $("#txtCustomerId").css("border","solid 1px green");
+      $("#txtCustomerName").focus();
+    } else {
+      $("#txtCustomerId").css("border","solid 1px red");
+    }
+  }
+
+  $("#txtCustomerName").on("input", function() {
+    validateCustomerName();
+  });
+
+  function validateCustomerName() {
+    var customerName = $("#txtCustomerName").val();
+    var customerNameRegex = /^[A-Za-z\s]+$/;
+
+    if (customerName.length === 10 && customerNameRegex.test(customerName)) {
+      $("#txtCustomerName").css("border","solid 1px green");
+      $("#txtAddress").focus();
+    } else {
+      $("#txtCustomerName").css("border","solid 1px red");
+    }
+  }
+
+/*  $("#txtAddress").on("input", function() {
+    validateAddress();
+  });
+
+  function validateAddress() {
+    var address = $("#txtAddress").val();
+    var addressRegex = /^[A-Za-z0-9]+$/;
+
+    if (addressRegex.test(address)) {
+      $("#txtAddress").css("border","solid 1px green");
+      $("#txtPhoneNumber").focus();
+    } else {
+      $("#txtAddress").css("border","solid 1px red");
+    }
+  }
+
+  $("#txtPhoneNumber").on("input", function() {
+    validatePhoneNumber();
+  });*/
+
+  function validatePhoneNumber() {
+    var phoneNumber = $("#txtPhoneNumber").val();
+    var phoneNumberRegex = /^[0-9+]+$/;
+
+    if (phoneNumberRegex.test(phoneNumber)) {
+      $("#txtPhoneNumber").css("border","solid 1px green");
+    } else {
+      $("#txtPhoneNumber").css("border","solid 1px red");
+    }
+  }
+
+
+
+/*  $('#customerTable>tr').click(function(){
+    let id=$(this).children().eq(0).text();
+    let name=$(this).children().eq(1).text();
+    let address=$(this).children().eq(2).text();
+    let salary=$(this).children().eq(4).text();
+    console.log(id, name, address, salary);
+  })*/
+
+/*  $("#btnCustomerDelete").click (function () {
+    let selectedRow = $(this);
+    let selectedID = selectedRow.find("td:eq(0)").text();
+    let selectedName = selectedRow.find("td:eq(1)").text();
+    let selectedAddress = selectedRow.find("td:eq(2)").text();
+    let selectedContact = selectedRow.find("td:eq(3)").text();
+
+    $('#txtCustomerId').val(selectedID);
+    $('#txtCustomerName').val(selectedName);
+    $('#txtAddress').val(selectedAddress);
+    $('#txtPhoneNumber').val(selectedContact);
+
+    selectedRow.remove();
+  });*/
+
 
 
   document.getElementById("customersInfo").style.display="none";
@@ -677,4 +859,3 @@
     $("h1").css('color','red');
   </script>
 </body>
-</html>

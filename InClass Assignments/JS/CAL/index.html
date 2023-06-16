@@ -12,7 +12,7 @@
     </style>
 </head>
 <body class="bg-light">
-    <div class="container bg-light h3 position-absolute top-50 start-50 translate-middle" style="height: 910px; width: 600px;box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border-radius: 30px;">
+    <div class="container bg-light h3 position-absolute top-50 start-50 translate-middle" style="height: 910px; width: 600px;box-shadow: -8px -8px 15px rgba(225,225,225,0.1),5px 5px 15px rgba(0,0,0,0.2); border-radius: 30px;">
         <div class="row bg-light" style="border-radius: 30px">
 
             <div class="col-xxl-12" style="height: 100px">
@@ -23,16 +23,16 @@
 
             <div class="col-xxl-12 bg-light" style="height: 200px">
                 <div class="row justify-content-center mt-1">
-                    <input class="inputNumbers" placeholder="0" style="width: 450px; height: 190px;box-shadow: 5px 5px 32px rgba(13,39,80,0.25) inset,-10px 10px 15px #fff;border: none; background-color: transparent; color: #2c3034; border-radius: 10px; font-size: 50px; text-align: right">
+                    <input class="inputNumbers" placeholder="0" type="text" id="inputBox" style="width: 450px; height: 190px;box-shadow: 5px 5px 32px rgba(13,39,80,0.25) inset,-10px 10px 15px #fff; border: none; background-color: transparent; color: #2c3034; border-radius: 10px; font-size: 70px; text-align: right">
                 </div>
             </div>
 
             <div class="col-xxl-12 mt-3" style="height: 100px">
                 <div class="row mt-3 justify-content-center" style="height: 90px">
-                    <button id="btnC" class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">C</button>
-                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">%</button>
-                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent"><img src="assests/images/icons8-clear-50.png" style="width: 50%"></button>
-                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">/</button>
+                    <button class="operations col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">AC</button>
+                    <button class="operations col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">DEL</button>
+                    <button class="operations col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">%</button>
+                    <button class="operations col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">/</button>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@
                     <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">7</button>
                     <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">8</button>
                     <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">9</button>
-                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">*</button>
+                    <button class="operations col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">*</button>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                     <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">4</button>
                     <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">5</button>
                     <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">6</button>
-                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">-</button>
+                    <button class="operations col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">-</button>
                 </div>
             </div>
 
@@ -59,22 +59,23 @@
                     <button class="button col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">1</button>
                     <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">2</button>
                     <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">3</button>
-                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">+</button>
+                    <button class="operations col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">+</button>
 
                 </div>
             </div>
 
             <div class="col-xxl-12 mt-3" style="height: 100px">
                 <div class="row mt-3 justify-content-center" style="height: 90px">
-                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">AC</button>
-                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">0</button>
                     <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">.</button>
-                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-light bg-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">=</button>
+                    <button class="col-xxl-3 ms-3 me-4 rounded-circle text-dark" type="button" style="width: 90px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">0</button>
+                    <button class="col-xxl-6 ms-3 me-4 text-dark bg-light" type="button" style="width: 220px; border-radius: 30px; box-shadow: 12px 12px 32px rgba(13,39,80,0.25),-10px 10px 15px #fff; border: none; background-color: transparent">=</button>
                 </div>
             </div>
 
         </div>
     </div>
+
     <script src="assests/JScript/jquery-3.7.0.min.js"></script>
+    <script src="assests/JScript/js1.js"></script>
 </body>
 </html>
