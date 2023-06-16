@@ -24,11 +24,10 @@
 
     body > header > img {
         position: absolute;
-        top: 35%;
-        left: 10px;
-        width: 48px;
+        top: 20%;
+        left: 135px;
+        width: 50px;
         height: 13px;
-        opacity: 0;
     }
 
     body > header > nav {
@@ -39,15 +38,15 @@
     body > header > nav > ul {
         position: relative;
         margin: auto;
-        right: 82%;
-        top: 2.5%;
+        right: 85%;
+        top: 22%;
     }
 
     body > header > nav > ul > li {
         position: relative;
         left: 290px;
         font-family: "Roboto Light",sans-serif;
-        font-weight: normal;
+        font-weight: bolder;
         font-size: 8px;
         margin-left: 3px;
         display: inline-block;

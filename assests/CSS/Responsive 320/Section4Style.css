@@ -1,4 +1,4 @@
-@media all and (max-width: 768px) {
+@media all and (max-width: 320px) {
     body > main > section:nth-child(4) {
         width: 100%;
         height: max-content;
@@ -8,7 +8,7 @@
 
     body > main > section:nth-child(4) > section:nth-child(1) {
         width: 100%;
-        height: max-content;
+        height: 150px;
         padding-bottom: 10px;
         background-color: whitesmoke;
     }
@@ -46,8 +46,13 @@
         font-family: 'Akshar Unicode', sans-serif;
         font-weight: lighter;
         font-size: 12px;
+        width: 80%;
         color: #4B4954;
         text-align: center;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
     body > main > section:nth-child(4) > section:nth-child(2) {
@@ -55,8 +60,7 @@
         padding: 0;
         box-sizing: border-box;
     }
-
-    body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) {
+(4) > section:nth-child(2) > section:nth-child(1) {
         display: flex;
         justify-items: center;
         align-items: center;
@@ -66,16 +70,16 @@
         left: 0;
         right: 0;
         margin: auto;
+        background-color: white;
     }
-
-    body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) > div {
+(4) > section:nth-child(2) > section:nth-child(1) > div {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 100px 50px;
-        padding: 90px 50px;
+        padding: 100px 0;
         margin: auto;
     }
 
@@ -84,7 +88,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        width: 350px;
+        width: 280px;
         height: 300px;
         background-color: #ffffff;
         border-radius: 5px;
@@ -98,7 +102,7 @@
 
     body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(1) {
         position: absolute;
-        width: 350px;
+        width: 280px;
         height: 220px;
         background-color: #072227;
         border-top-left-radius: 5px;
@@ -127,7 +131,7 @@
     body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) {
         position: absolute;
         top: 225px;
-        width: 100%;
+        width: 81.2%;
         padding: 0 30px;
         height: 45px;
         overflow: hidden;
@@ -136,8 +140,8 @@
     }
 
     body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) > div > div:hover > div:nth-child(2) {
-        height: 250px;
-        top: 150px;
+        height: 290px;
+        top: 110px;
     }
 
     body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) > h2 {
@@ -167,6 +171,8 @@
         box-shadow: 5px 5px 10px -5px #A6A6A6;
         cursor: pointer;
         transition: 0.5s;
+        position: relative;
+        bottom: 15px;
     }
 
     body > main > section:nth-child(4) > section:nth-child(2) > section:nth-child(1) > div > div > div:nth-child(2) > button:hover {
