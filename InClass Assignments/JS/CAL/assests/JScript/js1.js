@@ -16,9 +16,7 @@ array.forEach(button => {
         else if (e.target.innerHTML == 'AC') {
             string = '';
             input.value = string;
-        }
-
-        else if    
+        } 
 
         else if (e.target.innerHTML == 'DEL') {
             string = string.substring(0, string.length-1);
