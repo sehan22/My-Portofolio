@@ -1,13 +1,10 @@
-@media all and (max-width: 768px) {
+@media all and (max-width: 768px) and (min-width: 426px) {
     body > main > section:nth-child(2) {
         position: relative;
         height: 490px;
         display: flex;
         background-color: #F8FEFF;
         margin-top: 50px;
-    }
-
-    body > main > section:nth-child(2) > section {
     }
 
     body > main > section:nth-child(2) > section:nth-child(1) {

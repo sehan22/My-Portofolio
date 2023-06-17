@@ -1,4 +1,4 @@
-@media all and (max-width: 375px) {
+@media all and (max-width: 375px) and (min-width: 321px) {
     body > main > section:nth-child(3) {
         position: relative;
         width: 100%;

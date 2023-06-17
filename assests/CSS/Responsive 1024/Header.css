@@ -1,7 +1,7 @@
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1024px) and (min-width: 769px) {
     body{
         overflow-y: scroll;
-        overflow-x:hidden ;
+        overflow-x: none;
     }
 
     body::-webkit-scrollbar{
@@ -26,7 +26,7 @@
         position: absolute;
         top: 25%;
         left: 80px;
-        width: 170px;
+        width: 150px;
         height: 30px;
     }
 

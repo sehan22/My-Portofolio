@@ -1,4 +1,4 @@
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1024px) and (min-width: 769px) {
     body > main > section:nth-child(4) {
         width: 100%;
         height: max-content;
@@ -13,7 +13,7 @@
         background-color: transparent;
     }
 
-    body > main > section:nth-child(4) > section:nth-child(1) > h4 {
+    body > main > section:nth-child(4) > section:nth-child(1) > dfn > h4 {
         font-family: "Akshar Unicode",sans-serif;
         font-weight: bolder;
         font-size: 1.2vw;
@@ -26,6 +26,7 @@
         margin: auto;
         padding-bottom: 1vw;
         width: max-content;
+        font-style: normal;
     }
 
     body > main > section:nth-child(4) > section:nth-child(1) > h1 {
@@ -48,6 +49,7 @@
         font-size: 1.7vw;
         color: #4B4954;
         text-align: center;
+        width: 80%;
     }
 
     body > main > section:nth-child(4) > section:nth-child(2) {

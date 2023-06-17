@@ -1,332 +1,329 @@
-@media all and (max-width: 1024px) {
-    body > main > section:nth-child(8) > section {
-      margin: auto;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 1200px;
-      background-color: #343a40;
-      display: flex;
-      position: relative;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    body > main > section:nth-child(8) > section > section:nth-child(1) {
-      width: 650px;
-      height: 400px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      align-items: center;
-      margin: 50px auto auto;
-      background-color: #343a40;
-      box-shadow: 0 0 15px -5px #000000;
-      border-radius: 20px;
-      z-index: 2;
-      border-width: 3px;
-      border-style: solid;
-      border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 100%;
-      border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 15%;
-    }
-  
-    body > main > section:nth-child(8) > section > section:nth-child(2) {
-      position: absolute;
-      width: 650px;
-      left: 0;
-      height: 650px;
-      right: 0;
-      align-items: center;
-      margin: 500px auto auto;
-      background-color: #343a40;
-      box-shadow: 0 0 20px -5px #000000;
-      border-radius: 10px;
-      z-index: 1;
-      border-width: 3px;
-      border-style: solid;
-      border-image: linear-gradient(to top, #35858b, rgba(0, 0, 0, 0)) 1 100%;
-      border-image: linear-gradient(to top, #35858b, rgba(0, 0, 0, 0)) 1 15%;
-    }
-  
-    body > main > section:nth-child(8) > section > section:nth-child(1) > h4 {
-      font-family: "Akshar Unicode", sans-serif;
-      font-weight: bolder;
-      font-size: 7px;
-      color: white;
-      letter-spacing: 2px;
-      position: relative;
-      left: 290px;
-      top: 20px;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > dfn
-      > h1 {
-      font-family: "Roboto", sans-serif;
-      font-weight: bolder;
-      font-size: 31px;
-      color: white;
-      letter-spacing: 1px;
-      position: relative;
-      text-align: center;
-      font-style: normal;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > nav
-      > ul
-      > li {
-      list-style-type: none;
-      margin: 28px;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > nav
-      > ul
-      > li
-      > a {
-      text-decoration: none;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > nav:nth-child(3)
-      > ul
-      > li
-      > a
-      > img {
-      width: 35px;
-      transition: 0.3s;
-      position: relative;
-      right: 00px;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > nav:nth-child(3)
-      > ul
-      > li
-      > a
-      > img:hover {
-      transform: scale(1.2);
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > nav:nth-child(3)
-      > ul
-      > li:nth-child(4)
-      > a
-      > img {
-      width: 32px;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > nav:nth-child(4) {
-      position: absolute;
-      top: 80px;
-      left: 70px;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > nav:nth-child(4)
-      > ul
-      > li {
-      margin-bottom: 51px;
-      transition: 0.5s;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > nav:nth-child(4)
-      > ul
-      > li:hover {
-      transform: scale(0.9);
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(1)
-      > nav:nth-child(4)
-      > ul
-      > li
-      > a {
-      font-family: "Akshar Unicode", sans-serif;
-      font-weight: bolder;
-      font-size: 16px;
-      color: white;
-      letter-spacing: 2px;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(2)
-      > fieldset {
-      position: absolute;
-      margin: auto;
-      left: 0;
-      right: 0;
-      top: 80px;
-      height: 460px;
-      width: 300px;
-      border: none;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(2)
-      > fieldset
-      > h3:nth-child(1) {
-      font-family: "Roboto", sans-serif;
-      font-weight: bolder;
-      font-size: 21px;
-      color: #35858b;
-      letter-spacing: 0;
-      position: relative;
-      left: 70px;
-      margin-top: -59px;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(2)
-      > fieldset
-      > input {
-      margin-top: 25px;
-      left: -115px;
-      position: absolute;
-      width: 550px;
-      height: 50px;
-      font-family: "Roboto", sans-serif;
-      font-weight: lighter;
-      font-size: 14px;
-      color: white;
-      border-width: 1px;
-      border-style: solid;
-      border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 10%;
-      border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 15%;
-      border-radius: 3px;
-      box-sizing: border-box;
-      outline: none;
-      transition: 0.5s;
-      background-color: #343a40;
-    }
-  
-    #message {
-      height: 140px;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(2)
-      > fieldset
-      > input:focus {
-      border: 2px solid #007294;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(2)
-      > fieldset
-      > button {
-      position: relative;
-      left: 90px;
-      top: 162px;
-      width: 95px;
-      height: 40px;
-      font-family: "Akshar Unicode", sans-serif;
-      font-weight: bolder;
-      font-size: 13px;
-      color: white;
-      background-color: #35858b;
-      cursor: pointer;
-      box-shadow: 5px 5px 10px -5px #000000;
-      border-radius: 3px;
-      transition: 0.5s;
-      border: 2px solid #35858b;
-    }
-  
-    body
-      > main
-      > section:nth-child(8)
-      > section
-      > section:nth-child(2)
-      > fieldset
-      > button:hover {
-      box-shadow: 5px 5px 10px -10px #a6a6a6;
-      color: #35858b;
-      background-color: white;
-      border: 2px solid #35858b;
-    }
-  
-    body > footer {
-      z-index: 2;
-      position: relative;
-      top: 600px;
-      background-color: #343a40;
-    }
-    body > footer > div {
-      position: absolute;
-      width: 100%;
-      background-color: #343a40;
-      height: 50px;
-    }
-  
-    body > footer > div > h5 {
-      color: white;
-      font-size: 12px;
-      font-family: "Akshar Unicode", sans-serif;
-      font-weight: 300;
-      letter-spacing: 2px;
-      position: relative;
-      margin: auto;
-      justify-content: center;
-      align-items: center;
-      width: max-content;
-    }
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  body > main > section:nth-child(8) {
+    width: 100%;
+    height: 500px;
+    background-color: #343a40;
   }
-  
+
+  body > main > section:nth-child(8) > section {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body > main > section:nth-child(8) > section > section {
+    margin: 20px;
+  }
+
+  body > main > section:nth-child(8) > section > section:nth-child(1) {
+    width: 510px;
+    height: 450px;
+    position: relative;
+    background-color: #343a40;
+    box-shadow: 0 0 15px -5px #000000;
+    border-radius: 10px;
+    z-index: 2;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #35858b, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to right, #35858b, rgba(0, 0, 0, 0)) 1 15%;
+  }
+
+  body > main > section:nth-child(8) > section > section:nth-child(2) {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    background-color: #343a40;
+    box-shadow: 0 0 20px -5px #000000;
+    border-radius: 10px;
+    z-index: 1;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #35858b, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to left, #35858b, rgba(0, 0, 0, 0)) 1 15%;
+  }
+
+  body > main > section:nth-child(8) > section > section:nth-child(1) > h4 {
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 7px;
+    color: white;
+    letter-spacing: 2px;
+    position: relative;
+    left: 150px;
+    top: 20px;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > dfn
+    > h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 31px;
+    color: white;
+    letter-spacing: 1px;
+    position: relative;
+    text-align: center;
+    font-style: normal;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > nav
+    > ul
+    > li {
+    list-style-type: none;
+    margin: 33px;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > nav
+    > ul
+    > li
+    > a {
+    text-decoration: none;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > nav:nth-child(3)
+    > ul
+    > li
+    > a
+    > img {
+    width: 35px;
+    transition: 0.3s;
+    position: relative;
+    top: 25px;
+    left: -30px;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > nav:nth-child(3)
+    > ul
+    > li
+    > a
+    > img:hover {
+    transform: scale(1.2);
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > nav:nth-child(3)
+    > ul
+    > li:nth-child(4)
+    > a
+    > img {
+    width: 32px;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > nav:nth-child(4) {
+    position: absolute;
+    top: 110px;
+    left: 26px;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > nav:nth-child(4)
+    > ul
+    > li {
+    margin-bottom: 52px;
+    transition: 0.5s;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > nav:nth-child(4)
+    > ul
+    > li:hover {
+    transform: scale(0.9);
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(1)
+    > nav:nth-child(4)
+    > ul
+    > li
+    > a {
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(2)
+    > fieldset {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 80px;
+    height: 300px;
+    width: 300px;
+    border: none;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(2)
+    > fieldset
+    > h3:nth-child(1) {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 21px;
+    color: #35858b;
+    letter-spacing: 0;
+    position: relative;
+    left: 70px;
+    margin-top: -59px;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(2)
+    > fieldset
+    > input {
+    margin-top: 0;
+    left: -115px;
+    position: absolute;
+    width: 550px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 10%;
+    border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 15%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.5s;
+    background-color: #343a40;
+  }
+
+  #message {
+    height: 100px;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(2)
+    > fieldset
+    > input:focus {
+    border: 2px solid #007294;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(2)
+    > fieldset
+    > button {
+    position: relative;
+    left: 90px;
+    top: 50px;
+    width: 95px;
+    height: 40px;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    color: white;
+    background-color: #35858b;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px -5px #000000;
+    border-radius: 3px;
+    transition: 0.5s;
+    border: 2px solid #35858b;
+  }
+
+  body
+    > main
+    > section:nth-child(8)
+    > section
+    > section:nth-child(2)
+    > fieldset
+    > button:hover {
+    box-shadow: 5px 5px 10px -10px #a6a6a6;
+    color: #35858b;
+    background-color: white;
+    border: 2px solid #35858b;
+  }
+
+  body > footer {
+    z-index: 2;
+    position: relative;
+    top: 600px;
+    background-color: #343a40;
+  }
+  body > footer > div {
+    position: absolute;
+    width: 100%;
+    background-color: #343a40;
+    height: 50px;
+  }
+
+  body > footer > div > h5 {
+    color: white;
+    font-size: 12px;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+  }
+}
