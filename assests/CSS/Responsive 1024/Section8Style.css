@@ -304,7 +304,7 @@
   body > footer {
     z-index: 2;
     position: relative;
-    top: 600px;
+    top: 0;
     background-color: #343a40;
   }
   body > footer > div {
@@ -316,6 +316,7 @@
 
   body > footer > div > h5 {
     color: white;
+    top: 15px;
     font-size: 12px;
     font-family: "Akshar Unicode", sans-serif;
     font-weight: 300;

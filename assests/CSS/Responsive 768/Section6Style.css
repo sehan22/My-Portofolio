@@ -223,6 +223,7 @@
     position: relative;
     width: 100%;
     height: 200px;
+    margin-top: 30px;
   }
 
   body > main > section:nth-child(6) > section:nth-child(4) > section {
@@ -369,10 +370,22 @@
     letter-spacing: 10px;
   }
 
+  body > main > section:nth-child(6) > h3:nth-child(6) {
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    color: #4b4954;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 20px;
+  }
+
   body > main > section:nth-child(6) > section:nth-child(7) {
     position: relative;
     width: 100%;
     height: 200px;
+    margin-top: 30px;
   }
 
   body > main > section:nth-child(6) > section:nth-child(7) > section {
@@ -438,12 +451,35 @@
     left: 0;
     right: 0;
     margin: auto;
+    text-align: center;
     top: 80%;
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
     font-size: 12px;
     color: white;
     letter-spacing: 10px;
+  }
+
+  body
+    > main
+    > section:nth-child(6)
+    > section:nth-child(7)
+    > section
+    > div:nth-child(2)
+    > a
+    > h2 {
+    margin-top: 10px;
+  }
+
+  body
+    > main
+    > section:nth-child(6)
+    > section:nth-child(7)
+    > section
+    > div:nth-child(3)
+    > a
+    > h2 {
+    margin-top: 10px;
   }
 
   body > main > section:nth-child(6) > section:nth-child(8) {
@@ -460,6 +496,7 @@
     top: 0;
     margin: auto;
     display: flex;
+    width: max-content;
   }
   body > main > section:nth-child(6) > section:nth-child(8) > section > div {
     width: 200px;
@@ -468,6 +505,9 @@
     position: relative;
     left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 20px;
     justify-content: center;
     align-items: center;
     box-shadow: 5px 5px 10px 0 #a6a6a6;
@@ -516,6 +556,8 @@
     position: absolute;
     left: 0;
     right: 0;
+    margin: auto;
+    text-align: center;
     top: 85%;
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;

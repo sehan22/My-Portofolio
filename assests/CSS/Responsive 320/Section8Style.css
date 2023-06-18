@@ -18,6 +18,7 @@
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
     align-items: center;
     margin: 50px auto auto;
     background-color: #343a40;
@@ -149,7 +150,7 @@
     > section:nth-child(1)
     > nav:nth-child(4) {
     position: absolute;
-    top: px;
+    top: 75px;
     left: -5px;
   }
 
@@ -275,7 +276,7 @@
     > button {
     position: relative;
     left: 90px;
-    top: 162px;
+    top: 150px;
     width: 95px;
     height: 40px;
     font-family: "Akshar Unicode", sans-serif;
@@ -306,7 +307,6 @@
   body > footer {
     z-index: 2;
     position: relative;
-    top: 600px;
     background-color: #343a40;
   }
   body > footer > div {
@@ -324,6 +324,7 @@
     letter-spacing: 2px;
     position: relative;
     margin: auto;
+    top: 10px;
     justify-content: center;
     align-items: center;
     width: max-content;

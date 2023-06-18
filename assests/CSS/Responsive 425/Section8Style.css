@@ -19,6 +19,7 @@
         position: absolute;
         left: 0;
         right: 0;
+        top: 0;
         align-items: center;
         margin: 50px auto auto;
         background-color: #343a40;
@@ -172,7 +173,7 @@
     body > main > section:nth-child(8) > section > section:nth-child(2) > fieldset > button {
         position: relative;
         left: 90px;
-        top: 162px;
+        top: 150px;
         width: 95px;
         height: 40px;
         font-family: 'Akshar Unicode', sans-serif;
@@ -194,7 +195,7 @@
         border: 2px solid #35858B;
     }
 
-    body > footer {
+    /* body > footer {
         z-index: 2;
         position: relative;
         top: 600px;
@@ -218,5 +219,5 @@
         justify-content: center;
         align-items: center;
         width: max-content;
-    }
+    } */
 }

@@ -1,68 +1,68 @@
 @media all and (max-width: 1024px) and (min-width: 769px) {
-    body{
-        overflow-y: scroll;
-        overflow-x: none;
-    }
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 
-    body::-webkit-scrollbar{
-        display: none;
-    }
+  body::-webkit-scrollbar {
+    display: none;
+  }
 
-    body > header {
-        position: sticky;
-        top: 0;
-        z-index: 4;
-        background-color: white;
-        height: 66px;
-        width: 100%;
-        transition: 0.3s;
-    }
+  body > header {
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background-color: white;
+    height: 66px;
+    width: 100%;
+    transition: 0.3s;
+  }
 
-    body > header:hover {
-        box-shadow: 0 35px 80px rgba(0,0,0,0.05);
-    }
+  body > header:hover {
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.05);
+  }
 
-    body > header > img {
-        position: absolute;
-        top: 25%;
-        left: 80px;
-        width: 150px;
-        height: 30px;
-    }
+  body > header > img {
+    position: absolute;
+    top: 25%;
+    left: 80px;
+    width: 150px;
+    height: 30px;
+  }
 
-    body > header > nav > ul {
-        position: relative;
-        margin: auto;
-        right: 1vw;
-        top: 2.5%;
-        bottom: 0;
-        padding: 0;
-    }
+  body > header > nav > ul {
+    position: relative;
+    margin: auto;
+    right: 1vw;
+    top: 2.5%;
+    bottom: 0;
+    padding: 0;
+  }
 
-    body > header > nav > ul > li {
-        position: relative;
-        top: 22px;
-        font-family: "Roboto Light",sans-serif;
-        font-size: 18px;
-        left: 350px;
-        margin-left: 15px;
-        display: inline-block;
-    }
+  body > header > nav > ul > li {
+    position: relative;
+    top: 22px;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 18px;
+    left: 350px;
+    margin-left: 15px;
+    display: inline-block;
+  }
 
-    body > header > nav > ul > li > a {
-        text-decoration: none;
-        color: black;
-    }
+  body > header > nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+  }
 
-    body > header > nav > ul > li > a:hover {
-        color: #35858B;
-    }
+  body > header > nav > ul > li > a:hover {
+    color: #35858b;
+  }
 
-    body > header > nav > ul > li:nth-child(1) > a:nth-child(1) {
-        padding: 8px;
-        background-color: #4FBDBA;
-        border-radius: 2px;
-        color: white;
-        box-shadow: 2px 2px 8px #ABABAB;
-    }
+  body > header > nav > ul > li:nth-child(1) > a:nth-child(1) {
+    padding: 8px;
+    background-color: #4fbdba;
+    border-radius: 2px;
+    color: white;
+    box-shadow: 2px 2px 8px #ababab;
+  }
 }
