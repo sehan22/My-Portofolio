@@ -285,7 +285,7 @@
           <article>
             <h3 data-aos="fade-right">Hi There,</h3>
             <h2>I'm</h2>
-            <h1 data-aos="zoom-in">Software Developer.</h1>
+            <h1>Software Developer</h1>
             <h2>Sehan Ranaweera</h2>
             <h4>
               I'm Sehan Ranaweera from Matara Sri Lanka.Software Developer
@@ -1099,12 +1099,16 @@
 
     <!-- ? JavaScript -->
     <script>
+      // Loader
       let loader = document.getElementById("loader");
       window.addEventListener("load", function () {
         console.log(
           "This message will print just after fully loading the website"
         );
-        loader.style.display = "none";
+
+        setInterval(function () {
+          loader.style.display = "none";
+        }, 3000);
       });
     </script>
   </body>

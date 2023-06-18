@@ -249,5 +249,19 @@
     > a
     > i:hover {
     transform: scale(1.3);
+    animation: smButton 0.8s infinite;
+  }
+
+  @keyframes smButton {
+    0% {
+      scale: 0.99;
+    }
+    50% {
+      scale: 1;
+    }
+    100%,
+    0% {
+      scale: 1.09;
+    }
   }
 }
