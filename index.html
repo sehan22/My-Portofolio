@@ -240,7 +240,31 @@
 
     <link rel="icon" type="image/png" href="assests/index 2/logo.png" />
 
-    <style></style>
+    <style>
+      #loader {
+        transition: opacity 10s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 10;
+        background: #000000;
+      }
+
+      #loader > div {
+        width: 290px;
+        height: 290px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -1061,6 +1085,10 @@
       <script>
         AOS.init();
       </script>
+
+      <div id="loader">
+        <div></div>
+      </div>
     </main>
 
     <footer>
@@ -1068,5 +1096,28 @@
         <h5>Developed By Sehan Ranaweera 2023©</h5>
       </div>
     </footer>
+
+    <script>
+      let loader = document.getElementById("loader");
+      //this is it. this will execute after the window is fully loaded
+      window.addEventListener("load", function () {
+        console.log(
+          "This message will print just after fully loading the website"
+        );
+
+        //hide the loader
+        loader.style.display = "none";
+      });
+
+      // in addition to that if you want to run a code as soon as the DOM created
+      document.addEventListener("DOMContentLoaded", function () {
+        // you can write anything you want here, and it will run just after creating the DOM object
+        // let h1 = document.createElement("h1");
+        // h1.textContent = "HI there";
+
+        let body = document.querySelector("body");
+        body.prepend(h1);
+      }),20000;
+    </script>
   </body>
 </html>
