@@ -9,7 +9,6 @@
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4e4e50;
   }
 
   body > main > div:nth-child(1) > div {
@@ -22,7 +21,6 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #35858b;
   }
 
   body > main > div:nth-child(1) > div > div {
@@ -34,7 +32,6 @@
     gap: 0px 0px;
     padding: 0px 0px;
     margin: auto;
-    background-color: antiquewhite;
   }
 
   body > main > div:nth-child(1) > div > div > div:nth-child(1) {
@@ -42,12 +39,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 410px;
+    width: 370px;
     height: 380px;
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: coral;
   }
 
   body > main > div:nth-child(1) > div > div > div:nth-child(2) {
@@ -55,16 +51,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 420px;
-    height: 410px;
+    width: 370px;
+    height: 330px;
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: chocolate;
   }
 
   body > main > div:nth-child(1) > div > div > div:nth-child(1) > img {
-    width: 300px;
+    width: 280px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -109,7 +104,7 @@
     > div:nth-child(2)
     > div
     > h2:nth-child(2) {
-    margin: 10px 10px 0 10px;
+    margin: 10px 10px 0 0px;
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
     font-size: 30px;
@@ -128,6 +123,7 @@
     font-weight: bolder;
     font-size: 32px;
     color: #35858b;
+    letter-spacing: -1px;
   }
 
   body > main > div:nth-child(1) > div > div > div:nth-child(2) > div > h2,
