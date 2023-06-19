@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Sehan Ranaweera | My Portfolio</title>
-
     <!-- ? viewPoint -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -228,8 +227,8 @@
       rel="stylesheet"
     />
 
-    <!-- ? link Loader CSS file -->
-    <link href="assests/CSS/Loader.css" rel="stylesheet" />
+    <!-- ? link Loader -->
+    <link rel="stylesheet" href="assests/CSS/Loader.css">
 
     <!-- ? link Normalize file -->
     <link href="assests/CSS/normalize.css" rel="stylesheet" />
@@ -252,7 +251,14 @@
 
     <!-- ? set logo to titlebar -->
     <link rel="icon" type="image/png" href="assests/index 2/logo.png" />
+
+    <style>
+      * {
+        /* background-color: black; */
+      }
+    </style>
   </head>
+
   <body>
     <!-- * Header -->
     <header>
@@ -1071,11 +1077,6 @@
         </section>
       </section>
 
-      <!-- ? initialize JavaScript Animations -->
-      <script>
-        AOS.init();
-      </script>
-
       <!-- ? Loader -->
       <div id="loader">
         <div>
@@ -1088,6 +1089,11 @@
           </h3>
         </div>
       </div>
+
+      <!-- ? initialize JavaScript Animations -->
+      <script>
+        AOS.init();
+      </script>
     </main>
 
     <!-- * Footer -->
@@ -1101,10 +1107,6 @@
     <script>
       let loader = document.getElementById("loader");
       window.addEventListener("load", function () {
-        console.log(
-          "This message will print just after fully loading the website"
-        );
-
         setInterval(function () {
           loader.style.display = "none";
         }, 3000);

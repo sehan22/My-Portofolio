@@ -1,6 +1,7 @@
 @media all and (max-width: 1024px) and (min-width: 769px) {
     body > main > section:nth-child(2) {
         position: relative;
+        width: 100%;
         height: 600px;
         display: flex;
         background-color: #F8FEFF;

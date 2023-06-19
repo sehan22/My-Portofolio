@@ -1,4 +1,4 @@
-@media all and (max-width: 768px) and (min-width: 426px) {
+@media all and (max-width: 768px) {
     body > main > section:nth-child(1) {
         position: relative;
     }
@@ -32,10 +32,6 @@
         right: 0;
         position: absolute;
         top: 0;
-    }
-
-    body > main > section:nth-child(1) section:nth-child(3) > article {
-
     }
 
     body > main > section:nth-child(1) section:nth-child(3) > article > h3:nth-child(1) {
