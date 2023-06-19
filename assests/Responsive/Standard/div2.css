@@ -1,0 +1,114 @@
+@media all and (min-width: 1441px) {
+  body > main > div:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #35858b;
+  }
+
+  body > main > div:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: max-content;
+    width: 90%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #ababab;
+  }
+
+  body > main > div:nth-child(2) > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 50px;
+    padding: 10px 10px;
+    margin: auto;
+    background-color: aquamarine;
+  }
+
+  body > main > div:nth-child(2) > div > div > div:nth-child(1) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 800px;
+    height: 750px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+    background-color: antiquewhite;
+  }
+
+  body > main > div:nth-child(2) > div > div > div:nth-child(2) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 800px;
+    height: 750px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+    background-color: antiquewhite;
+  }
+
+  body > main > div:nth-child(2) > div > div > div:nth-child(1) > img {
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  body > main > div:nth-child(2) > div > div > div:nth-child(2) > ul {
+    min-width: max-content;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+  }
+
+  body > main > div:nth-child(2) > div > div > div:nth-child(2) > ul > li {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 21px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    position: relative5;
+  }
+
+  body > main > div:nth-child(2) > div > div > div:nth-child(2) > ul > li > a {
+    text-decoration: none;
+    color: black;
+  }
+
+  body
+    > main
+    > div:nth-child(2)
+    > div
+    > div
+    > div:nth-child(2)
+    > ul
+    > li
+    > a:hover {
+    color: #35858b;
+  }
+
+  body > main > div > div > div > div:nth-child(2) > ul > li:nth-child(7) > a {
+    padding: 8px;
+    background-color: #4fbdba;
+    border-radius: 2px;
+    color: white;
+    box-shadow: 2px 2px 8px #ababab;
+  }
+}
