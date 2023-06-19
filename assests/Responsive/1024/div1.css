@@ -1,7 +1,6 @@
 @media all and (max-width: 1024px) and (min-width: 769px) {
   body > main {
-    position: sticky;
-    top: 0;
+    position: relative;
   }
 
   body > main > div:nth-child(1) {
@@ -10,7 +9,6 @@
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #4e4e50;
   }
 
   body > main > div:nth-child(1) > div {
@@ -23,7 +21,6 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: antiquewhite;
   }
 
   body > main > div:nth-child(1) > div > div {
@@ -33,9 +30,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 0px 0px;
-    padding: 10px 10px;
+    padding: 0px 0px;
     margin: auto;
-    background-color: aquamarine;
   }
 
   body > main > div:nth-child(1) > div > div > div:nth-child(1) {
@@ -43,12 +39,11 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 510px;
+    width: 410px;
     height: 700px;
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: antiquewhite;
   }
 
   body > main > div:nth-child(1) > div > div > div:nth-child(2) {
@@ -56,16 +51,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 800px;
+    width: 570px;
     height: 700px;
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: burlywood;
   }
 
   body > main > div:nth-child(1) > div > div > div:nth-child(1) > img {
-    width: 500px;
+    width: 400px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -96,7 +90,7 @@
     > h3:nth-child(1) {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 30px;
     color: #4e4e50;
     margin: 0 0 0 0;
   }
@@ -109,10 +103,10 @@
     > div:nth-child(2)
     > div
     > h2:nth-child(2) {
-    margin: 20px 10px 0 50px;
+    margin: 20px 10px 0 30px;
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 40px;
     color: black;
   }
 
@@ -126,7 +120,7 @@
     > h1:nth-child(3) {
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
-    font-size: 55px;
+    font-size: 45px;
     color: #35858b;
   }
 
@@ -146,9 +140,9 @@
     > h3:nth-child(4) {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 40px;
     color: #4e4e50;
-    margin: 20px 0 0 50px;
+    margin: 20px 0 0 30px;
   }
 
   body
@@ -161,9 +155,9 @@
     > h4:nth-child(5) {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 17px;
     color: #4e4e50;
-    margin: 20px 0 20px 50px;
+    margin: 20px 0 20px 30px;
     width: 84%;
   }
 
@@ -187,7 +181,7 @@
     color: #35858b;
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
-    padding: 12px 20px;
+    padding: 8px 10px;
     min-width: 175px;
     cursor: pointer;
     transition: color 0.4s linear;
@@ -208,7 +202,7 @@
     font-family: "Roboto", sans-serif;
     color: white;
     font-weight: bolder;
-    padding: 12px 20px;
+    padding: 8px 10px;
     min-width: 175px;
     cursor: pointer;
     transition: color 0.4s linear;
@@ -313,9 +307,8 @@
     margin: 0 0 0 0;
     padding: 0;
     width: max-content;
-    position: absolute;
-    left: 363px;
-    top: 297px;
+    position: relative;
+    margin-top: 20px;
   }
 
   body

@@ -2,10 +2,10 @@
   body > header {
     position: sticky;
     top: 0;
+    z-index: 1;
   }
 
   body > header > div {
-    background-color: aqua;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +21,6 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: antiquewhite;
   }
 
   body > header > div > div > div {
@@ -33,7 +32,6 @@
     gap: 0px 0px;
     padding: 2px 0px;
     margin: auto;
-    background-color: blueviolet;
   }
 
   body > header > div > div > div > div:nth-child(1) {
@@ -43,7 +41,6 @@
     align-items: flex-start;
     width: 110px;
     height: 30px;
-    background-color: #ffffff;
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
@@ -56,7 +53,6 @@
     align-items: flex-start;
     width: 400px;
     height: 30px;
-    background-color: #ffffff;
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;

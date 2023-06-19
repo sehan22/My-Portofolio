@@ -1,7 +1,6 @@
 @media all and (max-width: 1440px) and (min-width: 1025px) {
   body > main {
-    position: sticky;
-    top: 0;
+    position: relative;
   }
 
   body > main > div:nth-child(1) {
