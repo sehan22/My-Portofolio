@@ -1,0 +1,119 @@
+@media all and (max-width: 425px) and (min-width: 376px) {
+  body > header {
+    position: sticky;
+    top: 0;
+  }
+
+  body > header > div {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body > header > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: max-content;
+    width: 90%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: antiquewhite;
+  }
+
+  body > header > div > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0px 0px;
+    padding: 2px 0px;
+    margin: auto;
+    background-color: blueviolet;
+  }
+
+  body > header > div > div > div > div:nth-child(1) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 110px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+  }
+
+  body > header > div > div > div > div:nth-child(2) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 400px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+  }
+
+  body > header > div > div > div > div:nth-child(1) > img {
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  body > header > div > div > div > div:nth-child(2) > ul {
+    min-width: max-content;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  body > header > div > div > div > div:nth-child(2) > ul > li {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 12px;
+    margin: 1px;
+    display: inline-block;
+    position: relative5;
+  }
+
+  body > header > div > div > div > div:nth-child(2) > ul > li > a {
+    text-decoration: none;
+    color: black;
+  }
+
+  body > header > div > div > div > div:nth-child(2) > ul > li > a:hover {
+    color: #35858b;
+  }
+
+  body
+    > header
+    > div
+    > div
+    > div
+    > div:nth-child(2)
+    > ul
+    > li:nth-child(7)
+    > a {
+    padding: 5px;
+    background-color: #4fbdba;
+    border-radius: 2px;
+    color: white;
+    box-shadow: 2px 2px 8px #ababab;
+  }
+}

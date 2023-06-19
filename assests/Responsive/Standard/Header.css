@@ -1,0 +1,114 @@
+@media all and (min-width: 1441px) {
+  body > header {
+    position: sticky;
+    top: 0;
+  }
+
+  body > header > div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body > header > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: max-content;
+    width: 90%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  body > header > div > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 50px;
+    padding: 10px 10px;
+    margin: auto;
+  }
+
+  body > header > div > div > div > div:nth-child(1) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+  }
+
+  body > header > div > div > div > div:nth-child(2) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1300px;
+    height: 50px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+  }
+
+  body > header > div > div > div > div:nth-child(1) > img {
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  body > header > div > div > div > div:nth-child(2) > ul {
+    min-width: max-content;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+  }
+
+  body > header > div > div > div > div:nth-child(2) > ul > li {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 21px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    position: relative5;
+  }
+
+  body > header > div > div > div > div:nth-child(2) > ul > li > a {
+    text-decoration: none;
+    color: black;
+  }
+
+  body > header > div > div > div > div:nth-child(2) > ul > li > a:hover {
+    color: #35858b;
+  }
+
+  body
+    > header
+    > div
+    > div
+    > div
+    > div:nth-child(2)
+    > ul
+    > li:nth-child(7)
+    > a {
+    padding: 8px;
+    background-color: #4fbdba;
+    border-radius: 2px;
+    color: white;
+    box-shadow: 2px 2px 8px #ababab;
+  }
+}
