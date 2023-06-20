@@ -1,0 +1,60 @@
+@media all and (min-width: 1441px) {
+  body > main > div:nth-child(5) {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ! 1st div */
+
+  body > main > div:nth-child(5) > div {
+    width: 100%;
+    min-height: 850px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  body > main > div:nth-child(5) > div > div {
+    width: 40%;
+  }
+
+  body > main > div:nth-child(5) > div > div > h4 {
+    width: 100%;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  body > main > div:nth-child(5) > div > div > dfn > h1 {
+    min-width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    color: #35858b;
+    letter-spacing: 2px;
+    font-style: normal;
+    margin: -15px 0 0 0;
+  }
+
+  body > main > div:nth-child(5) > div > div > p {
+    width: 90%;
+    margin: auto;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    color: white;
+    line-height: 1.5;
+    margin: 40px auto 0 auto;
+  }
+}
