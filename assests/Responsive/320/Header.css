@@ -2,7 +2,8 @@
   body > header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
+    background-color: white;
   }
 
   body > header > div {
@@ -96,20 +97,4 @@
   body > header > div > div > div > div:nth-child(2) > ul > li > a:hover {
     color: #35858b;
   }
-
-  /* body
-    > header
-    > div
-    > div
-    > div
-    > div:nth-child(2)
-    > ul
-    > li:nth-child(7)
-    > a {
-    padding: 4px;
-    background-color: #4fbdba;
-    border-radius: 2px;
-    color: white;
-    box-shadow: 2px 2px 8px #ababab;
-  } */
 }

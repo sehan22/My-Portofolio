@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #35858b;
+    background-color: #f8feff;
   }
 
   body > main > div:nth-child(2) > div {
@@ -16,7 +16,6 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #ababab;
   }
 
   body > main > div:nth-child(2) > div > div {
@@ -28,7 +27,6 @@
     gap: 0px 0px;
     padding: 10px 0px;
     margin: auto;
-    background-color: aquamarine;
   }
 
   body > main > div:nth-child(2) > div > div > div:nth-child(1) {
@@ -37,12 +35,11 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    width: 600px;
-    height: 600px;
+    width: 375px;
+    height: 420px;
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: antiquewhite;
     z-index: 2;
   }
 
@@ -56,7 +53,6 @@
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: #35858b;
     z-index: 1;
   }
 
@@ -76,7 +72,7 @@
     > h5 {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
-    font-size: 9px;
+    font-size: 7px;
     color: #4b4954;
     letter-spacing: 2px;
     margin: 0 0 0 0;
@@ -94,7 +90,7 @@
     > h1 {
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
-    font-size: 45px;
+    font-size: 32px;
     color: #35858b;
     letter-spacing: 2px;
     font-style: normal;
@@ -105,15 +101,15 @@
   body > main > div:nth-child(2) > div > div > div:nth-child(1) > div > h3 {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
     color: #4b4954;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
   }
 
   body > main > div:nth-child(2) > div > div > div:nth-child(1) > div > p {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 13px;
     color: #4b4954;
   }
 
@@ -130,7 +126,7 @@
     > div:nth-child(1)
     > div
     > p:nth-child(4) {
-    width: 70%;
+    width: 90%;
     padding: 0;
   }
 
@@ -142,7 +138,7 @@
     > div:nth-child(1)
     > div
     > p:nth-child(5) {
-    width: 70%;
+    width: 90%;
     padding: 0;
   }
 
@@ -154,14 +150,14 @@
     > div:nth-child(1)
     > div
     > p:nth-child(7) {
-    width: 70%;
+    width: 90%;
     padding: 0;
   }
 
   body > main > div:nth-child(2) > div > div > div:nth-child(1) > div > h4 {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 13px;
     color: #4b4954;
     letter-spacing: 1px;
     margin: 10px 0 0 0;
@@ -184,7 +180,7 @@
     > ul
     > li {
     display: inline-block;
-    margin: 0 -10px 0 0;
+    margin: 0 -5px 0 -5px;
   }
 
   body
@@ -198,7 +194,7 @@
     > li
     > a
     > img {
-    height: 50px;
+    height: 40px;
     transition: 0.3s;
   }
 
@@ -239,7 +235,6 @@
     padding: 0;
     animation: moving 1.5s linear infinite;
     position: relative;
-    background-color: antiquewhite;
   }
 
   @keyframes moving {
@@ -258,7 +253,7 @@
     }
 
     60% {
-      left: 5;
+      left: -5;
       top: -5px;
     }
 

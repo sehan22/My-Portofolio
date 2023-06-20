@@ -184,7 +184,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
     padding: 8px 10px;
-    min-width: 175px;
+    min-width: 160px;
     cursor: pointer;
     transition: color 0.4s linear;
   }
@@ -205,7 +205,7 @@
     color: white;
     font-weight: bolder;
     padding: 8px 10px;
-    min-width: 175px;
+    min-width: 160px;
     cursor: pointer;
     transition: color 0.4s linear;
     margin-left: 10px;
@@ -354,7 +354,7 @@
     > ul
     > li
     > a {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   body

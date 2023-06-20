@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #35858b;
   }
 
   body > main > div:nth-child(2) > div {
@@ -16,7 +15,6 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #ababab;
   }
 
   body > main > div:nth-child(2) > div > div {
@@ -28,7 +26,6 @@
     gap: 10px 50px;
     padding: 10px 10px;
     margin: auto;
-    background-color: aquamarine;
   }
 
   body > main > div:nth-child(2) > div > div > div:nth-child(1) {
@@ -42,7 +39,6 @@
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: antiquewhite;
     z-index: 2;
   }
 
@@ -56,7 +52,6 @@
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: #35858b;
     z-index: 1;
   }
 
@@ -125,8 +120,8 @@
     > div:nth-child(1)
     > div
     > p:nth-child(4) {
-    width: 70%;
-    margin-left: 110px;
+    width: 80%;
+    margin-left: 75px;
     padding: 0;
   }
 
@@ -138,8 +133,8 @@
     > div:nth-child(1)
     > div
     > p:nth-child(5) {
-    width: 70%;
-    margin-left: 110px;
+    width: 80%;
+    margin-left: 75px;
     padding: 0;
   }
 
@@ -151,8 +146,8 @@
     > div:nth-child(1)
     > div
     > p:nth-child(7) {
-    width: 70%;
-    margin-left: 110px;
+    width: 80%;
+    margin-left: 75px;
     padding: 0;
   }
 
@@ -182,7 +177,7 @@
     > ul
     > li {
     display: inline-block;
-    margin: 0 -10px 0 0;
+    margin: 10px -10px 0 0;
   }
 
   body
@@ -196,7 +191,7 @@
     > li
     > a
     > img {
-    height: 60px;
+    height: 50px;
     transition: 0.3s;
   }
 
@@ -237,7 +232,6 @@
     padding: 0;
     animation: moving 1.5s linear infinite;
     position: relative;
-    background-color: antiquewhite;
   }
 
   @keyframes moving {
