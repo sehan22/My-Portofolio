@@ -1,0 +1,51 @@
+@media all and (min-width: 1441px) {
+  body > main > div:nth-child(7) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aqua;
+    margin-top: 100px;
+  }
+
+  body > main > div:nth-child(7) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: max-content;
+    width: 90%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: aliceblue;
+  }
+
+  body > main > div:nth-child(7) > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    padding: 10px 10px;
+    margin: auto;
+    background-color: aquamarine;
+  }
+
+  body > main > div:nth-child(7) > div > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 220px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+    background-color: antiquewhite;
+  }
+
+  body > main > div:nth-child(7) > div > div > div:nth-child(1) {
+    width: 100%;
+  }
+}
