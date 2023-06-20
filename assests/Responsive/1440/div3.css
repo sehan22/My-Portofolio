@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #35858b;
   }
 
   body > main > div:nth-child(3) > div {
@@ -16,7 +15,6 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #ababab;
   }
 
   body > main > div:nth-child(3) > div > div {
@@ -28,7 +26,6 @@
     gap: 10px 10px;
     padding: 10px 10px;
     margin: auto;
-    background-color: brown;
   }
 
   body > main > div:nth-child(3) > div > div > div:nth-child(1) {
