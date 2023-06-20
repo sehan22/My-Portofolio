@@ -1,0 +1,194 @@
+@media all and (max-width: 768px) and (min-width: 426px) {
+  body > main > div:nth-child(3) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body > main > div:nth-child(3) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: max-content;
+    width: 80%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  body > main > div:nth-child(3) > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px 10px;
+    padding: 10px 0px;
+    margin: auto;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(1) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+    background-color: white;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(2) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+    background-color: white;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(3) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+    background-color: white;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(4) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+    background-color: white;
+  }
+
+  body > main > div:nth-child(3) > div > div > div {
+    box-shadow: 5px 5px 20px -5px #a6a6a6;
+  }
+
+  body > main > div:nth-child(3) > div > div > div > i {
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 100px;
+    color: #4b838a;
+  }
+
+  body > main > div:nth-child(3) > div > div > div > h2 {
+    width: 100%;
+    margin: -30px 0 0 0;
+    padding: 0;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #35858b;
+  }
+
+  body > main > div:nth-child(3) > div > div > div > p {
+    width: 90%;
+    margin: -30px 0 0 0;
+    padding: 0;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #4b4954;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:hover {
+    cursor: pointer;
+    background-color: #35858b;
+    box-shadow: 3px 3px 17px -8px #a6a6a6;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:hover > i {
+    color: #ffffff;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:hover > h2 {
+    color: white;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:hover > p {
+    color: white;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(4) > h5 {
+    width: 100%;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 9px;
+    color: #4b4954;
+    letter-spacing: 2px;
+    margin: 0 0 0 0;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(4) > h1 {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    color: #35858b;
+    letter-spacing: -3.5px;
+    margin: -60px 0 0 0;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(4) > h4 {
+    width: 90%;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #4b4954;
+    margin: -30px 0 0 0;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(4) > button {
+    background: #35858b;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+    margin: -30px 0 0 0;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(4):hover {
+    background-color: white;
+  }
+
+  body > main > div:nth-child(3) > div > div > div:nth-child(4) > button:hover {
+    background: #378e95;
+    color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  }
+}

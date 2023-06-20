@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     transition: 1s;
-    background-color: antiquewhite;
+    background-color: #f8feff;
   }
 
   body > main > div:nth-child(2) > div {
@@ -18,7 +18,7 @@
     right: 0;
     margin: auto;
     transition: 1s;
-    background-color: antiquewhite;
+    
   }
 
   body > main > div:nth-child(2) > div > div {
@@ -31,7 +31,7 @@
     padding: 10px 10px;
     margin: auto;
     transition: 1s;
-    background-color: aquamarine;
+    
   }
 
   body > main > div:nth-child(2) > div > div > div:nth-child(1) {
