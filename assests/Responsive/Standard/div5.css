@@ -4,11 +4,9 @@
     padding: 0;
   }
 
-  /* ! 1st div */
-
   body > main > div:nth-child(5) > div {
     width: 100%;
-    min-height: 850px;
+    min-height: 700px;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
