@@ -37,12 +37,13 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    width: 500px;
-    height: 750px;
+    width: 350px;
+    height: 600px;
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
     background-color: antiquewhite;
+    z-index: 2;
   }
 
   body > main > div:nth-child(2) > div > div > div:nth-child(2) {
@@ -50,12 +51,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
-    height: 750px;
+    width: 500px;
+    height: 600px;
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
     background-color: #35858b;
+    z-index: 1;
   }
 
   body > main > div:nth-child(2) > div > div > div:nth-child(1) > div {
@@ -74,7 +76,7 @@
     > h5 {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
-    font-size: 11px;
+    font-size: 9px;
     color: #4b4954;
     letter-spacing: 2px;
     margin: 0 0 0 0;
@@ -92,7 +94,7 @@
     > h1 {
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
-    font-size: 55px;
+    font-size: 45px;
     color: #35858b;
     letter-spacing: 2px;
     font-style: normal;
@@ -103,7 +105,7 @@
   body > main > div:nth-child(2) > div > div > div:nth-child(1) > div > h3 {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 20px;
     color: #4b4954;
     margin-bottom: -5px;
   }
@@ -111,7 +113,7 @@
   body > main > div:nth-child(2) > div > div > div:nth-child(1) > div > p {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 15px;
     color: #4b4954;
   }
 
@@ -123,10 +125,8 @@
     > div:nth-child(1)
     > div
     > p:nth-child(4) {
-    width: 90%;
-    position: relative;
-    right: 0;
-    margin-left: 50px;
+    width: 70%;
+    margin-left: 110px;
     padding: 0;
   }
 
@@ -138,16 +138,28 @@
     > div:nth-child(1)
     > div
     > p:nth-child(5) {
-    width: 90%;
-    position: relative;
-    margin-left: 50px;
+    width: 70%;
+    margin-left: 110px;
+    padding: 0;
+  }
+
+  body
+    > main
+    > div:nth-child(2)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > p:nth-child(7) {
+    width: 70%;
+    margin-left: 110px;
     padding: 0;
   }
 
   body > main > div:nth-child(2) > div > div > div:nth-child(1) > div > h4 {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 15px;
     color: #4b4954;
     letter-spacing: 1px;
     margin: 10px 0 0 0;
@@ -155,7 +167,7 @@
 
   body > main > div:nth-child(2) > div > div > div:nth-child(1) > div > ul {
     width: max-content;
-    margin: 10px -50px auto auto;
+    margin: 1px -50px auto auto;
     padding: 0;
     cursor: pointer;
   }
@@ -170,6 +182,7 @@
     > ul
     > li {
     display: inline-block;
+    margin: 0 -10px 0 0;
   }
 
   body
@@ -183,7 +196,7 @@
     > li
     > a
     > img {
-    height: 70px;
+    height: 60px;
     transition: 0.3s;
   }
 
@@ -216,7 +229,7 @@
   }
 
   body > main > div:nth-child(2) > div > div > div:nth-child(2) > img {
-    width: 90%;
+    width: 100%;
     height: 90%;
     left: 0;
     top: 0;
