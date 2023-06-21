@@ -126,6 +126,11 @@
     <link rel="stylesheet" href="assests/Responsive/320/div8.css" />
     <link rel="stylesheet" href="assests/Responsive/320/div9.css" />
 
+    <!-- ? Link Footer CSS -->
+    <link rel="stylesheet" href="assests/Responsive/Standard/Footer.css" />
+    <!-- ? Link Loader CSS -->
+    <link rel="stylesheet" href="assests/Responsive/Standard/Loader.css">
+
     <style>
       body > main > div:nth-child(5) > div:nth-child(1) {
         width: 100%;
@@ -211,6 +216,11 @@
       body > main > div:nth-child(8) > div {
         background-image: url("assests/index 2/section 7/wallpaperflare.com_wallpaper\ \(3\).jpg");
       }
+
+      /*  Customize Mouse Pointer */
+      /* * {
+        cursor: url('assests/index 2/cursor.png'),auto;
+      } */
     </style>
   </head>
   <body>
@@ -291,7 +301,7 @@
                     </li>
 
                     <li>
-                      <a href="https://wa.me/qr/SLKJU7VCNRZQL1" target="_blank">
+                      <a href="https://wa.me/+94712400168" target="_blank">
                         <i
                           class="fa-brands fa-whatsapp"
                           style="color: #4b838a"
@@ -351,7 +361,7 @@
                     /></a>
                   </li>
                   <li>
-                    <a href="https://wa.me/qr/SLKJU7VCNRZQL1" target="_blank"
+                    <a href="https://wa.me/+94712400168" target="_blank"
                       ><img
                         src="assests/index%202/section%202/Social%20Media/Whatsapp.png"
                     /></a>
@@ -965,34 +975,44 @@
         <div>
           <div>
             <div>
-              <h4>Great to connect</h4>
-              <dfn id="Contact"><h1>Contact Info</h1></dfn>
+              <div>
+                <h4>Great to connect</h4>
+                <dfn id="Contact"><h1>Contact Info</h1></dfn>
 
-              <nav>
-                <ul>
-                  <li>
-                    <i class="fa-regular fa-envelope" style="color: #ffffff"></i>
-                      <a href="">sehanranaweera2002@gmail.xom</a>
-                  </li>
+                <nav>
+                  <ul>
+                    <li>
+                      <i
+                        class="fa-regular fa-envelope"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="#">sehanranaweera2002@gmail.xom</a>
+                    </li>
 
-                  <li>
-                    <i class="fa-brands fa-whatsapp" style="color: #ffffff"></i>
-                      <a href="https://wa.me/qr/SLKJU7VCNRZQL1" target="_blank">+94 - 712400167(whatsapp)</a>
-                  </li>
+                    <li>
+                      <i
+                        class="fa-brands fa-whatsapp"
+                        style="color: #ffffff"
+                      ></i>
+                      <a href="https://wa.me/+94712400168" target="_blank"
+                        >+94 - 712400167(whatsapp)</a
+                      >
+                    </li>
 
-                  <li>
-                    <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
-                      <a href="">+94 - 71200167</a>
-                  </li>
+                    <li>
+                      <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+                      <a href="tel:+94712400168">+94 - 71200167</a>
+                    </li>
 
-                  <li>
-                    <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
-                      <a href="">+94 - 71200167</a>
-                    </i>
-                  </li>
-                </ul>
-              </nav>
+                    <li>
+                      <i class="fa-solid fa-globe" style="color: #ffffff"></i>
+                      <a href="#">Matara,Sri Lanka.</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
+
             <div>
               <fieldset>
                 <h3>Send a message</h3>
@@ -1027,12 +1047,28 @@
           </div>
         </div>
       </div>
+
+      <!-- ? Loader -->
+      <div id="loader">
+        <div>
+          <img src="assests/index 2/logo.png" alt="logo" />
+          <img src="assests/index 2/output-onlinegiftools.gif" alt="load" />
+          <h3>Hello and welcome to my portfolio!</h3>
+          <h3>
+            Please wait patiently while we load your experience. This shouldn't
+            take long!
+          </h3>
+        </div>
+      </div>
     </main>
     <!-- * Footer -->
-    <footer></footer>
+    <footer>
+      <div><h2>Developed By Sehan Ranaweera 2023</h2></div>
+    </footer>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
+      //type writer animation
       var typingEffect = new Typed(".multiText", {
         strings: [
           "Software Developer",
@@ -1045,6 +1081,14 @@
         typeSpeed: 80,
         backSpeed: 80,
         backDelay: 1500,
+      });
+
+      // Loader
+      let loader = document.getElementById("loader");
+      window.addEventListener("load", function () {
+        setInterval(function () {
+          loader.style.display = "none";
+        }, 3000);
       });
     </script>
   </body>

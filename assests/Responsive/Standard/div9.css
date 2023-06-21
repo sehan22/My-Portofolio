@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aqua;
     margin-top: 100px;
+    background-color: #343a40;
   }
 
   body > main > div:nth-child(9) > div {
@@ -17,7 +17,6 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: aliceblue;
   }
 
   body > main > div:nth-child(9) > div > div {
@@ -27,9 +26,8 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 50px 50px;
-    padding: 10px 10px;
+    padding: 50px 10px;
     margin: auto;
-    background-color: aquamarine;
   }
 
   body > main > div:nth-child(9) > div > div > div {
@@ -39,32 +37,41 @@
     align-items: center;
     flex-wrap: wrap;
     width: 850px;
-    height: 550px;
+    height: 650px;
     border-radius: 5px;
-    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 0px 80px rgba(0, 0, 0, 0.15);
     transition: 0.5s;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #343a40;
+    border-image: linear-gradient(to left, #35858b, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to left, #35858b, rgba(0, 0, 0, 0)) 1 15%;
   }
 
   body > main > div:nth-child(9) > div > div > div:nth-child(1) {
     width: 550px;
     background-color: #343a40;
-    border-image: linear-gradient(to right, #35858b, rgba(0, 0, 0, 0)) 1 100%;
-    border-image: linear-gradient(to right, #35858b, rgba(0, 0, 0, 0)) 1 15%;
+    border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 10%;
+    border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 15%;
   }
 
-  body > main > div:nth-child(9) > div > div > div:nth-child(1) > h4 {
+  body > main > div:nth-child(9) > div > div > div:nth-child(1) div > h4 {
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
     font-size: 11px;
     color: white;
     letter-spacing: 2px;
     width: 100%;
-    margin: 20px 0 0 0;
   }
 
-  body > main > div:nth-child(9) > div > div > div:nth-child(1) > dfn > h1 {
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > dfn
+    > h1 {
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
     font-size: 55px;
@@ -72,44 +79,183 @@
     letter-spacing: 2px;
     font-style: normal;
     width: 500px;
-    margin: -90px 0 0 0;
+    margin: -20px 0 0 0;
   }
 
-  body > main > div:nth-child(9) > div > div > div:nth-child(1) > nav {
+  body > main > div:nth-child(9) > div > div > div:nth-child(1) > div > nav {
     margin: -80px 0 20px 0;
     padding: 0;
     min-height: max-content;
-    transition: 1s;
-  }
-
-  body > main > div:nth-child(9) > div > div > div:nth-child(1) > nav > ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    transition: 1s;
-  }
-
-  body > main > div:nth-child(9) > div > div > div:nth-child(1) > nav > ul > li {
-    text-align: left;
-    transition: 1s linear;
-  }
-
-  body > main > div:nth-child(9) > div > div > div:nth-child(1) > nav > ul > li:hover {
-    scale: 1.05;
     text-align: center;
   }
 
-  body > main > div:nth-child(9) > div > div > div:nth-child(1) > nav > ul > li > i {
-    font-size: 30px;
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 100px 0 0 0;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul
+    > li {
+    transition: 0.5s linear;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul
+    > li:hover {
+    scale: 1.05;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul
+    > li
+    > i {
+    font-size: 25px;
     margin: 50px 10px 0 0;
   }
 
-  body > main > div:nth-child(9) > div > div > div:nth-child(1) > nav > ul > li > a {
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul
+    > li
+    > a {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 23px;
     color: white;
     letter-spacing: 0;
     text-decoration: none;
+  }
+
+  body > main > div:nth-child(9) > div > div > div:nth-child(2) > fieldset {
+    width: 80%;
+    height: max-content;
+    border: none;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #35858b;
+    letter-spacing: 0;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > input {
+    width: 600px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 10%;
+    border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 15%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.5s;
+    background-color: #343a40;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > input:focus {
+    border: 2px solid #007294;
+  }
+
+  #message {
+    height: 100px;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > button {
+    width: 95px;
+    height: 40px;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 13px;
+    color: white;
+    background-color: #35858b;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px -15px #000000;
+    border-radius: 3px;
+    transition: 0.5s;
+    border: 2px solid #35858b;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > button:hover {
+      box-shadow: 5px 5px 20px -20px #000000;
+    background-color: rgb(30, 187, 179);
+    border: 2px solid #35858b;
   }
 }

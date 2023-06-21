@@ -1,0 +1,104 @@
+#loader {
+  transition: opacity 1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background: #343a40;
+  width: 100%;
+}
+
+#loader > div {
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+}
+
+#loader > div > img:nth-child(1) {
+  width: 80%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#loader > div > img:nth-child(2) {
+  width: 25%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#loader > div > h3 {
+  font-family: "Akshar Unicode", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#loader > div > h3:nth-child(3) {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 240px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#loader > div > h3:nth-child(4) {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 280px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 13px;
+}
+
+@media all and (min-width: 1025px) {
+}
+
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  #loader {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) and (min-width: 426px) {
+  #loader {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 425px) and (min-width: 376px) {
+  #loader {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 375px) and (min-width: 321px) {
+  #loader {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #loader {
+    width: 100%;
+  }
+}

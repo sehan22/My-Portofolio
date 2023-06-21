@@ -1,0 +1,22 @@
+footer {
+  position: relative;
+  display: flex;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: #343a40;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto auto auto;
+  font-family: "Akshar Unicode", sans-serif;
+  font-weight: bolde;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+footer > h2 {
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+}
