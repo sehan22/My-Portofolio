@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
     margin-top: 100px;
   }
 
@@ -17,12 +16,11 @@
     left: 0;
     right: 0;
     margin: auto;
-
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    
     background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
   }
 
   body > main > div:nth-child(8) > div > div {
@@ -31,7 +29,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px 50px;
+    gap: 150px 50px;
     padding: 10px 10px;
     margin: auto;
   }
