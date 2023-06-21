@@ -10,7 +10,7 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     display: flex;
     flex-wrap: wrap;

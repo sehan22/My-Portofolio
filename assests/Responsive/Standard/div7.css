@@ -91,10 +91,13 @@
 
   body > main > div:nth-child(7) > div > div > div:hover {
     background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.25);
   }
 
   body > main > div:nth-child(7) > div > div > div:nth-child(1):hover {
     background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    background-color: #f8feff;
   }
 
   body > main > div:nth-child(7) > div > div > div:nth-child(14),
