@@ -127,7 +127,7 @@
     <!-- ? Link Footer CSS -->
     <link rel="stylesheet" href="assests/Responsive/Standard/Footer.css" />
     <!-- ? Link Loader CSS -->
-    <link rel="stylesheet" href="assests/Responsive/Standard/Loader.css">
+    <link rel="stylesheet" href="assests/Responsive/Standard/Loader.css" />
 
     <style>
       body > main > div:nth-child(5) > div:nth-child(1) {
@@ -215,8 +215,8 @@
         background-image: url("assests/index 2/section 7/wallpaperflare.com_wallpaper\ \(3\).jpg");
       }
 
-      /*  Customize Mouse Pointer */
-      /* * {
+      /*  Customize Mouse Pointer
+       body {
         cursor: url('assests/index 2/cursor.png'),auto;
       } */
     </style>
@@ -702,7 +702,7 @@
           </div>
         </div>
       </div>
-
+<!-- 
       <!-- ? div 6 -->
       <div>
         <div>
@@ -1039,11 +1039,16 @@
                   type="text"
                   placeholder="Message"
                 /><br /><br /><br />
-                <button type="submit">Submit</button>
+                <button type="submit" id="multiColourButton">Submit</button>
               </fieldset>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- ? div 10 scroll to up-->
+      <div id="chatBox">
+        <i class="fa-solid fa-arrow-up" style="color: #000000"></i>
       </div>
 
       <!-- ? Loader -->
@@ -1057,7 +1062,7 @@
             take long!
           </h3>
         </div>
-      </div>
+      </div>      
     </main>
     <!-- * Footer -->
     <footer>
@@ -1086,7 +1091,49 @@
       window.addEventListener("load", function () {
         setInterval(function () {
           loader.style.display = "none";
-        }, 3000);
+        }, 3);
+      });
+
+      //random colours
+      function generateRandomColor() {
+        const hexValues = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += hexValues[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      const multiColorButton = document.getElementById("multiColourButton");
+      multiColorButton.addEventListener("mouseenter", function () {
+        multiColorButton.style.backgroundColor = generateRandomColor();
+      });
+
+      multiColorButton.addEventListener("mouseleave", function () {
+        multiColorButton.style.backgroundColor = "";
+      });
+
+      //scroll to top
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      const scrollBtn = document.getElementById("chatBox");
+      scrollBtn.addEventListener("click", scrollToTop);
+
+      window.addEventListener("scroll", function () {
+        const scrollBtn = document.getElementById("chatBox");
+        if (window.pageYOffset > 3100) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+        if (window.pageYOffset === 0) {
+          scrollBtn.style.display = "none";
+        }
       });
     </script>
   </body>
