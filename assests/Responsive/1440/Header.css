@@ -113,6 +113,6 @@
     background-color: #4fbdba;
     border-radius: 2px;
     color: white;
-    box-shadow: 2px 2px 8px #ababab;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
   }
 }

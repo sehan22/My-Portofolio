@@ -6,6 +6,8 @@
     background-color: rgba(255, 255, 255, 0.4);
     width: 100%;
     backdrop-filter: blur(15px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   body > header > div {
@@ -113,7 +115,7 @@
     background-color: #4fbdba;
     border-radius: 2px;
     color: white;
-    box-shadow: 2px 2px 8px #ababab;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
   }
 }
 

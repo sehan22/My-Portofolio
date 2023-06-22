@@ -60,6 +60,8 @@
     width: 100%;
     height: 250px;
     background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
   }
 
   body > main > div:nth-child(8) > div > div > div:nth-child(1):hover {
