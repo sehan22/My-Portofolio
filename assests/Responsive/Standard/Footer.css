@@ -9,14 +9,30 @@ footer {
   align-items: center;
   margin: auto auto auto auto;
   font-family: "Akshar Unicode", sans-serif;
-  font-weight: bolde;
+  font-weight: bold;
   font-size: 10px;
   letter-spacing: 2px;
   color: white;
 }
 
 footer > h2 {
-    text-align: center;
-    margin: auto;
-    display: inline-block;
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+}
+
+@media all and (max-width: 425px) and (min-width: 376px) {
+  footer {
+    font-size: 9px;
+  }
+}
+@media all and (max-width: 375px) and (min-width: 321px) {
+  footer {
+    font-size: 8px;
+  }
+}
+@media all and (max-width: 320px) {
+  footer {
+    font-size: 6px;
+  }
 }
