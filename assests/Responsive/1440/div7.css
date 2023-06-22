@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aqua;
     margin-top: 100px;
   }
 
@@ -17,9 +16,8 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color: aliceblue;
   }
-
+  
   body > main > div:nth-child(7) > div > div {
     position: relative;
     display: flex;
@@ -29,9 +27,8 @@
     gap: 50px 50px;
     padding: 10px 10px;
     margin: auto;
-    background-color: aquamarine;
   }
-
+  
   body > main > div:nth-child(7) > div > div > div {
     position: relative;
     display: flex;
@@ -43,13 +40,13 @@
     border-radius: 5px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 1s;
-    background-color: antiquewhite;
     text-align: center;
   }
-
+  
   body > main > div:nth-child(7) > div > div > div:nth-child(1) {
     width: 100%;
     background: none;
+    background-color: #f8feff;
   }
 
   body > main > div:nth-child(7) > div > div > div:nth-child(1) > h4 {

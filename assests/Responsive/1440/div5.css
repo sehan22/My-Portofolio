@@ -6,7 +6,7 @@
 
   body > main > div:nth-child(5) > div {
     width: 100%;
-    min-height: 700px;
+    min-height: 600px;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

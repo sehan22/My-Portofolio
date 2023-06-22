@@ -1,18 +1,9 @@
-@media all and (max-width: 1px) {
-  body > main {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: white;
-  }
-
-  /* ! need to update */
-
+@media all and (max-width: 1440px) and (min-width: 1025px) {
   body > main > div:nth-child(6) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #35858b;
+    margin-top: -100px;
   }
 
   body > main > div:nth-child(6) > div {
@@ -20,12 +11,11 @@
     justify-content: center;
     align-items: center;
     min-height: max-content;
-    width: 90%;
+    width: 100%;
     position: relative;
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #ababab;
   }
 
   body > main > div:nth-child(6) > div > div {
@@ -37,7 +27,6 @@
     gap: 10px 50px;
     padding: 10px 10px;
     margin: auto;
-    background-color: #4fbdba;
   }
 
   body > main > div:nth-child(6) > div > div > div:nth-child(1) {
@@ -46,12 +35,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 460px;
-    height: 490px;
+    width: 400px;
+    height: 420px;
     border-radius: 5px;
-    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
-    transition: 0.5s;
-    background-color: antiquewhite;
   }
 
   body > main > div:nth-child(6) > div > div > div:nth-child(2) {
@@ -60,12 +46,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 460px;
-    height: 490px;
+    width: 400px;
+    height: 420px;
     border-radius: 5px;
-    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
-    transition: 0.5s;
-    background-color: antiquewhite;
   }
 
   body > main > div:nth-child(6) > div > div > div:nth-child(3) {
@@ -74,20 +57,33 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 460px;
-    height: 490px;
+    width: 400px;
+    height: 420px;
     border-radius: 5px;
-    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
-    transition: 0.5s;
-    background-color: antiquewhite;
   }
 
   body > main > div:nth-child(6) > div > div > div {
     text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+    background-position: center;
+    background-size: cover;
+  }
+
+  body > main > div:nth-child(6) > div > div > div:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: -webkit-grab;
+  }
+
+  body > main > div:nth-child(6) > div > div > div:hover > h4 {
+    color: white;
   }
 
   body > main > div:nth-child(6) > div > div > div > img {
-    width: 40%;
+    width: 30%;
     border-radius: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     margin: 20px 0 0 0;
@@ -95,7 +91,6 @@
 
   body > main > div:nth-child(6) > div > div > div > h3 {
     width: 100%;
-    background-color: #ababab;
     font-family: "Akshar Unicode", sans-serif;
     font-weight: bolder;
     font-size: 25px;
@@ -105,10 +100,9 @@
   }
 
   body > main > div:nth-child(6) > div > div > div > h4 {
-    width: 90%;
-    background-color: #ababab;
+    width: 85%;
     font-family: "Akshar Unicode", sans-serif;
-    font-weight: bolder;
+    font-weight: lighter;
     font-size: 18px;
     color: #4e4e50;
     margin: 0 0 40px 0;

@@ -1,9 +1,9 @@
-@media all and (max-width: 1px) {
+@media all and (max-width: 1440px) and (min-width: 1025px) {
   body > main > div:nth-child(9) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: aqua;
+    background-color: #343a40;
     margin-top: 100px;
   }
 
@@ -12,12 +12,11 @@
     justify-content: center;
     align-items: center;
     min-height: max-content;
-    width: 90%;
+    width: 100%;
     position: relative;
     left: 0;
     right: 0;
     margin: auto;
-    background-color: aliceblue;
   }
 
   body > main > div:nth-child(9) > div > div {
@@ -26,7 +25,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px 50px;
+    gap: 10px 10px;
     padding: 10px 10px;
     margin: auto;
   }
@@ -44,6 +43,7 @@
     transition: 0.5s;
     text-align: center;
     background-color: #343a40;
+    box-shadow: 0 0px 80px rgba(0, 0, 0, 0.15);
     border-image: linear-gradient(to left, #35858b, rgba(0, 0, 0, 0)) 1 100%;
     border-image: linear-gradient(to left, #35858b, rgba(0, 0, 0, 0)) 1 15%;
   }
