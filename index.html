@@ -113,7 +113,7 @@
     <link rel="stylesheet" href="assests/Responsive/320/div9.css" />
 
     <!-- ? div 10 scroll to top -->
-    <link rel="stylesheet" href="assests/Responsive/div10.css">
+    <link rel="stylesheet" href="assests/Responsive/div10.css" />
     <!-- ? Link Footer CSS -->
     <link rel="stylesheet" href="assests/Responsive/Standard/Footer.css" />
     <!-- ? Link Loader CSS -->
@@ -214,7 +214,7 @@
   </head>
   <body>
     <!-- * Header -->
-    <header>
+    <header id="header">
       <div>
         <div>
           <div>
@@ -1082,7 +1082,7 @@
       window.addEventListener("load", function () {
         setInterval(function () {
           loader.style.display = "none";
-        },3000);
+        }, 3000);
       });
 
       //random colours
@@ -1125,6 +1125,23 @@
         if (window.pageYOffset === 0) {
           scrollBtn.style.display = "none";
         }
+      });
+    </script>
+
+    <script type="text/javascript">
+      //Hide header when scrolling down and show header when scrolling up
+      var lastScrollTop = 0;
+      navbar = document.querySelector("#header");
+      window.addEventListener("scroll", function () {
+        var scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          navbar.style.transition = "1s";
+          navbar.style.top = "-80px";
+        } else {
+          navbar.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
       });
     </script>
   </body>

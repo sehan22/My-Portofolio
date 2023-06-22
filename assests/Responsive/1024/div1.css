@@ -9,6 +9,7 @@
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 70px;
   }
 
   body > main > div:nth-child(1) > div {
