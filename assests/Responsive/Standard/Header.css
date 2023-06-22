@@ -159,3 +159,7 @@
   margin: auto;
   top: 14px;
 }
+
+#chatbox {
+  display: none;
+}

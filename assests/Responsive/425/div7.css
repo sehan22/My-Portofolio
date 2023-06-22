@@ -1,0 +1,143 @@
+@media all and (max-width: 425px) and (min-width: 376px) {
+  body > main > div:nth-child(7) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 100px;
+  }
+
+  body > main > div:nth-child(7) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: max-content;
+    width: 95%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  body > main > div:nth-child(7) > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px 0px;
+    padding: 20px 0px;
+    margin: auto;
+  }
+
+  body > main > div:nth-child(7) > div > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 250px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 1s;
+    text-align: center;
+  }
+
+  body > main > div:nth-child(7) > div > div > div:nth-child(1) {
+    width: 100%;
+    background: none;
+    background-color: #f8feff;
+  }
+
+  body > main > div:nth-child(7) > div > div > div:nth-child(1) > h4 {
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 7px;
+    color: #4b4954;
+    letter-spacing: 2px;
+    width: 100%;
+    margin: 0 0 -80px 0;
+    z-index: 1;
+  }
+
+  body > main > div:nth-child(7) > div > div > div:nth-child(1) dfn > h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    color: #35858b;
+    letter-spacing: 2px;
+    font-style: normal;
+    min-width: 400px;
+    margin: 10px 0 0 0;
+  }
+
+  body > main > div:nth-child(7) > div > div > div:nth-child(1) > p {
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    color: #4b4954;
+    text-align: center;
+    width: 90%;
+    margin: 0 0 0 0;
+  }
+
+  body > main > div:nth-child(7) > div > div > div {
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    overflow: hidden;
+  }
+
+  body > main > div:nth-child(7) > div > div > div:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  body > main > div:nth-child(7) > div > div > div:nth-child(1):hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  body > main > div:nth-child(7) > div > div > div > a {
+    text-decoration: none;
+    position: relative;
+    top: 130px;
+    transition: 0.8s;
+  }
+
+  body > main > div:nth-child(7) > div > div > div > a > h2 {
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+  }
+
+  body > main > div:nth-child(7) > div > div > div > a > h3 {
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+  }
+
+  body > main > div:nth-child(7) > div > div > div > a > button {
+    background: #35858b;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+  }
+
+  body > main > div:nth-child(7) > div > div > div > a > button:hover {
+    background: #378e95;
+    color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  body > main > div:nth-child(7) > div > div > div:hover > a {
+    top: 0;
+  }
+}

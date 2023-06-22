@@ -1,0 +1,269 @@
+@media all and (max-width: 425px) and (min-width: 376px) {
+  body > main > div:nth-child(9) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #343a40;
+    margin-top: 100px;
+  }
+
+  body > main > div:nth-child(9) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: max-content;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  body > main > div:nth-child(9) > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 0px;
+    padding: 50px 0px;
+    margin: auto;
+  }
+
+  body > main > div:nth-child(9) > div > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 340px;
+    height: 550px;
+    border-radius: 5px;
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
+    transition: 0.5s;
+    text-align: center;
+    background-color: #343a40;
+    box-shadow: 0 0px 80px rgba(0, 0, 0, 0.15);
+    border-image: linear-gradient(to left, #35858b, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to left, #35858b, rgba(0, 0, 0, 0)) 1 15%;
+  }
+
+  body > main > div:nth-child(9) > div > div > div:nth-child(1) {
+    width: 340px;
+    background-color: #343a40;
+    border-image: linear-gradient(to right, #35858b, rgba(0, 0, 0, 0)) 1 100%;
+    border-image: linear-gradient(to right, #35858b, rgba(0, 0, 0, 0)) 1 15%;
+  }
+
+  body > main > div:nth-child(9) > div > div > div:nth-child(1) div > h4 {
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 7px;
+    color: white;
+    letter-spacing: 2px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > dfn
+    > h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    color: #35858b;
+    letter-spacing: 2px;
+    font-style: normal;
+    width: 300px;
+    margin: -5px 0 0 0;
+  }
+
+  body > main > div:nth-child(9) > div > div > div:nth-child(1) > div > nav {
+    margin: -80px 0 20px 0;
+    padding: 0;
+    min-height: max-content;
+    text-align: center;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 100px 0 0 0;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul
+    > li {
+    transition: 0.5s linear;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul
+    > li:hover {
+    scale: 1.05;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul
+    > li
+    > i {
+    font-size: 20px;
+    margin: 50px 10px 0 0;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(1)
+    > div
+    > nav
+    > ul
+    > li
+    > a {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 0;
+    text-decoration: none;
+  }
+
+  body > main > div:nth-child(9) > div > div > div:nth-child(2) > fieldset {
+    width: 80%;
+    height: max-content;
+    border: none;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #35858b;
+    letter-spacing: 0;
+    margin: 20px 0 20px 0;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > input {
+    width: 300px;
+    height: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 12px;
+    color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 10%;
+    border-image: linear-gradient(to bottom, #35858b, rgba(0, 0, 0, 0)) 1 15%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.5s;
+    background-color: #343a40;
+    margin: -5px 0 0 0;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > input:focus {
+    border: 2px solid #007294;
+  }
+
+  #message {
+    height: 80px;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > button {
+    width: 80px;
+    height: 35px;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 11px;
+    color: white;
+    background-color: #35858b;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px -5px #000000;
+    border-radius: 3px;
+    transition: 0.5s;
+    border: none;
+    margin: 0 0 0 0;
+    position: relative;
+    bottom: 5px;
+  }
+
+  body
+    > main
+    > div:nth-child(9)
+    > div
+    > div
+    > div:nth-child(2)
+    > fieldset
+    > button:hover {
+    box-shadow: 5px 5px 10px -10px #a6a6a6;
+    background-color: rgb(30, 187, 179);
+    border: none;
+  }
+}
