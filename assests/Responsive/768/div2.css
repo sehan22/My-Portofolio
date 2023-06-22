@@ -242,6 +242,7 @@
     padding: 0;
     animation: moving 1.5s linear infinite;
     position: relative;
+    object-fit: cover;
   }
 
   @keyframes moving {

@@ -109,10 +109,22 @@
     > ul
     > li:nth-child(7)
     > a {
-    padding: 6px;
+    padding: 8px;
     background-color: #4fbdba;
     border-radius: 2px;
     color: white;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  body
+    > header
+    > div
+    > div
+    > div
+    > div:nth-child(2)
+    > ul
+    > li:nth-child(7)
+    > a {
+    color: #333;
   }
 }
