@@ -1,0 +1,59 @@
+@media all and (max-width: 320px) {
+  body > main > div:nth-child(5) {
+    margin: 0;
+    padding: 0;
+  }
+
+  body > main > div:nth-child(5) > div {
+    width: 100%;
+    min-height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-size: 60%;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  body > main > div:nth-child(5) > div > div {
+    width: 90%;
+  }
+
+  body > main > div:nth-child(5) > div > div > h4 {
+    width: 100%;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: bolder;
+    font-size: 7px;
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  body > main > div:nth-child(5) > div > div > dfn > h1 {
+    min-width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 32px;
+    color: #35858b;
+    letter-spacing: 2px;
+    font-style: normal;
+    margin: -10px 0 0 0;
+  }
+
+  body > main > div:nth-child(5) > div > div > p {
+    width: 95%;
+    margin: auto;
+    font-family: "Akshar Unicode", sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    color: white;
+    line-height: 1.5;
+    margin: 40px auto 0 auto;
+  }
+}
