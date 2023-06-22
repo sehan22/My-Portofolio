@@ -88,7 +88,6 @@
     <link rel="stylesheet" href="assests/Responsive/425/div8.css" />
     <link rel="stylesheet" href="assests/Responsive/425/div9.css" />
 
-
     <!-- ? link 375 Responsive-->
     <link rel="stylesheet" href="assests/Responsive/375/Header.css" />
     <link rel="stylesheet" href="assests/Responsive/375/div1.css" />
@@ -111,10 +110,10 @@
     <link rel="stylesheet" href="assests/Responsive/320/div6.css" />
     <link rel="stylesheet" href="assests/Responsive/320/div7.css" />
     <link rel="stylesheet" href="assests/Responsive/320/div8.css" />
-
-    <!-- ! Need to fix this responsive sizes -->
     <link rel="stylesheet" href="assests/Responsive/320/div9.css" />
 
+    <!-- ? div 10 scroll to top -->
+    <link rel="stylesheet" href="assests/Responsive/div10.css">
     <!-- ? Link Footer CSS -->
     <link rel="stylesheet" href="assests/Responsive/Standard/Footer.css" />
     <!-- ? Link Loader CSS -->
@@ -206,8 +205,6 @@
       body > main > div:nth-child(8) > div {
         background-image: url("assests/index 2/section 7/wallpaperflare.com_wallpaper\ \(3\).jpg");
       }
-
-      /* chatbox disable */
 
       /*  Customize Mouse Pointer
        body {
@@ -1042,7 +1039,7 @@
 
       <!-- ? div 10 scroll to up-->
       <div id="chatBox">
-        <i class="fa-solid fa-arrow-up" style="color: #000000"></i>
+        <i class="fa-solid fa-arrow-up" style="color: #4b838a"></i>
       </div>
 
       <!-- ? Loader -->
@@ -1085,7 +1082,7 @@
       window.addEventListener("load", function () {
         setInterval(function () {
           loader.style.display = "none";
-        }, 3);
+        },3000);
       });
 
       //random colours
@@ -1107,28 +1104,28 @@
         multiColorButton.style.backgroundColor = "";
       });
 
-      // //scroll to top
-      // function scrollToTop() {
-      //   window.scrollTo({
-      //     top: 0,
-      //     behavior: "smooth",
-      //   });
-      // }
+      //scroll to top
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
 
-      // const scrollBtn = document.getElementById("chatBox");
-      // scrollBtn.addEventListener("click", scrollToTop);
+      const scrollBtn = document.getElementById("chatBox");
+      scrollBtn.addEventListener("click", scrollToTop);
 
-      // window.addEventListener("scroll", function () {
-      //   const scrollBtn = document.getElementById("chatBox");
-      //   if (window.pageYOffset > 3100) {
-      //     scrollBtn.style.display = "block";
-      //   } else {
-      //     scrollBtn.style.display = "none";
-      //   }
-      //   if (window.pageYOffset === 0) {
-      //     scrollBtn.style.display = "none";
-      //   }
-      // });
+      window.addEventListener("scroll", function () {
+        const scrollBtn = document.getElementById("chatBox");
+        if (window.pageYOffset > 3100) {
+          scrollBtn.style.display = "block";
+        } else {
+          scrollBtn.style.display = "none";
+        }
+        if (window.pageYOffset === 0) {
+          scrollBtn.style.display = "none";
+        }
+      });
     </script>
   </body>
 </html>

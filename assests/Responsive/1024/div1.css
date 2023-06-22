@@ -59,7 +59,7 @@
   }
 
   body > main > div:nth-child(1) > div > div > div:nth-child(1) > img {
-    width: 400px;
+    width: 380px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -179,9 +179,10 @@
     background: none;
     border: 2px solid #35858b;
     color: #35858b;
+    font-size: 15px;
     font-family: "Roboto", sans-serif;
     font-weight: bolder;
-    padding: 8px 10px;
+    padding: 7px 8px;
     min-width: 175px;
     cursor: pointer;
     transition: color 0.4s linear;
@@ -201,8 +202,9 @@
     border: 2px solid #35858b;
     font-family: "Roboto", sans-serif;
     color: white;
+    font-size: 15px;
     font-weight: bolder;
-    padding: 8px 10px;
+    padding: 6px 8px;
     min-width: 175px;
     cursor: pointer;
     transition: color 0.4s linear;
@@ -349,7 +351,7 @@
     > ul
     > li
     > a {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   body

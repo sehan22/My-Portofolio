@@ -241,7 +241,7 @@
     color: white;
     background-color: #35858b;
     cursor: pointer;
-    box-shadow: 5px 5px 10px -5px #000000;
+    box-shadow: 5px 5px 20px -20px #000000;
     border-radius: 3px;
     transition: 0.5s;
     border: 2px solid #35858b;
@@ -255,7 +255,7 @@
     > div:nth-child(2)
     > fieldset
     > button:hover {
-    box-shadow: 5px 5px 10px -10px #a6a6a6;
+      box-shadow: 5px 5px 20px -15px #000000;
     background-color: rgb(30, 187, 179);
     border: 2px solid #35858b;
   }

@@ -20,7 +20,7 @@
     letter-spacing: 2px;
     width: max-content;
     font-style: normal;
-    margin: auto auto auto auto;
+    margin: auto auto auto auto;;
   }
 
   body > main > div:nth-child(4) > div:nth-child(1) > h1 {
@@ -56,7 +56,7 @@
     justify-items: center;
     align-items: center;
     min-height: max-content + 100px;
-    width: 90%;
+    width: 100%;
     position: relative;
     left: 0;
     right: 0;
@@ -69,8 +69,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 100px 50px;
+    gap: 40px 30px;
+    padding: 100px 10px;
     margin: auto;
   }
 
@@ -163,7 +163,7 @@
     > div:nth-child(2) {
     position: absolute;
     top: 225px;
-    width: 100%;
+    width: 80%;
     padding: 0 30px;
     height: 43px;
     overflow: hidden;

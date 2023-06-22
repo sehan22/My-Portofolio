@@ -1,0 +1,60 @@
+/* scroll to top */
+#chatBox {
+  border: 2px solid #4b838a;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 100%;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  display: none;
+}
+
+#chatBox i:hover {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media all and (min-width: 1441px) {
+  #chatBox {
+    right: 35px;
+  }
+  #chatBox i {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 1440px) and (min-width: 1025px) {
+  #chatBox {
+    right: 20px;
+  }
+  #chatBox i {
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 1024px) and (min-width: 769px) {
+  #chatBox i {
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 768px) and (min-width: 426px) {
+  #chatBox i {
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 425px) and (min-width: 376px) {
+  #chatBox i {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 375px) and (min-width: 321px) {
+  #chatBox i {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  #chatBox i {
+    font-size: 15px;
+  }
+}

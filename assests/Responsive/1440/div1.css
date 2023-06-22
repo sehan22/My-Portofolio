@@ -45,7 +45,7 @@
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
   }
-
+  
   body > main > div:nth-child(1) > div > div > div:nth-child(2) {
     position: relative;
     display: flex;
@@ -59,7 +59,7 @@
   }
 
   body > main > div:nth-child(1) > div > div > div:nth-child(1) > img {
-    width: 500px;
+    width: 480px;
     justify-content: center;
     align-items: center;
     position: relative;
