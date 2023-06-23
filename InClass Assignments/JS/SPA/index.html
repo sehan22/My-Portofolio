@@ -47,7 +47,7 @@
       }
 
       .container > div > div > div > div > input:focus {
-        border: 1px solid #4fbdba;
+        border: 1px solid #ff0000;
       }
     </style>
   </head>
@@ -295,8 +295,14 @@
                 type="text"
                 name="customer id"
                 placeholder="Customer Id"
-                style="height: 60px; background-color: transparent"
+                style="height: 60px; background-color: transparent;"
               />
+              <h7
+                class="text-danger text-center"
+                id="customerIdvalidationNote"
+                style="display: none"
+                >Cus Id is a required field:Pattern C00-00X</h7
+              >
             </div>
           </div>
 
@@ -310,6 +316,12 @@
                 placeholder="Customer Name"
                 style="height: 60px; background-color: transparent"
               />
+              <h7
+                class="text-danger text-center"
+                id="customerNamevalidationNote"
+                style="display: none"
+                >Cus name is a required field:Minimum 5,Max 20,Space Allowed</h7
+              >
             </div>
           </div>
 
@@ -323,6 +335,12 @@
                 placeholder="Customer Address"
                 style="height: 60px; background-color: transparent"
               />
+              <h7
+                class="text-danger text-center"
+                id="customerAddressvalidationNote"
+                style="display: none"
+                >Cus address is a required field:Minimum 7,Space Allowed</h7
+              >
             </div>
           </div>
 
@@ -349,8 +367,12 @@
 
           <div class="col-xxl-1 ms-2" style="height: 70px; font-size: 5px">
             <div class="row justify-content-center">
-              <button id="" class="btn btn-primary col-xxl-12" type="button">
-                Remove All
+              <button
+                id="btnCustomerClearAll"
+                class="btn btn-primary col-xxl-12"
+                type="button"
+              >
+                Clear All
               </button>
             </div>
           </div>
@@ -400,7 +422,7 @@
           </div>
         </div>
       </div>
-
+      A
       <div
         class="container bg-dark mt-5"
         id="customersTable"
