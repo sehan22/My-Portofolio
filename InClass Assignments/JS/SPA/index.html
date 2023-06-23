@@ -349,11 +349,7 @@
 
           <div class="col-xxl-1 ms-2" style="height: 70px; font-size: 5px">
             <div class="row justify-content-center">
-              <button
-                id="btnCustomerUpdate"
-                class="btn btn-primary col-xxl-12"
-                type="submit"
-              >
+              <button id="" class="btn btn-primary col-xxl-12" type="button">
                 Remove All
               </button>
             </div>
@@ -361,11 +357,7 @@
 
           <div class="col-xxl-1 ms-2" style="height: 70px; font-size: 5px">
             <div class="row justify-content-center">
-              <button
-                id="btnCustomerUpdate"
-                class="btn btn-secondary col-xxl-12"
-                type="submit"
-              >
+              <button id="" class="btn btn-secondary col-xxl-12" type="button">
                 Get All
               </button>
             </div>
@@ -376,7 +368,7 @@
               <button
                 id="btnCustomerUpdate"
                 class="btn btn-danger col-xxl-12"
-                type="submit"
+                type="button"
               >
                 Update
               </button>
@@ -388,7 +380,7 @@
               <button
                 id="btnCustomerDelete"
                 class="btn btn-warning col-xxl-12"
-                type="submit"
+                type="button"
               >
                 Remove
               </button>
@@ -400,7 +392,7 @@
               <button
                 id="btnCustomerSave"
                 class="btn btn-success col-xxl-12"
-                type="submit"
+                type="button"
               >
                 Save
               </button>
@@ -960,70 +952,71 @@
     </footer>
 
     <script>
-      // document.getElementById("customersInfo").style.display = "none";
-      // document.getElementById("customersForm").style.display = "none";
-      // document.getElementById("customersTable").style.display = "none";
-      // document.getElementById("itemsInfo").style.display = "none";
-      // document.getElementById("itemsForm").style.display = "none";
-      // document.getElementById("itemsTable").style.display = "none";
-      // document.getElementById("placeOrderInfo").style.display = "none";
-      // document.getElementById("placeOrderForm").style.display = "none";
+      document.getElementById("customersInfo").style.display = "none";
+      document.getElementById("customersForm").style.display = "none";
+      document.getElementById("customersTable").style.display = "none";
+      document.getElementById("itemsInfo").style.display = "none";
+      document.getElementById("itemsForm").style.display = "none";
+      document.getElementById("itemsTable").style.display = "none";
+      document.getElementById("placeOrderInfo").style.display = "none";
+      document.getElementById("placeOrderForm").style.display = "none";
 
-      // document.getElementById("btnHome").addEventListener("click", function () {
-      //   document.getElementById("customersInfo").style.display = "none";
-      //   document.getElementById("customersForm").style.display = "none";
-      //   document.getElementById("customersTable").style.display = "none";
-      //   document.getElementById("itemsInfo").style.display = "none";
-      //   document.getElementById("itemsForm").style.display = "none";
-      //   document.getElementById("itemsTable").style.display = "none";
-      //   document.getElementById("placeOrderInfo").style.display = "none";
-      //   document.getElementById("placeOrderForm").style.display = "none";
-      // });
+      document.getElementById("btnHome").addEventListener("click", function () {
+        document.getElementById("customersInfo").style.display = "none";
+        document.getElementById("customersForm").style.display = "none";
+        document.getElementById("customersTable").style.display = "none";
+        document.getElementById("itemsInfo").style.display = "none";
+        document.getElementById("itemsForm").style.display = "none";
+        document.getElementById("itemsTable").style.display = "none";
+        document.getElementById("placeOrderInfo").style.display = "none";
+        document.getElementById("placeOrderForm").style.display = "none";
+      });
 
-      // document
-      //   .getElementById("btnCustomer")
-      //   .addEventListener("click", function () {
-      //     document.getElementById("customersInfo").style.display = "block";
-      //     document.getElementById("customersForm").style.display = "block";
-      //     document.getElementById("customersTable").style.display = "block";
+      document
+        .getElementById("btnCustomer")
+        .addEventListener("click", function () {
+          document.getElementById("customersInfo").style.display = "block";
+          document.getElementById("customersForm").style.display = "block";
+          document.getElementById("customersTable").style.display = "block";
 
-      //     document.getElementById("itemsInfo").style.display = "none";
-      //     document.getElementById("itemsForm").style.display = "none";
-      //     document.getElementById("itemsTable").style.display = "none";
-      //     document.getElementById("placeOrderInfo").style.display = "none";
-      //     document.getElementById("placeOrderForm").style.display = "none";
-      //   });
+          document.getElementById("itemsInfo").style.display = "none";
+          document.getElementById("itemsForm").style.display = "none";
+          document.getElementById("itemsTable").style.display = "none";
+          document.getElementById("placeOrderInfo").style.display = "none";
+          document.getElementById("placeOrderForm").style.display = "none";
+        });
 
-      // document
-      //   .getElementById("btnProducts")
-      //   .addEventListener("click", function () {
-      //     document.getElementById("itemsInfo").style.display = "block";
-      //     document.getElementById("itemsForm").style.display = "block";
-      //     document.getElementById("itemsTable").style.display = "block";
+      document
+        .getElementById("btnProducts")
+        .addEventListener("click", function () {
+          document.getElementById("itemsInfo").style.display = "block";
+          document.getElementById("itemsForm").style.display = "block";
+          document.getElementById("itemsTable").style.display = "block";
 
-      //     document.getElementById("customersInfo").style.display = "none";
-      //     document.getElementById("customersForm").style.display = "none";
-      //     document.getElementById("customersTable").style.display = "none";
-      //     document.getElementById("placeOrderInfo").style.display = "none";
-      //     document.getElementById("placeOrderForm").style.display = "none";
-      //   });
+          document.getElementById("customersInfo").style.display = "none";
+          document.getElementById("customersForm").style.display = "none";
+          document.getElementById("customersTable").style.display = "none";
+          document.getElementById("placeOrderInfo").style.display = "none";
+          document.getElementById("placeOrderForm").style.display = "none";
+        });
 
-      // document
-      //   .getElementById("btnOrders")
-      //   .addEventListener("click", function () {
-      //     document.getElementById("placeOrderInfo").style.display = "block";
-      //     document.getElementById("placeOrderForm").style.display = "block";
+      document
+        .getElementById("btnOrders")
+        .addEventListener("click", function () {
+          document.getElementById("placeOrderInfo").style.display = "block";
+          document.getElementById("placeOrderForm").style.display = "block";
 
-      //     document.getElementById("customersInfo").style.display = "none";
-      //     document.getElementById("customersForm").style.display = "none";
-      //     document.getElementById("customersTable").style.display = "none";
-      //     document.getElementById("itemsInfo").style.display = "none";
-      //     document.getElementById("itemsForm").style.display = "none";
-      //     document.getElementById("itemsTable").style.display = "none";
-      //   });
+          document.getElementById("customersInfo").style.display = "none";
+          document.getElementById("customersForm").style.display = "none";
+          document.getElementById("customersTable").style.display = "none";
+          document.getElementById("itemsInfo").style.display = "none";
+          document.getElementById("itemsForm").style.display = "none";
+          document.getElementById("itemsTable").style.display = "none";
+        });
     </script>
 
     <script src="../Queue/js/jquery-3.7.0.min.js"></script>
     <script src="cutomerjs.js"></script>
+    <script src="itemjs.js"></script>
   </body>
 </html>

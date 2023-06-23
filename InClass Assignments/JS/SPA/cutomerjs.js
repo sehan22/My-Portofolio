@@ -1,29 +1,144 @@
+//save customer
+var customerDetails = [];
+
+document
+  .getElementById("btnCustomerSave")
+  .addEventListener("click", function () {
+    var customerId = document.getElementById("txtCustomerId").value;
+    var customerName = document.getElementById("txtCustomerName").value;
+    var address = document.getElementById("txtAddress").value;
+    var phoneNumber = document.getElementById("txtPhoneNumber").value;
+
+    var customer = {
+      customerId: customerId,
+      customerName: customerName,
+      address: address,
+      phoneNumber: phoneNumber,
+    };
+
+    customerDetails.push(customer);
+    console.log(customerDetails);
+
+    var row = document.createElement("tr");
+
+    var col = document.createElement("td");
+    col.textContent = customerId;
+
+    var col2 = document.createElement("td");
+    col2.textContent = customerName;
+
+    var col3 = document.createElement("td");
+    col3.textContent = address;
+
+    var col4 = document.createElement("td");
+    col4.textContent = phoneNumber;
+
+    row.appendChild(col);
+    row.appendChild(col2);
+    row.appendChild(col3);
+    row.appendChild(col4);
+
+    let customerTable = document.getElementById("customerTable");
+    customerTable.appendChild(row);
+  });
+
+//load customer information from table row click
+document
+  .getElementById("customerTable")
+  .addEventListener("click", function (event) {
+    let selectedRow = event.target.closest("tr");
+    let selectedID = selectedRow.cells[0].textContent;
+    let selectedName = selectedRow.cells[1].textContent;
+    let selectedAddress = selectedRow.cells[2].textContent;
+    let selectedContact = selectedRow.cells[3].textContent;
+
+    document.getElementById("txtCustomerId").value = selectedID;
+    document.getElementById("txtCustomerName").value = selectedName;
+    document.getElementById("txtAddress").value = selectedAddress;
+    document.getElementById("txtPhoneNumber").value = selectedContact;
+  });
+
+//update customer information from table row click
+document
+  .getElementById("btnCustomerUpdate")
+  .addEventListener("click", function () {
+    alert("Customer");
+    // Get the updated customer details
+    var customerId = document.getElementById("txtCustomerId").value;
+    var customerName = document.getElementById("txtCustomerName").value;
+    var address = document.getElementById("txtAddress").value;
+    var phoneNumber = document.getElementById("txtPhoneNumber").value;
+
+    // Find the customer to update
+    for (var i = 0; i < customerDetails.length; i++) {
+      if (customerDetails[i].customerId == customerId) {
+        // Update the customer details
+        customerDetails[i].customerName = customerName;
+        customerDetails[i].address = address;
+        customerDetails[i].phoneNumber = phoneNumber;
+
+        // Update the table row for the customer
+        var row = document.getElementById("customerTable").rows[i + 1];
+        row.cells[1].textContent = customerName;
+        row.cells[2].textContent = address;
+        row.cells[3].textContent = phoneNumber;
+
+        // Optionally, add a success message
+        console.log("Customer details updated successfully");
+        break;
+      }
+    }
+  });
+
+//delete customer details click delete button
+document
+  .getElementById("btnCustomerDelete")
+  .addEventListener("click", function () {
+    var customerIdToDelete = document.getElementById("txtCustomerId").value;
+    for (var i = 0; i < customerDetails.length; i++) {
+      if (customerDetails[i].customerId == customerIdToDelete) {
+        customerDetails.splice(i, 1);
+        break;
+      }
+    }
+    var rows = document.querySelectorAll("#customerTable tr");
+    for (var i = 1; i < rows.length; i++) {
+      var rowCells = rows[i].getElementsByTagName("td");
+      if (rowCells[0].textContent == customerIdToDelete) {
+        rows[i].parentNode.removeChild(rows[i]);
+        break;
+      }
+    }
+  });
+
+//     // Loop through customerDetails array and find the index of the customer to be updated
+//     var indexToUpdate = -1;
+//     for (var i = 0; i < customerDetails.length; i++) {
+//       if (customerDetails[i].customerId === customerId) {
+//         indexToUpdate = i;
+//         break;
+//       }
+//     }
+
+//     // Update the customer's properties in the customerDetails array
+//     if (indexToUpdate >= 0) {
+//       customerDetails[indexToUpdate].customerName =
+//         updatedCustomer.customerName;
+//       customerDetails[indexToUpdate].address = updatedCustomer.address;
+//       customerDetails[indexToUpdate].phoneNumber = updatedCustomer.phoneNumber;
+//     }
+
+//     // Update the selected row in the customer table
+//     var selectedRow = document.querySelector("tr.selected");
+//     if (selectedRow) {
+//       selectedRow.cells[1].textContent = updatedCustomer.customerName;
+//       selectedRow.cells[2].textContent = updatedCustomer.address;
+//       selectedRow.cells[3].textContent = updatedCustomer.phoneNumber;
+//     }
+//     console.log(customerDetails);
+//   });
 
 // // customer save
-
-// document
-//   .getElementById("btnCustomerSave")
-//   .addEventListener("click", function () {
-//     var row = document.createElement("tr");
-
-//     var col = document.createElement("td");
-//     var col2 = document.createElement("td");
-//     var col3 = document.createElement("td");
-//     var col4 = document.createElement("td");
-
-//     col.textContent = txtCustomerId.value;
-//     col2.textContent = txtCustomerName.value;
-//     col3.textContent = txtAddress.value;
-//     col4.textContent = txtPhoneNumber.value;
-
-//     row.appendChild(col);
-//     row.appendChild(col2);
-//     row.appendChild(col3);
-//     row.appendChild(col4);
-
-//     let customerTable = document.getElementById("customerTable");
-//     customerTable.appendChild(row);
-//   });
 
 // /*  document.getElementById("btnCustomerUpdate").addEventListener("click", function () {
 //     var selectedRow = document.querySelector("#customerTable tr.selected");
@@ -86,43 +201,6 @@
 //     console.log("Customer with ID " + cusID + " not found.");
 //   }
 // });
-
-// document.getElementById("btnSaveItem").addEventListener("click", function () {
-//   var itemrow = document.createElement("tr");
-
-//   var itemcol = document.createElement("td");
-//   var itemcol2 = document.createElement("td");
-//   var itemcol3 = document.createElement("td");
-//   var itemcol4 = document.createElement("td");
-
-//   itemcol.textContent = txtProductId.value;
-//   itemcol2.textContent = txtProductDescription.value;
-//   itemcol3.textContent = txtUnitPrice.value;
-//   itemcol4.textContent = txtQty.value;
-
-//   itemrow.appendChild(itemcol);
-//   itemrow.appendChild(itemcol2);
-//   itemrow.appendChild(itemcol3);
-//   itemrow.appendChild(itemcol4);
-
-//   let itemTable = document.getElementById("itemTable");
-//   itemTable.appendChild(itemrow);
-// });
-
-// $("#customerTable").on("click", "tr", function () {
-//   let selectedRow = $(this);
-//   let selectedID = selectedRow.find("td:eq(0)").text();
-//   let selectedName = selectedRow.find("td:eq(1)").text();
-//   let selectedAddress = selectedRow.find("td:eq(2)").text();
-//   let selectedContact = selectedRow.find("td:eq(3)").text();
-
-//   $("#txtCustomerId").val(selectedID);
-//   $("#txtCustomerName").val(selectedName);
-//   $("#txtAddress").val(selectedAddress);
-//   $("#txtPhoneNumber").val(selectedContact);
-// });
-
-
 
 // $("#btnCustomerUpdate").on("click", function () {
 //   // Get the selected row
