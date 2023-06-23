@@ -161,6 +161,7 @@ function validateCustomerName() {
   }
 }
 
+//validate customer address field
 document.getElementById("txtAddress").addEventListener("input", function () {
   validateAddress();
 });
@@ -171,9 +172,9 @@ function validateAddress() {
 
   if (addressRegex.test(address)) {
     document.getElementById("txtAddress").style.border = "solid 1px green";
-    document.getElementById("txtPhoneNumber").focus();
     document.getElementById("customerAddressvalidationNote").style.display =
       "none";
+    document.getElementById("txtPhoneNumber").focus();
   } else {
     document.getElementById("txtAddress").style.border = "solid 1px red";
     document.getElementById("customerAddressvalidationNote").style.display =
@@ -181,40 +182,24 @@ function validateAddress() {
   }
 }
 
-// $("#txtPhoneNumber").on("input", function () {
-//   validatePhoneNumber();
-// });
+//validate customer contact field
+document
+  .getElementById("txtPhoneNumber")
+  .addEventListener("input", function () {
+    validatePhoneNumber();
+  });
 
-// function validatePhoneNumber() {
-//   var phoneNumber = $("#txtPhoneNumber").val();
-//   var phoneNumberRegex = /^[0-9+]+$/;
+function validatePhoneNumber() {
+  var phoneNumber = document.getElementById("txtPhoneNumber").value;
+  var phoneNumberRegex = /^[0-9+]+$/;
 
-//   if (phoneNumberRegex.test(phoneNumber)) {
-//     $("#txtPhoneNumber").css("border", "solid 1px green");
-//   } else {
-//     $("#txtPhoneNumber").css("border", "solid 1px red");
-//   }
-// }
-
-// /*  $('#customerTable>tr').click(function(){
-//     let id=$(this).children().eq(0).text();
-//     let name=$(this).children().eq(1).text();
-//     let address=$(this).children().eq(2).text();
-//     let salary=$(this).children().eq(4).text();
-//     console.log(id, name, address, salary);
-//   })*/
-
-// /*  $("#btnCustomerDelete").click (function () {
-//     let selectedRow = $(this);
-//     let selectedID = selectedRow.find("td:eq(0)").text();
-//     let selectedName = selectedRow.find("td:eq(1)").text();
-//     let selectedAddress = selectedRow.find("td:eq(2)").text();
-//     let selectedContact = selectedRow.find("td:eq(3)").text();
-
-//     $('#txtCustomerId').val(selectedID);
-//     $('#txtCustomerName').val(selectedName);
-//     $('#txtAddress').val(selectedAddress);
-//     $('#txtPhoneNumber').val(selectedContact);
-
-//     selectedRow.remove();
-//   });*/
+  if (phoneNumberRegex.test(phoneNumber)) {
+    document.getElementById("txtPhoneNumber").style.border = "solid 1px green";
+    document.getElementById("customerPhoneNumbervalidationNote").style.display =
+      "none";
+  } else {
+    document.getElementById("txtPhoneNumber").style.border = "solid 1px red";
+    document.getElementById("customerPhoneNumbervalidationNote").style.display =
+      "block";
+  }
+}
