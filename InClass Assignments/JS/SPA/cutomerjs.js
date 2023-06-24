@@ -119,19 +119,22 @@ document
   });
 
 //input field data validation
-document.getElementById("txtCustomerId").addEventListener("input", function () {
-  validateCustomerId();
-});
 
 //validate customer id field
+document
+  .getElementById("txtCustomerId")
+  .addEventListener("keypress", function () {
+    validateCustomerId();
+  });
+
 function validateCustomerId() {
   var customerId = document.getElementById("txtCustomerId").value;
   var customerIdRegex = /^C\d{2}-\d{3}$/;
 
   if (customerIdRegex.test(customerId)) {
     document.getElementById("txtCustomerId").style.border = "solid 1px green";
-    document.getElementById("txtCustomerName").focus();
     document.getElementById("customerIdvalidationNote").style.display = "none";
+    document.getElementById("txtCustomerName").focus();
   } else {
     document.getElementById("txtCustomerId").style.border = "solid 1px red";
     document.getElementById("customerIdvalidationNote").style.display = "block";
@@ -141,7 +144,7 @@ function validateCustomerId() {
 //validate customer name field
 document
   .getElementById("txtCustomerName")
-  .addEventListener("input", function () {
+  .addEventListener("keypress", function () {
     validateCustomerName();
   });
 
@@ -151,7 +154,6 @@ function validateCustomerName() {
 
   if (customerName.length >= 10 && customerNameRegex.test(customerName)) {
     document.getElementById("txtCustomerName").style.border = "solid 1px green";
-    document.getElementById("txtAddress").focus();
     document.getElementById("customerNamevalidationNote").style.display =
       "none";
   } else {
@@ -162,7 +164,7 @@ function validateCustomerName() {
 }
 
 //validate customer address field
-document.getElementById("txtAddress").addEventListener("input", function () {
+document.getElementById("txtAddress").addEventListener("keypress", function () {
   validateAddress();
 });
 
@@ -174,7 +176,6 @@ function validateAddress() {
     document.getElementById("txtAddress").style.border = "solid 1px green";
     document.getElementById("customerAddressvalidationNote").style.display =
       "none";
-    document.getElementById("txtPhoneNumber").focus();
   } else {
     document.getElementById("txtAddress").style.border = "solid 1px red";
     document.getElementById("customerAddressvalidationNote").style.display =
@@ -185,7 +186,7 @@ function validateAddress() {
 //validate customer contact field
 document
   .getElementById("txtPhoneNumber")
-  .addEventListener("input", function () {
+  .addEventListener("keypress", function () {
     validatePhoneNumber();
   });
 
@@ -203,3 +204,35 @@ function validatePhoneNumber() {
       "block";
   }
 }
+
+// const customerId = document.querySelector("#txtCustomerId");
+
+// customerId.addEventListener("keydown", function (event) {
+//   if (event.key === "Enter") {
+//     document.getElementById("txtCustomerName").focus();
+//   }
+// });
+
+const customerName = document.querySelector("#txtCustomerName");
+
+customerName.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    document.getElementById("txtAddress").focus();
+  }
+});
+
+const customerAddress = document.querySelector("#txtAddress");
+
+customerAddress.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    document.getElementById("txtPhoneNumber").focus();
+  }
+});
+
+const customerNumber = document.querySelector("#txtPhoneNumber");
+
+customerNumber.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    customerNumber.focus();
+  }
+});
