@@ -147,7 +147,7 @@ document
     alert("Are you sure you want to save customer information?");
     let customerTable = document.getElementById("customerTable");
     customerTable.appendChild(row);
-    clearTextFields();
+    clearCustomerSectionTextFields();
     alert("Customer Informations saved successfully");
     document.getElementById("btnCustomerSave").disabled = true;
   });
@@ -199,7 +199,7 @@ document
         row.cells[3].textContent = phoneNumber;
 
         console.log("Customer details updated successfully");
-        document.getElementById("btnCustomerSave").disabled = true;
+        clearCustomerSectionTextFields();
         break;
       }
     }
@@ -223,7 +223,7 @@ document
       if (rowCells[0].textContent == customerIdToDelete) {
         rows[i].parentNode.removeChild(rows[i]);
         alert("Customer informations deleted successfully");
-        clearTextFields();
+        clearCustomerSectionTextFields();
         break;
       }
     }
@@ -233,10 +233,10 @@ document
 document
   .getElementById("btnCustomerClearAll")
   .addEventListener("click", function () {
-    clearTextFields();
+    clearCustomerSectionTextFields();
   });
 
-function clearTextFields() {
+function clearCustomerSectionTextFields() {
   document.getElementById("txtCustomerId").value = "";
   document.getElementById("txtCustomerName").value = "";
   document.getElementById("txtAddress").value = "";
