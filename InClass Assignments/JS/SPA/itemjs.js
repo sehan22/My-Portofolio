@@ -1,48 +1,56 @@
 //save item
-console.log(itemsArray);
+var customerDetails = [];
 
-var itemsArray = [];
+document
+  .getElementById("btnCustomerSave")
+  .addEventListener("click", function () {
+    var customerId = document.getElementById("txtCustomerId").value;
+    var customerName = document.getElementById("txtCustomerName").value;
+    var address = document.getElementById("txtAddress").value;
+    var phoneNumber = document.getElementById("txtPhoneNumber").value;
 
-document.getElementById("btnSaveItem").addEventListener("click", function () {
-  var itemrow = document.createElement("tr");
+    var isDuplicate = customerDetails.some(function (customer) {
+      return customer.customerId === customerId;
+    });
 
-  var itemcol = document.createElement("td");
-  var itemcol2 = document.createElement("td");
-  var itemcol3 = document.createElement("td");
-  var itemcol4 = document.createElement("td");
+    if (isDuplicate) {
+      alert("Customer ID already exists. Please enter a unique ID.");
+      return;
+    }
 
-  itemcol.textContent = txtProductId.value;
-  itemcol2.textContent = txtProductDescription.value;
-  itemcol3.textContent = txtUnitPrice.value;
-  itemcol4.textContent = txtQty.value;
+    var customer = {
+      customerId: customerId,
+      customerName: customerName,
+      address: address,
+      phoneNumber: phoneNumber,
+    };
 
-  itemrow.appendChild(itemcol);
-  itemrow.appendChild(itemcol2);
-  itemrow.appendChild(itemcol3);
-  itemrow.appendChild(itemcol4);
+    customerDetails.push(customer);
+    console.log(customerDetails);
 
-  let itemTable = document.getElementById("itemTable");
-  itemTable.appendChild(itemrow);
+    var row = document.createElement("tr");
 
-  itemsArray.push({
-    productId: txtProductId.value,
-    productDescription: txtProductDescription.value,
-    unitPrice: txtUnitPrice.value,
-    qty: txtQty.value,
+    var col = document.createElement("td");
+    col.textContent = customerId;
+
+    var col2 = document.createElement("td");
+    col2.textContent = customerName;
+
+    var col3 = document.createElement("td");
+    col3.textContent = address;
+
+    var col4 = document.createElement("td");
+    col4.textContent = phoneNumber;
+
+    row.appendChild(col);
+    row.appendChild(col2);
+    row.appendChild(col3);
+    row.appendChild(col4);
+
+    alert("Are you sure you want to save customer information?");
+    let customerTable = document.getElementById("customerTable");
+    customerTable.appendChild(row);
+    clearTextFields();
+    alert("Customer Informations saved successfully");
+    document.getElementById("btnCustomerSave").disabled = true;
   });
-
-  console.log(itemsArray);
-});
-
-// $("#itemTable").on("click", "tr", function () {
-//     let selectedRow = $(this);
-//     let selectedID = selectedRow.find("td:eq(0)").text();
-//     let selectedName = selectedRow.find("td:eq(1)").text();
-//     let selectedAddress = selectedRow.find("td:eq(2)").text();
-//     let selectedContact = selectedRow.find("td:eq(3)").text();
-
-//     $("#txtProductId").val(selectedID);
-//     $("#txtProductDescription").val(selectedName);
-//     $("#txtUnitPrice").val(selectedAddress);
-//     $("#txtQTY").val(selectedContact);
-//   });
