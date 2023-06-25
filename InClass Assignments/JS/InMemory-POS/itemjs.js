@@ -93,38 +93,76 @@ document
   });
 
 //update item information from table row click
-document
-  .getElementById("btnUpdateItem")
-  .addEventListener("click", function () {
-    var itemId = document.getElementById("txtProductId").value;
-    var itemDescription = document.getElementById("txtProductDescription").value;
-    var itemUnitPrice = document.getElementById("txtUnitPrice").value;
-    var itemQTY = document.getElementById("txtQty").value;
+document.getElementById("btnUpdateItem").addEventListener("click", function () {
+  var itemId = document.getElementById("txtProductId").value;
+  var itemDescription = document.getElementById("txtProductDescription").value;
+  var itemUnitPrice = document.getElementById("txtUnitPrice").value;
+  var itemQTY = document.getElementById("txtQty").value;
 
-    var isDuplicate = itemDetails.some(function (item) {
-      return item.itemId === itemId;
-    });
-
-    if (!isDuplicate) {
-      alert("WARNING: item Id change attempted!");
-      return;
-    }
-
-    for (var i = 0; i < itemDetails.length; i++) {
-      if (itemDetails[i].itemId == itemId) {
-        alert("Are you sure you want to update item information?");
-        itemDetails[i].itemDescription = itemDescription;
-        itemDetails[i].itemUnitPrice = itemUnitPrice;
-        itemDetails[i].itemQTY = itemQTY;
-
-        var row = document.getElementById("itemTable").rows[i + 1];
-        row.cells[1].textContent = itemDescription;
-        row.cells[2].textContent = itemUnitPrice;
-        row.cells[3].textContent = itemQTY;
-
-        console.log("Item details updated successfully");
-        // document.getElementById("btnUpdateItem").disabled = true;
-        break;
-      }
-    }
+  var isDuplicate = itemDetails.some(function (item) {
+    return item.itemId === itemId;
   });
+
+  if (!isDuplicate) {
+    alert("WARNING: item Id change attempted!");
+    return;
+  }
+
+  for (var i = 0; i < itemDetails.length; i++) {
+    if (itemDetails[i].itemId == itemId) {
+      alert("Are you sure you want to update item information?");
+      itemDetails[i].itemDescription = itemDescription;
+      itemDetails[i].itemUnitPrice = itemUnitPrice;
+      itemDetails[i].itemQTY = itemQTY;
+
+      var row = document.getElementById("itemTable").rows[i + 1];
+      row.cells[1].textContent = itemDescription;
+      row.cells[2].textContent = itemUnitPrice;
+      row.cells[3].textContent = itemQTY;
+
+      console.log("Item details updated successfully");
+      document.getElementById("btnUpdateItem").disabled = true;
+      clearTextFields();
+      break;
+    }
+  }
+});
+
+//delete item details click delete button
+document.getElementById("btnDeleteItem").addEventListener("click", function () {
+  var itemIdDelete = document.getElementById("txtProductId").value;
+  for (var i = 0; i < itemDetails.length; i++) {
+    if (itemDetails[i].itemId == itemIdDelete) {
+      alert("Are you sure you want to delete item information?");
+      itemDetails.splice(i, 1);
+      break;
+    }
+  }
+  var rows = document.querySelectorAll("#itemTable tr");
+  for (var i = 1; i < rows.length; i++) {
+    var rowCells = rows[i].getElementsByTagName("td");
+    if (rowCells[0].textContent == itemIdDelete) {
+      rows[i].parentNode.removeChild(rows[i]);
+      alert("item informations deleted successfully");
+      clearTextFields();
+      break;
+    }
+  }
+});
+
+function clearTextFields() {
+  document.getElementById("txtProductId").value = "";
+  document.getElementById("txtProductDescription").value = "";
+  document.getElementById("txtUnitPrice").value = "";
+  document.getElementById("txtQty").value = "";
+  document.getElementById("txtProductId").style.border = "";
+  document.getElementById("txtProductDescription").style.border = "";
+  document.getElementById("txtAddress").style.border = "";
+  document.getElementById("txtQty").style.border = "";
+  document.getElementById("itemIdvalidationNote").style.display = "none";
+  document.getElementById("itemDescriptionvalidationNote").style.display =
+    "none";
+  document.getElementById("itemUnitPricevalidationNote").style.display = "none";
+  document.getElementById("itemQTYvalidationNote").style.display = "none";
+  document.getElementById("btnSaveItem").disabled = true;
+}

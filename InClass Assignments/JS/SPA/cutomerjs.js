@@ -223,6 +223,7 @@ document
       if (rowCells[0].textContent == customerIdToDelete) {
         rows[i].parentNode.removeChild(rows[i]);
         alert("Customer informations deleted successfully");
+        clearTextFields();
         break;
       }
     }
