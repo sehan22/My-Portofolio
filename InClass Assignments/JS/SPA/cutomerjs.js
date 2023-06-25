@@ -1,3 +1,89 @@
+//All input data validate
+document.getElementById("btnCustomerSave").disabled = true;
+
+function dataValidate() {
+  var customerId = document.getElementById("txtCustomerId").value;
+  var customerIdRegex = /^C\d{2}-\d{3}$/;
+
+  var customerName = document.getElementById("txtCustomerName").value;
+  var customerNameRegex = /^[A-Za-z\s]+$/;
+
+  var address = document.getElementById("txtAddress").value;
+  var addressRegex = /^[A-Za-z0-9]+$/;
+
+  var phoneNumber = document.getElementById("txtPhoneNumber").value;
+  var phoneNumberRegex = /^[0-9+]+$/;
+
+  if (customerIdRegex.test(customerId)) {
+    document.getElementById("txtCustomerId").style.border = "solid 1px green";
+    document.getElementById("customerIdvalidationNote").style.display = "none";
+
+    if (customerName.length >= 10 && customerNameRegex.test(customerName)) {
+      document.getElementById("txtCustomerName").style.border =
+        "solid 1px green";
+      document.getElementById("customerNamevalidationNote").style.display =
+        "none";
+
+      if (address.length >= 5 && addressRegex.test(address)) {
+        document.getElementById("txtAddress").style.border = "solid 1px green";
+        document.getElementById("customerAddressvalidationNote").style.display =
+          "none";
+
+        if (phoneNumber.length >= 10 && phoneNumberRegex.test(phoneNumber)) {
+          document.getElementById("txtPhoneNumber").style.border =
+            "solid 1px green";
+          document.getElementById(
+            "customerPhoneNumbervalidationNote"
+          ).style.display = "none";
+
+          document.getElementById("btnCustomerSave").disabled = false;
+        } else {
+          document.getElementById("txtPhoneNumber").style.border =
+            "solid 1px red";
+          document.getElementById(
+            "customerPhoneNumbervalidationNote"
+          ).style.display = "block";
+          document.getElementById("btnCustomerSave").disabled = true;
+        }
+      } else {
+        document.getElementById("txtAddress").style.border = "solid 1px red";
+        document.getElementById("customerAddressvalidationNote").style.display =
+          "block";
+        document.getElementById("btnCustomerSave").disabled = true;
+      }
+    } else {
+      document.getElementById("txtCustomerName").style.border = "solid 1px red";
+      document.getElementById("customerNamevalidationNote").style.display =
+        "block";
+      document.getElementById("btnCustomerSave").disabled = true;
+    }
+  } else {
+    document.getElementById("txtCustomerId").style.border = "solid 1px red";
+    document.getElementById("customerIdvalidationNote").style.display = "block";
+  }
+}
+
+//validate customer id field
+document.getElementById("txtCustomerId").addEventListener("keyup", function () {
+  dataValidate();
+});
+
+document
+  .getElementById("txtCustomerName")
+  .addEventListener("keyup", function () {
+    dataValidate();
+  });
+
+document.getElementById("txtAddress").addEventListener("keyup", function () {
+  dataValidate();
+});
+
+document
+  .getElementById("txtPhoneNumber")
+  .addEventListener("keyup", function () {
+    dataValidate();
+  });
+
 //save customer
 var customerDetails = [];
 
@@ -9,14 +95,13 @@ document
     var address = document.getElementById("txtAddress").value;
     var phoneNumber = document.getElementById("txtPhoneNumber").value;
 
-    // Check for duplicate entries
     var isDuplicate = customerDetails.some(function (customer) {
       return customer.customerId === customerId;
     });
 
     if (isDuplicate) {
       alert("Customer ID already exists. Please enter a unique ID.");
-      return; // Exit the function without adding the customer
+      return;
     }
 
     var customer = {
@@ -51,6 +136,8 @@ document
     alert("Are you sure you want to save customer information?");
     let customerTable = document.getElementById("customerTable");
     customerTable.appendChild(row);
+    clearTextFields();
+    alert("Customer Informations saved successfully");
   });
 
 //load customer information from table row click
@@ -122,109 +209,30 @@ document
 document
   .getElementById("btnCustomerClearAll")
   .addEventListener("click", function () {
-    document.getElementById("txtCustomerId").value = "";
-    document.getElementById("txtCustomerName").value = "";
-    document.getElementById("txtAddress").value = "";
-    document.getElementById("txtPhoneNumber").value = "";
-    document.getElementById("txtCustomerId").style.border = "";
-    document.getElementById("txtCustomerName").style.border = "";
-    document.getElementById("txtAddress").style.border = "";
-    document.getElementById("txtPhoneNumber").style.border = "";
+    clearTextFields();
   });
 
-//input field data validation
-
-//validate customer id field
-document
-  .getElementById("txtCustomerId")
-  .addEventListener("keypress", function () {
-    validateCustomerId();
-  });
-
-function validateCustomerId() {
-  var customerId = document.getElementById("txtCustomerId").value;
-  var customerIdRegex = /^C\d{2}-\d{2}$/;
-
-  if (customerIdRegex.test(customerId)) {
-    document.getElementById("txtCustomerId").style.border = "solid 1px green";
-    document.getElementById("customerIdvalidationNote").style.display = "none";
-    document.getElementById("txtCustomerName").focus();
-  } else {
-    document.getElementById("txtCustomerId").style.border = "solid 1px red";
-    document.getElementById("customerIdvalidationNote").style.display = "block";
-  }
-}
-
-//validate customer name field
-document
-  .getElementById("txtCustomerName")
-  .addEventListener("keypress", function () {
-    validateCustomerName();
-  });
-
-function validateCustomerName() {
-  var customerName = document.getElementById("txtCustomerName").value;
-  var customerNameRegex = /^[A-Za-z\s]+$/;
-
-  if (customerName.length >= 10 && customerNameRegex.test(customerName)) {
-    document.getElementById("txtCustomerName").style.border = "solid 1px green";
-    document.getElementById("customerNamevalidationNote").style.display =
-      "none";
-  } else {
-    document.getElementById("txtCustomerName").style.border = "solid 1px red";
-    document.getElementById("customerNamevalidationNote").style.display =
-      "block";
-  }
-}
-
-//validate customer address field
-document.getElementById("txtAddress").addEventListener("keypress", function () {
-  validateAddress();
-});
-
-function validateAddress() {
-  var address = document.getElementById("txtAddress").value;
-  var addressRegex = /^[A-Za-z0-9]+$/;
-
-  if (addressRegex.test(address)) {
-    document.getElementById("txtAddress").style.border = "solid 1px green";
-    document.getElementById("customerAddressvalidationNote").style.display =
-      "none";
-  } else {
-    document.getElementById("txtAddress").style.border = "solid 1px red";
-    document.getElementById("customerAddressvalidationNote").style.display =
-      "block";
-  }
-}
-
-//validate customer contact field
-document
-  .getElementById("txtPhoneNumber")
-  .addEventListener("keypress", function () {
-    validatePhoneNumber();
-  });
-
-function validatePhoneNumber() {
-  var phoneNumber = document.getElementById("txtPhoneNumber").value;
-  var phoneNumberRegex = /^[0-9+]+$/;
-
-  if (phoneNumberRegex.test(phoneNumber)) {
-    document.getElementById("txtPhoneNumber").style.border = "solid 1px green";
-    document.getElementById("customerPhoneNumbervalidationNote").style.display =
-      "none";
-  } else {
-    document.getElementById("txtPhoneNumber").style.border = "solid 1px red";
-    document.getElementById("customerPhoneNumbervalidationNote").style.display =
-      "block";
-  }
+function clearTextFields() {
+  document.getElementById("txtCustomerId").value = "";
+  document.getElementById("txtCustomerName").value = "";
+  document.getElementById("txtAddress").value = "";
+  document.getElementById("txtPhoneNumber").value = "";
+  document.getElementById("txtCustomerId").style.border = "";
+  document.getElementById("txtCustomerName").style.border = "";
+  document.getElementById("txtAddress").style.border = "";
+  document.getElementById("txtPhoneNumber").style.border = "";
+  document.getElementById("customerIdvalidationNote").style.display = "none";
+  document.getElementById("customerNamevalidationNote").style.display = "none";
+  document.getElementById("customerAddressvalidationNote").style.display =
+    "none";
+  document.getElementById("customerPhoneNumbervalidationNote").style.display =
+    "none";
 }
 
 const customerId = document.querySelector("#txtCustomerId");
 
 customerId.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    document.getElementById("txtCustomerName").focus();
-  }
+
 });
 
 const customerName = document.querySelector("#txtCustomerName");
