@@ -9,6 +9,16 @@ document
     var address = document.getElementById("txtAddress").value;
     var phoneNumber = document.getElementById("txtPhoneNumber").value;
 
+    // Check for duplicate entries
+    var isDuplicate = customerDetails.some(function (customer) {
+      return customer.customerId === customerId;
+    });
+
+    if (isDuplicate) {
+      alert("Customer ID already exists. Please enter a unique ID.");
+      return; // Exit the function without adding the customer
+    }
+
     var customer = {
       customerId: customerId,
       customerName: customerName,
@@ -116,6 +126,10 @@ document
     document.getElementById("txtCustomerName").value = "";
     document.getElementById("txtAddress").value = "";
     document.getElementById("txtPhoneNumber").value = "";
+    document.getElementById("txtCustomerId").style.border = "";
+    document.getElementById("txtCustomerName").style.border = "";
+    document.getElementById("txtAddress").style.border = "";
+    document.getElementById("txtPhoneNumber").style.border = "";
   });
 
 //input field data validation
@@ -129,7 +143,7 @@ document
 
 function validateCustomerId() {
   var customerId = document.getElementById("txtCustomerId").value;
-  var customerIdRegex = /^C\d{2}-\d{3}$/;
+  var customerIdRegex = /^C\d{2}-\d{2}$/;
 
   if (customerIdRegex.test(customerId)) {
     document.getElementById("txtCustomerId").style.border = "solid 1px green";
@@ -205,13 +219,13 @@ function validatePhoneNumber() {
   }
 }
 
-// const customerId = document.querySelector("#txtCustomerId");
+const customerId = document.querySelector("#txtCustomerId");
 
-// customerId.addEventListener("keydown", function (event) {
-//   if (event.key === "Enter") {
-//     document.getElementById("txtCustomerName").focus();
-//   }
-// });
+customerId.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    document.getElementById("txtCustomerName").focus();
+  }
+});
 
 const customerName = document.querySelector("#txtCustomerName");
 
