@@ -1,5 +1,5 @@
-//All input data validate
 document.getElementById("btnCustomerSave").disabled = true;
+//All input data validate
 
 function dataValidate() {
   var customerId = document.getElementById("txtCustomerId").value;
@@ -254,26 +254,31 @@ function clearTextFields() {
   document.getElementById("btnCustomerSave").disabled = true;
 }
 
-const customerId = document.querySelector("#txtCustomerId");
+// Navigate From Enter Key Pressed
+const customerId = document.getElementById("txtCustomerId");
+const customerName = document.getElementById("txtCustomerName");
 
 customerId.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    document.getElementById("txtCustomerName").focus();
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    customerName.focus();
   }
 });
 
-const customerName = document.querySelector("#txtCustomerName");
+const customerAddress = document.getElementById("txtAddress");
 
 customerName.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    document.getElementById("txtAddress").focus();
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    customerAddress.focus();
   }
 });
 
-const customerAddress = document.querySelector("#txtAddress");
+const customerPhoneNumber = document.getElementById("txtPhoneNumber");
 
 customerAddress.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    document.getElementById("txtPhoneNumber").focus();
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    customerPhoneNumber.focus();
   }
 });
