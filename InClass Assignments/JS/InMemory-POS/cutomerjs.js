@@ -18,13 +18,13 @@ function dataValidate() {
     document.getElementById("txtCustomerId").style.border = "solid 1px green";
     document.getElementById("customerIdvalidationNote").style.display = "none";
 
-    if (customerName.length >= 10 && customerNameRegex.test(customerName)) {
+    if (customerName.length >= 5 && customerName.length <= 20 && customerNameRegex.test(customerName)) {
       document.getElementById("txtCustomerName").style.border =
         "solid 1px green";
       document.getElementById("customerNamevalidationNote").style.display =
         "none";
 
-      if (address.length >= 5 && addressRegex.test(address)) {
+      if (address.length >= 7 && addressRegex.test(address)) {
         document.getElementById("txtAddress").style.border = "solid 1px green";
         document.getElementById("customerAddressvalidationNote").style.display =
           "none";

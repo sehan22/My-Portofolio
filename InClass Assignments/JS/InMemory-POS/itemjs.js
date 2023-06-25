@@ -9,17 +9,18 @@ function itemDataValidate() {
   var itemDescriptionRegex = /^[A-Za-z\s]+$/;
 
   var itemUnitPrice = document.getElementById("txtUnitPrice").value;
-  var unitPriceRegex = /^[A-Za-z0-9]+$/;
+  var unitPriceRegex = /^\d+(?:\.\d{2})?$/;
 
   var itemQTY = document.getElementById("txtQty").value;
-  var itemQTYRegex = /^[0-9+]+$/;
+  var itemQTYRegex = /^[0-9]+$/;
 
   if (itemIdRegex.test(itemId)) {
     document.getElementById("txtProductId").style.border = "solid 1px green";
     document.getElementById("itemIdvalidationNote").style.display = "none";
 
     if (
-      itemDescription.length >= 10 &&
+      itemDescription.length >= 5 &&
+      itemDescription.length <= 20 &&
       itemDescriptionRegex.test(itemDescription)
     ) {
       document.getElementById("txtProductDescription").style.border =
@@ -27,13 +28,17 @@ function itemDataValidate() {
       document.getElementById("itemDescriptionvalidationNote").style.display =
         "none";
 
-      if (itemUnitPrice.length >= 5 && unitPriceRegex.test(itemUnitPrice)) {
+      if (
+        itemUnitPrice.length >= 1 &&
+        itemUnitPrice.length <= 15 &&
+        unitPriceRegex.test(itemUnitPrice)
+      ) {
         document.getElementById("txtUnitPrice").style.border =
           "solid 1px green";
         document.getElementById("itemUnitPricevalidationNote").style.display =
           "none";
 
-        if (itemQTY.length >= 10 && itemQTYRegex.test(itemQTY)) {
+        if (itemQTY.length <= 8 && itemQTYRegex.test(itemQTY)) {
           document.getElementById("txtQty").style.border = "solid 1px green";
           document.getElementById("itemQTYvalidationNote").style.display =
             "none";
