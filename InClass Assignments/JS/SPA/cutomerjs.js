@@ -76,16 +76,19 @@ document.getElementById("txtCustomerId").addEventListener("keyup", function () {
   dataValidate();
 });
 
+//valid customer name field
 document
   .getElementById("txtCustomerName")
   .addEventListener("keyup", function () {
     dataValidate();
   });
 
+//validate customer address field
 document.getElementById("txtAddress").addEventListener("keyup", function () {
   dataValidate();
 });
 
+//validate customer phone number field
 document
   .getElementById("txtPhoneNumber")
   .addEventListener("keyup", function () {
