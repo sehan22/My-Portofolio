@@ -19,4 +19,7 @@
 ⚪ Wireframe - https://drive.google.com/file/d/1XGzTDXmAAQOR1TfOSj6Dq_-OGEw7vStR/view?usp=drive_link<br>
 ⚪ Mockup - https://www.figma.com/file/ZpOR6MK4b3Y9DGrlXXOde1/Web-POS-Mockup?type=design&node-id=0%3A1&mode=design&t=gFnNsJgLsgW7bdZv-1<br>
 
-#Developed By Sehan Ranaweera
+#Developed By Sehan Ranaweera<br>
+
+#Desktop View
+file:///C:/Users/sehan/Downloads/127.0.0.1_5501_index.html%20(2).png
