@@ -22,4 +22,5 @@
 #Developed By Sehan Ranaweera<br>
 
 #Desktop View
-file:///C:/Users/sehan/Downloads/127.0.0.1_5501_index.html%20(2).png
+
+      <img src="assests/index 2/github readme/127.0.0.1_5501_index.html (2).png" alt="drawing" width="90%" height="75%" align="center">
