@@ -22,4 +22,11 @@
 #Developed By Sehan Ranaweera<br>
 
 #Desktop View
-file:///C:/Users/sehan/Downloads/127.0.0.1_5501_index.html%20(2).png
+![127 0 0 1_5501_index html (2)](https://github.com/sehan22/My-Portofolio/assets/121780182/43ba9325-3c7e-4ca0-afb6-dd88819ef1a6) <br>
+
+#Mobile View
+![mobile_size](https://github.com/sehan22/My-Portofolio/assets/121780182/ac9f491c-b4ca-47d0-b372-fbfc3e43a26b) <br>
+
+#Web-POS Desktop View
+![127 0 0 1_5501_InClass%20Assignments_JS_InMemory-POS_index html](https://github.com/sehan22/My-Portofolio/assets/121780182/04c2ecd6-2437-47c1-8357-d3d5f459a126)
+
