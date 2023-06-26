@@ -23,4 +23,4 @@
 
 #Desktop View
 
-      <img src="src/MyPortofolio/assests/index 2/github readme/127.0.0.1_5501_index.html (2).png" alt="drawing" width="90%" height="75%" align="center">
+[      <img src="src/MyPortofolio/assests/index 2/github readme/127.0.0.1_5501_index.html (2).png" alt="drawing" width="90%" height="75%" align="center">](https://github.com/sehan22/My-Portofolio/blob/master/assests/index%202/github%20readme/127.0.0.1_5501_index.html%20(2).png)https://github.com/sehan22/My-Portofolio/blob/master/assests/index%202/github%20readme/127.0.0.1_5501_index.html%20(2).png
