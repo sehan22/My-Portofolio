@@ -1,6 +1,6 @@
-let customer = {
-  id: "",
-  name: "",
-  address: "",
-  phonenumber: 0
-};
+let customer={
+  id:"",
+  name:"",
+  address:"",
+  phonenumber:0
+}

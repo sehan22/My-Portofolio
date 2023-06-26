@@ -1,6 +1,6 @@
-let product = {
-  id: "",
+let item = {
+  code: "",
   description: "",
   unitPrice: 0,
-  qty: 0
+  qtyOnHand: 0
 };

@@ -2,7 +2,7 @@ initiateUI();
 
 function initiateUI() {
   clearAll();
-  document.getElementById("home").style.display = "block";
+  document.getElementById("dashboardcontent").style.display = "block";
   setTheLastView();
 }
 
@@ -17,12 +17,12 @@ function saveLastView(clickedID) {
     case "product":
       localStorage.setItem("view", "ITEM");
       break;
-    case "orders":
-      localStorage.setItem("view", "ORDER");
-      break;
     case "placeOrder":
       localStorage.setItem("view", "PLACEORDER");
       break;
+    // case "orders":
+    //   localStorage.setItem("view", "ORDER");
+    //   break;
   }
 }
 
@@ -30,31 +30,31 @@ function setTheLastView() {
   let view = localStorage.getItem("view");
   switch (view) {
     case "HOME":
-      setView(document.getElementById("navHome"));
+      setView(document.getElementById("dashboardcontent"));
       break;
     case "ITEM":
-      setView(document.getElementById("navProducts"));
+      setView(document.getElementById("itemcontent"));
       break;
     case "CUSTOMER":
-      setView(document.getElementById("navCustomer"));
+      setView(document.getElementById("customercontent"));
       break;
-    case "ORDER":
-      setView(document.getElementById("navOrders"));
+    case "PLACEORDER":
+      setView(document.getElementById("placeordercontent"));
       break;
-    // case "PLACEORDER":
-    //   setView(document.getElementById("placeOrder"));
+    // case "ORDER":
+    //   setView(document.getElementById("navOrders"));
     //   break;
     default:
-      setView(document.getElementById("navHome"));
+      setView(document.getElementById("dashboardcontent"));
   }
 }
 
 function clearAll() {
-  document.getElementById("navHome").style.display = "none";
-  document.getElementById("navCustomer").style.display = "none";
-  document.getElementById("navProducts").style.display = "none";
-  document.getElementById("navOrders").style.display = "none";
-  // document.getElementById("placeOrder").style.display = "none";
+  // document.getElementById("dashboardcontent").style.display = "none";
+  document.getElementById("itemcontent").style.display = "none";
+  document.getElementById("customercontent").style.display = "none";
+  document.getElementById("placeordercontent").style.display = "none";
+  // document.getElementById("navOrders").style.display = "none";
 }
 
 function setView(viewOb) {
@@ -66,25 +66,25 @@ function setView(viewOb) {
 
 //bind events
 document.getElementById("btnHome").addEventListener("click", function () {
-  setView(document.getElementById("home"));
+  setView(document.getElementById("dashboardcontent"));
 });
 
 document.getElementById("btnCustomer").addEventListener("click", function () {
-  setView(document.getElementById("customer"));
+  setView(document.getElementById("customercontent"));
 });
 
-document.getElementById("btnItem").addEventListener("click", function () {
-  setView(document.getElementById("produc"));
+document.getElementById("btnProducts").addEventListener("click", function () {
+  setView(document.getElementById("itemcontent"));
 });
 
 document.getElementById("btnOrders").addEventListener("click", function () {
-  setView(document.getElementById("orders"));
-  getAllOrders();
+  setView(document.getElementById("placeordercontent"));
+  // getAllOrders();
 });
 
-document.getElementById("btnPlaceOrder").addEventListener("click", function () {
-  setView(document.getElementById("placeOrder"));
-  loadCusIds();
-  loadItemIds();
-  setOrderId();
-});
+// document.getElementById("btnPlaceOrder").addEventListener("click", function () {
+//   setView(document.getElementById("placeOrder"));
+//   loadCusIds();
+//   loadItemIds();
+//   setOrderId();
+// });
