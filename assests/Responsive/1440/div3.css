@@ -37,10 +37,11 @@
     text-align: center;
     width: 300px;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 15px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: white;
+    background-color: #fafaff;
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
   }
 
   body > main > div:nth-child(3) > div > div > div:nth-child(2) {
@@ -52,10 +53,11 @@
     text-align: center;
     width: 300px;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 15px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: white;
+    background-color: #fafaff;
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
   }
 
   body > main > div:nth-child(3) > div > div > div:nth-child(3) {
@@ -67,10 +69,11 @@
     text-align: center;
     width: 300px;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 15px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: white;
+    background-color: #fafaff;
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
   }
 
   body > main > div:nth-child(3) > div > div > div:nth-child(4) {
@@ -82,10 +85,11 @@
     text-align: center;
     width: 300px;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 15px;
     /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
     transition: 0.5s;
-    background-color: white;
+    background-color: #fafaff;
+    box-shadow: -23px -23px 45px #ffffff, 28px 28px 50px rgba(13, 39, 80, 0.16);
   }
 
   body > main > div:nth-child(3) > div > div > div {
